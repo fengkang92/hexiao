@@ -67,6 +67,8 @@ class WxNotify extends \WxPayNotify
                     if ($stockStatus['pass']) {
                         $this->updateOrderStatus($order->id, true);
                         $this->reduceStock($order->time_id, $stockStatus, $order->id);
+                        $this->addCodeImgById($order->id);
+
                     } else {
                         $this->updateOrderStatus($order->id, false);
                     }
@@ -133,12 +135,12 @@ class WxNotify extends \WxPayNotify
         $phoneNumber = $memberService->ytel;
         $code = $this->generate_code(6);
         $url = 'https://cs.api.joyfamliy.com/lock/student/Index/';
-        $params = array($orderDetail->snap_name, $orderDetail->total_count, $orderDetail->total_price,$url,$code);
-        $paramsTeacher = array($boxCourseService->server_name,$memberService->yname,$boxCoursePlan->server_name,date('y-m-d H:i',$serviceTime->start_time),$url);
+        $params = array($orderDetail->snap_name, $orderDetail->total_count, $orderDetail->total_price, $url, $code);
+        $paramsTeacher = array($boxCourseService->server_name, $memberService->yname, $boxCoursePlan->server_name, date('y-m-d H:i', $serviceTime->start_time), $url);
         $SmsSender = new SmsSender();
         $SmsSender->SmsSingleSender($phoneNumber, 51756, $params);
         $SmsSender->SmsSingleSender($boxCourseService->tel, 51766, $paramsTeacher);
-        $this->setCacheByOrderId($id,$code);
+        $this->setCacheByOrderId($id, $code);
     }
 
     /**
@@ -146,7 +148,7 @@ class WxNotify extends \WxPayNotify
      * @param $id
      * @param $code
      */
-    private function setCacheByOrderId($id,$code)
+    private function setCacheByOrderId($id, $code)
     {
         $orderDetail = OrderModel::get($id);
         $boxCourse = BoxCourse::get($orderDetail->sid);
@@ -156,14 +158,42 @@ class WxNotify extends \WxPayNotify
         $member_service_id = $memberService->id;
         $start_time = $serviceTime->start_time;
         $end_time = $serviceTime->end_time;
-        $data = json_encode(array('device_name'=>$device_name,'member_service_id'=>$member_service_id,'start_time'=>$start_time,'end_time'=>$end_time));
-        $key = 'key'.date('md').$code;
-        Cache::set($key,$data,$end_time);
+        $data = json_encode(array('device_name' => $device_name, 'member_service_id' => $member_service_id, 'start_time' => $start_time, 'end_time' => $end_time));
+        $key = 'key' . date('md') . $code;
+        Cache::set($key, $data, $end_time);
     }
 
     private function generate_code($length = 6)
     {
         return rand(pow(10, ($length - 1)), pow(10, $length) - 1);
+    }
+
+    /**
+     * 增加二维码图片路径
+     * @param $orderId
+     * @return mixed
+     */
+    private function addCodeImgById($orderNo)
+    {
+        $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
+        //echo $save_path;die;
+        $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
+
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'xxxx.xxx.xxx?orderNo=' . $orderNo;
+
+        $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
+
+        $qr_size = isset($_GET['qr_size']) ? $_GET['qr_size'] : '10';
+
+        $save_prefix = isset($_GET['save_prefix']) ? $_GET['save_prefix'] : 'ZETA';
+
+        if ($filename = createQRcode($save_path, $qr_data, $qr_level, $qr_size, $save_prefix)) {
+
+            $pic = $web_path . $filename;
+
+        }
+        $img_path = '/qrcode/' . $filename;
+        OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
     private function updateOrderStatus($orderID, $success)
