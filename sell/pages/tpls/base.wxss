@@ -1,0 +1,48 @@
+.no-data{
+    display: flex;
+    height: 140rpx;
+    font-size: 26rpx;
+    color: #ccc;
+    align-items: center;
+    justify-content: center;
+}
+.upper-word{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 45rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:rgba(0,0,0,.25);
+}
+
+
+
+.disabled{
+    pointer-events: none;
+}
+
+/*订单三种状态*/
+.order-status-txt{
+    font-size: 14px;
+}
+.order-status-txt.unpay{
+    color: #d93838;
+}
+.order-status-txt.payed{
+    color: #999;
+}
+.order-status-txt.done{
+    color: #999;
+}
+
+.order-no-txt{
+    letter-spacing: 2rpx;
+    color: #999;
+}
+

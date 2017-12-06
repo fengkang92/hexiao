@@ -1,0 +1,60 @@
+<!--订单详情-->
+<view class="container order-container">
+    <!--商品展示-->
+    <view class="product-item">
+        <image class="item-left" src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg" mode="aspectFill"></image>
+        <view class="item-middle">
+            <view class="item-title">文艺社剧场先行版--名侦探毛利小五郎&&名侦探屈原文艺社剧场先行版--名侦探毛利小五郎&&名侦探屈原</view>
+            <view class="item-price">￥50</view>
+        </view>
+    </view>
+
+    <view class='choose'>
+        <view class="choose-title">选择日期</view>
+        <view class="choose-content">
+            <view class='choose-item'>2017.12.25--2018.3.4</view>
+        </view>
+    </view>
+
+    <view class='choose'>
+        <view class="choose-title">选择时间</view>
+        <view class="choose-content">
+            <view class='choose-item'>17:00-22:00</view>
+        </view>
+    </view>
+
+    <view class='choose'>
+        <view class="choose-title">数量</view>
+        <view class="choose-content">
+            <view class='choose-num'>
+				<view class='num-down'>-</view>
+				<view class='num-show'>1</view>
+				<view class='num-add'>+</view>
+			</view>
+        </view>
+    </view>
+
+    <view class='choose'>
+	    <view class="choose-title">购票人姓名</view>
+        <view class="choose-content">
+			<view class='input'>
+				<input placeholder='请输入购票人姓名'></input>
+			</view>
+        </view>
+    </view>
+
+	<view class='choose' style='margin-bottom:100rpx'>
+		<view class="choose-title">购票人手机号码</view>
+        <view class="choose-content">
+			<view class='input'>
+				<input placeholder='请输入购票人手机号码'></input>
+			</view>
+        </view>
+    </view>
+
+    <!--结算-->
+    <view class="footer-account-box order-accounts">
+        <view class="total-account">总计:￥50</view>
+        <view class="pay" ontap="pay">立即支付</view>
+    </view>
+</view>

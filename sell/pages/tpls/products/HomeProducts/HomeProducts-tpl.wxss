@@ -1,0 +1,73 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.services-title {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.services-describe {
+    font-size: 22rpx;
+    color: #999;
+    text-align: center;
+	margin-bottom: 20rpx
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    margin: 0rpx 0 10rpx 0;
+    position: relative;
+}
+.service:last-child{
+	margin-bottom: 0;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 60rpx;
+    margin-left: 60rpx;
+    z-index: 50;
+}
+
+.service image {
+    width: 750rpx;
+    height: 360rpx;
+}
+
+.service-cover {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 750rpx;
+    height: 360rpx;
+    background: #000;
+}
+
+.service-title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.service-describe {
+    margin-top: 10rpx;
+    font-size: 14px;
+    color: #fff;
+}
+
+.service-price {
+    margin-top: 30rpx;
+    font-size: 14px;
+    color: #fff;
+}

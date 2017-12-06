@@ -1,0 +1,66 @@
+.ThemeProducts {
+    background: #fff;
+}
+
+.shops {
+    padding: 40rpx 0rpx;
+    margin: 0 40rpx;
+    height: 190rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-bottom: solid #f0f0f0 1px;
+}
+
+.shops image {
+    width: 268rpx;
+    height: 190rpx;
+}
+
+.shops_data {
+    width: 360rpx;
+    height: 190rpx;
+    margin-left: 40rpx;
+}
+
+.shops_title {
+    font-size: 14px;
+    color: #333;
+    line-height: 40rpx;
+    height: 80rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.shops_price {
+    display: block;
+    font-size: 13px;
+    color: #d93737;
+    margin-top: 18rpx;
+    line-height: 30rpx;
+    height: 30rpx;
+}
+
+.shops_describe {
+    display: block;
+    margin-top: 10rpx;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.shops_describe text {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999;
+    border: solid #e6e6e6 1px;
+    margin-right: 10rpx;
+    border-radius: 9px;
+    letter-spacing: 5rpx;
+    text-align: center;
+    padding: 4rpx 8rpx;
+}

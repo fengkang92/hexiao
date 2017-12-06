@@ -1,0 +1,30 @@
+<template name="menus">
+   <view class="menus">
+   		<view class='floor'>
+			<image class="menus-item" data-id="3" data-name="studio box" 
+			bindtap="onCategoryItemTap" src="/images/icon/studio_box.png"></image>
+			<image class="menus-item" data-id="4" data-name="food box" 
+			bindtap="onCategoryItemTap" src="/images/icon/food_box.png"></image>
+			<image class="menus-item" data-id="2" data-name="art box" 
+			bindtap="onCategoryItemTap" src="/images/icon/art_box.png"></image>
+   		</view>
+
+		<view class='floor'>
+			<image class="menus-item" data-id="1" data-name="music box" 
+			bindtap="onCategoryItemTap" src="/images/icon/music_box.png"></image>
+			<image class="menus-item" data-id="9" data-name="joy music" 
+			bindtap="jumpToJoy" src="/images/icon/joy_music.png"></image>
+			<image class="menus-item" data-id="8" data-name="space box" 
+			bindtap="onCategoryItemTap" src="/images/icon/space_box.png"></image>
+		</view>
+
+		<view class='floor'>
+			<image class="menus-item" data-id="7" data-name="yoga box" 
+			bindtap="onCategoryItemTap" src="/images/icon/yoga_box.png"></image>
+			<image class="menus-item" data-id="5" data-name="diy box" 
+			bindtap="onCategoryItemTap" src="/images/icon/diy_box.png"></image>
+			<image class="menus-item" data-id="6" data-name="book box" 
+			bindtap="onCategoryItemTap" src="/images/icon/book_box.png"></image>
+		</view>
+   </view>
+</template>

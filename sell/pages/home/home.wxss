@@ -1,0 +1,137 @@
+@import "../tpls/menus/menus-tpl.wxss";
+@import "../tpls/products/HomeProducts/HomeProducts-tpl.wxss";
+
+.container {
+    border-top: solid 1px #e6e6e6;
+    background-color: #fff;
+    position: relative;
+    padding: 40rpx;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.scroll {
+    margin-top: 40rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.scroll-item {
+    width: 100%;
+    display: inline-block;
+    margin-right: 40rpx;
+}
+
+.scroll-item:last-child {
+    margin-right: 0rpx;
+}
+
+.scroll-img {
+    display: block;
+    width: 670rpx;
+    height: 380rpx;
+}
+
+.scroll-bottom {
+    margin-top: 40rpx;
+}
+
+.scroll-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.scroll-time {
+    margin-top: 20rpx;
+    font-size: 14px;
+    line-height: 14px;
+    color: #666;
+}
+
+.second {
+    margin-top: 40rpx;
+	padding-top: 40rpx;
+	padding-bottom: 40rpx;
+    position: relative;
+     margin-bottom: 40rpx; 
+	border-top: solid 1rpx #efefef;
+	border-bottom: solid 1rpx #efefef;
+}
+
+.second-bottom {
+    display: block;
+    width: 670rpx;
+    height: 320rpx;
+}
+
+.second-tip {
+    width: 124rpx;
+    height: 68rpx;
+    background-color: #ffda44;
+    position: absolute;
+    top: 40rpx;
+    right: 0;
+    color: #242424;
+    line-height: 68rpx;
+    text-align: center;
+}
+
+.title-down {
+    margin-top: 10rpx;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: #666;
+}
+
+.gift {
+    margin-top: 40rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gift-item {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+	margin-bottom: 40rpx;
+}
+
+.gift-item:nth-child(odd) {
+    margin-right: 3%;
+}
+
+.gift-item:nth-child(even) {
+    margin-left: 3%;
+}
+
+.gift-item-img {
+    display: block;
+    width: 100%;
+}
+
+.gift-item-name {
+    margin-top: 40rpx;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #242424;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gift-item-price{
+	margin-top: 20rpx;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0px;
+	color: #ad0015;
+}

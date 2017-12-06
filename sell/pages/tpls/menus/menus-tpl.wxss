@@ -1,0 +1,41 @@
+.menus {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+	 /* background: red;  */
+}
+.floor{
+	width: 750rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 8rpx auto 0;
+	/* background: #000; */
+}
+
+.menus-item {
+    width: 246rpx;
+    height: 246rpx;
+}
+
+.menus-item image {
+	font-size: 0;
+    display: block;
+    width: 246rpx;
+    height: 246rpx;
+}
+.item1{
+	/* margin: 0 8rpx; */
+}
+.joyitem{
+	width: 498rpx;
+	height: 246rpx;
+	/* margin-right: 8rpx; */
+}
+.joyitem image{
+	font-size: 0;
+	display: block;
+	width: 498rpx;
+	height: 246rpx;
+}
+

@@ -1,0 +1,60 @@
+<import src="../tpls/menus/menus-tpl.wxml" />
+<import src="../tpls/products/HomeProducts/HomeProducts-tpl.wxml" />
+
+<view class="container">
+    <view class='title'>活动推荐</view>
+    <scroll-view scroll-x class='scroll' style='width:100%'>
+        <view class='scroll-item'>
+            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
+            <view class='scroll-bottom'>
+                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
+                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
+            </view>
+        </view>
+        <view class='scroll-item'>
+            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
+            <view class='scroll-bottom'>
+                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
+                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
+            </view>
+        </view>
+        <view class='scroll-item'>
+            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
+            <view class='scroll-bottom'>
+                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
+                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
+            </view>
+        </view>
+    </scroll-view>
+
+    <view class='second'>
+        <image class='second-bottom' mode="aspectFill" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
+        <view class='second-tip'>NEW</view>
+    </view>
+
+    <view class='title'>周边小物</view>
+    <view class='title-down'>周边小礼物</view>
+    <view class='gift'>
+        <view class='gift-item'>
+            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
+            <view class='gift-item-name'>文艺社小气球🎈文艺社小气球🎈</view>
+            <view class='gift-item-price'>￥ 50</view>
+        </view>
+        <view class='gift-item'>
+            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
+            <view class='gift-item-name'>文艺社小气球🎈</view>
+            <view class='gift-item-price'>￥ 50</view>
+        </view>
+        <view class='gift-item'>
+            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
+            <view class='gift-item-name'>文艺社小气球🎈</view>
+            <view class='gift-item-price'>￥ 50</view>
+        </view>
+        <view class='gift-item'>
+            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
+            <view class='gift-item-name'>文艺社小气球🎈</view>
+            <view class='gift-item-price'>￥ 50</view>
+        </view>
+    </view>
+
+</view>

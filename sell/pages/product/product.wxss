@@ -1,0 +1,157 @@
+/* product.wxss */
+@import "../tpls/products/ThemeProducts/ThemeProducts-tpl.wxss";
+
+.detail_container {
+    border-top: solid 1px #e6e6e6;
+}
+
+.shop_topic_img {
+    width: 100%;
+    height: 560rpx;
+}
+
+.shop_topic_img swiper {
+    width: 100%;
+    height: 560rpx;
+}
+
+.shop_topic_img swiper-item {
+    width: 100%;
+    height: 560rpx;
+}
+
+.shop_topic_img image {
+    width: 100%;
+    height: 100%;
+}
+
+.shop_detail {
+    padding: 40rpx 40rpx 30rpx 40rpx;
+    min-height: 200rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_title {
+    font-size: 20px;
+    color: #333;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.shop_author {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20rpx;
+    text-align: left;
+}
+
+.shop_price {
+    font-size: 20px;
+    color: #ad0015;
+    margin-top: 20rpx;
+    font-weight: 500;
+}
+
+.shop_data {
+    margin: 0 40rpx;
+    padding: 40rpx 0;
+    border-top: solid 1rpx #efefef;
+    border-bottom: solid 1rpx #efefef;
+}
+
+.shop_data view {
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+}
+
+/*选择数量和添加到购物车*/
+
+.cart-box {
+    width: 750rpx;
+    height: 100rpx;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    border-top: solid 1rpx #e6e6e6;
+}
+
+.product-counts, .add-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-counts {
+    width: 270rpx;
+    height: 100rpx;
+    box-sizing: border-box;
+    font-size: 40rpx;
+    color: #ad0015;
+    font-weight: 500;
+}
+
+.add-cart-btn {
+    background-color: #ad0015;
+    font-size: 36rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    color: #fff;
+    flex: 1;
+}
+
+.add-cart-btn:active {
+    color: #fff;
+}
+
+.add-cart-btn.disabled {
+    color: #fff;
+    background: #4d4d4d;
+}
+
+/*商品详情*/
+
+.info-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #333;
+    padding: 40rpx;
+}
+
+.info_detail {
+    padding: 0 40rpx;
+    background-color: white;
+    height: auto;
+}
+
+.shop-tips {
+    margin: 40rpx 40rpx 100rpx 40rpx;
+    padding-top: 40rpx;
+    border-top: solid 1rpx #efefef;
+}
+
+.tips-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #333;
+}
+
+.tips-detail {
+    margin-top: 30rpx;
+}
+
+.tips-detail view {
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+}
+

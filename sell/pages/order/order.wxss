@@ -1,0 +1,167 @@
+@import "../tpls/base.wxss";
+
+.order-container {
+    overflow-x: hidden;
+    font-size: 28rpx;
+    border-top: solid 1px #e6e6e6;
+}
+
+/* 商品展示 */
+
+.product-item {
+    display: flex;
+    justify-content: space-around;
+    color: #6d6d6d;
+    padding: 40rpx;
+}
+
+.item-left {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.item-left image {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.item-middle {
+    flex: 1;
+    margin-left: 30rpx;
+    overflow: hidden;
+}
+
+.item-title {
+    margin-top: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #ad0015;
+    margin-top: 10rpx;
+}
+
+.item-right {
+    flex-basis: 80rpx;
+    text-align: center;
+}
+
+/* 属性选择 */
+
+.choose{
+	margin: 0 40rpx;
+	border-top:solid 1rpx #efefef;
+	padding-top: 40rpx;
+	padding-bottom: 40rpx;
+}
+.choose-title{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	color: #242424;
+}
+.choose-content{
+	margin-top: 40rpx;
+}
+.choose-item{
+	width: 160px;
+	height: 40px;
+	border: solid 4rpx #ad0015;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 40px;
+	text-align: center;
+	color: #ad0015;
+}
+.choose-num{
+	width: 320rpx;
+	height: 80rpx;
+	border: solid 4rpx #e5e5e5;
+	display: flex;
+	flex-direction: row;
+}
+.num-down{
+	width: 80rpx;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #242424;
+	font-size: 40rpx;
+	font-weight: 500;
+	border-right: solid 4rpx #e5e5e5;
+}
+.num-show{
+	flex: 1;
+	text-align: center;
+	line-height: 80rpx;
+	color: #242424;
+	font-size: 40rpx;
+	font-weight: 500;
+}
+.num-add{
+	width: 80rpx;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #242424;
+	font-size: 40rpx;
+	font-weight: 500;
+	border-left: solid 4rpx #e5e5e5;
+}
+.input{
+	font-size: 16px;
+	line-height: 16px;
+	color: #666666;
+}
+.input input{
+	font-size: 16px;
+	line-height: 16px;
+	color: #666666;
+	font-weight: 500;
+}
+
+.footer-account-box{
+	background: #fff;
+    position: fixed;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+	z-index: 999;
+}
+.total-account {
+    width: 270rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 20px;
+    color: #ad0015;
+    font-weight: 500;
+    text-align: center
+}
+
+.pay {
+    background-color: #ad0015;
+    font-size: 36rpx;
+    line-height: 100rpx;
+    color: #fff;
+    text-align: center;
+    flex: 1;
+}
+
+.pay:active {
+    background: darkred;
+}
+.pay.disabled {
+    color: #fff;
+    background: #4d4d4d;
+}

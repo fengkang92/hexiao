@@ -1,0 +1,85 @@
+.VideoProducts {
+    background: #fff;
+}
+
+.videos {
+    padding: 40rpx 0rpx;
+    margin: 0 40rpx;
+    box-sizing: border-box;
+    /* height: 260rpx; */
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-bottom: solid #f0f0f0 1px;
+}
+
+.videos_imgs {
+    width: 320rpx;
+    height: 180rpx;
+    position: relative;
+    overflow: hidden;
+}
+
+.videos_img {
+    width: 320rpx;
+    height: 180rpx;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.videos_img_play {
+    width: 32rpx;
+    height: 32rpx;
+    position: absolute;
+    bottom: 10rpx;
+    right: 10rpx;
+}
+
+.videos video {
+    width: 268rpx;
+    height: 190rpx;
+}
+
+.videos_data {
+    width: 330rpx;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+}
+
+.videos_title {
+    font-size: 14px;
+    color: #333;
+    line-height: 40rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.videos_price {
+    font-size: 13px;
+    color: #d93737;
+    margin-top: 26rpx;
+}
+
+.videos_describe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+}
+
+.videos_describe text {
+    font-size: 13px;
+    line-height: 15px;
+    color: #999;
+    border: solid #e6e6e6 1px;
+    margin-right: 10rpx;
+    border-radius: 9px;
+    letter-spacing: 5rpx;
+    text-align: center;
+}

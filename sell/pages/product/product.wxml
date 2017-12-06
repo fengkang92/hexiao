@@ -1,0 +1,52 @@
+<!-- <import src="../tpls/products/ThemeProducts/ThemeProducts-tpl.wxml" /> -->
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="container detail_container">
+    <view class="shop_topic_img">
+        <swiper indicator-dots="{{true}}" indicator-color="white" circular="{{false}}">
+            <swiper-item>
+                <image src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg" mode="aspectFill"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <view class='shop_detail'>
+        <view class='shop_title'>文艺社小剧场--剧场先行版</view>
+        <view class='shop_author'>来黑弧，享受视觉盛宴</view>
+        <view class='shop_price'>¥50.00</view>
+    </view>
+
+    <view class='shop_data'>
+        <view>2017.12.25 - 2018.3.4 17:00-22:00</view>
+        <view>北京市海淀区复兴路69号</view>
+    </view>
+
+    <view class="shop_info">
+        <view class='info-title'>活动详情</view>
+		<view class='info_detail'>
+		    <view class="wxParse">
+        		123
+                <!-- <template is="wxParse" data="{{wxParseData:content.nodes}}" /> -->
+        	</view>
+		</view>
+    </view>
+
+    <view class="shop-tips" style='margin-bottom:120rpx'>
+        <view class='tips-title'>温馨提示</view>
+		<view class='tips-detail'>
+			<view>使用日期：2017.12.25 - 2018.3.4</view>
+			<view>使用时间：17:00-22:00</view>
+			<view>活动地点：北京市海淀区复兴路69号</view>
+			<view>该活动暂不支持退款，请您合理安排好时间</view>
+			<view>购买时请您正确填写购买人姓名及手机号码，该手机号码用于收取票务信息</view>
+		</view>
+    </view>
+
+    <!-- 底部立即购买 -->
+    <view class="cart-box">
+        <view class="product-counts">￥50</view>
+        <view class="add-cart-btn {{product.stock==0?'disabled':''}}" bindtap="submitOrder">
+            <text>{{product.stock==0?'商品已下架':'立即购买'}}</text>
+        </view>
+    </view>
+</view>
