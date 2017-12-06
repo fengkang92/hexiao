@@ -11,6 +11,7 @@
 use think\Route;
 
 Route::get('api/:version/platform/shopDetails', 'api/:version.Platform/shopDetails');
+Route::get('api/:version/platform/shoplist', 'api/:version.Platform/shoplist');
 
 
 //核销

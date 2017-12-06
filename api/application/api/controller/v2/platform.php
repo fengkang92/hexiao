@@ -13,7 +13,16 @@ class Platform extends Controller
      */
 	public function shoplist()
 	{
-		$product = ProductModel::getProductDetail($id);
+		$shoplist = ProductModel::getProductlist();
+		if (empty($shoplist)) {
+			return [
+				'code' => 0,
+				'msg' => '服务器异常',
+				'data' => ''
+			];
+		}
+		$shoplist = $shoplist->toarray();
+		return $shoplist;
 	}
 
     /**
