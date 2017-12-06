@@ -9,5 +9,5 @@ return [
 //    'img_prefix' => 'http://blacky.com/images_literature'
 //    'img_prefix' => 'http://blacky.com/images'
      // 'img_prefix' => 'https://api.joyfamliy.com/images_literature'
-'img_prefix' => 'http://cms.joyfamliy.com'
+'img_prefix' => 'http://apilab.dayaartist.com'
 ];
