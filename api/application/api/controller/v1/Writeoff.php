@@ -21,7 +21,7 @@ class Writeoff extends Controller
         //echo $save_path;die;
         $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
 
-        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'http://www.baidu.com/';
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'sb250';
 
         $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
 
@@ -35,8 +35,8 @@ class Writeoff extends Controller
 
         }
         $img_path = '/qrcode/' . $filename;
-        echo $pic;
-        die;
+        echo $img_path;die;
+        //die;
         echo "<img src='" . $pic . "'>";
     }
 

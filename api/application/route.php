@@ -10,10 +10,11 @@
 // 写完代码后对着路由表看，能否不看注释就知道这个接口的意义
 use think\Route;
 
+Route::get('api/:version/platform/shopDetails', 'api/:version.Platform/shopDetails');
+
+
 //核销
 Route::get('api/:version/writeoff/qrcode', 'api/:version.Writeoff/qrcode');
-
-
 
 
 //Sample

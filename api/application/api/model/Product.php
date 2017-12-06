@@ -16,7 +16,7 @@ class Product extends BaseModel
      */
     public function imgs()
     {
-        return $this->hasMany('ProductImage', 'product_id', 'id');
+        return $this->hasMany('Image','product_id','id');
     }
 
     public function getMainImgUrlAttr($value, $data)
@@ -63,8 +63,7 @@ class Product extends BaseModel
      * @param bool $paginate
      * @return \think\Paginator
      */
-    public static function getProductsByCategoryID(
-        $categoryID, $summary, $paginate = true, $page = 1, $size = 30)
+    public static function getProductsByCategoryID($categoryID, $summary, $paginate = true, $page = 1, $size = 30)
     {
         $query = self::with('tags')
             ->where('category_id', '=', $categoryID)
@@ -89,21 +88,8 @@ class Product extends BaseModel
      */
     public static function getProductDetail($id)
     {
-        //千万不能在with中加空格,否则你会崩溃的
-        //        $product = self::with(['imgs' => function($query){
-        //               $query->order('index','asc');
-        //            }])
-        //            ->with('properties,imgs.imgUrl')
-        //            ->find($id);
-        //        return $product;
 
-        $product = self::with(
-            [
-                'imgs' => function ($query) {
-                    $query->with(['imgUrl'])
-                        ->order('order', 'asc');
-                }, 'properties'])
-//            ->with('properties')
+        $product = self::with('imgs')
             ->find($id);
         return $product;
     }
