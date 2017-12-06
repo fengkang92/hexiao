@@ -179,7 +179,7 @@ class WxNotify extends \WxPayNotify
         //echo $save_path;die;
         $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
 
-        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'xxxx.xxx.xxx?orderNo=' . $orderNo;
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
 
         $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
 

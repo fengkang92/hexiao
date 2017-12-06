@@ -100,20 +100,28 @@ class Sample extends Controller
         $m = input('post.');
     }
 
-    public function test4($id=712)
+    public function test4($orderNo='AB29483050272132')
     {
-        $orderDetail = Order::get($id);
-        print_r($orderDetail);die();
-        if($orderDetail['time_id'] !== null){
-            $orderDetail = self::with('serviceTime')
-                ->where('id','=',$id)
-                ->find();
-            $orderDetail['data'] = date('y年m月d日',$orderDetail['serviceTime']['start_time']);
-            $orderDetail['time'] = date('H:I',$orderDetail['serviceTime']['start_time']).'--'.date('h:i',$orderDetail['serviceTime']['end_time']);
-            return $orderDetail->hidden(['prepay_id','serviceTime']);
-        }else{
-            return $orderDetail->hidden(['prepay_id']);
+        $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
+        //echo $save_path;die;
+        $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
+
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
+
+        $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
+
+        $qr_size = isset($_GET['qr_size']) ? $_GET['qr_size'] : '10';
+
+        $save_prefix = isset($_GET['save_prefix']) ? $_GET['save_prefix'] : 'ZETA';
+
+        if ($filename = createQRcode($save_path, $qr_data, $qr_level, $qr_size, $save_prefix)) {
+
+            $pic = $web_path . $filename;
+
         }
+        $img_path = '/qrcode/' . $filename;
+        echo "<img src='http://artists.com/".$img_path."'>";die();
+        return OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
     public function generate_code($length = 6)
