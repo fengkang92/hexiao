@@ -143,6 +143,12 @@ class Order extends BaseController
             return new SuccessMessage();
         }
     }
+
+    public function checkOrder($id){
+        (new IDMustBePositiveInt())->goCheck();
+        $result = OrderModel::checkOrderStatus();
+
+    }
 }
 
 
