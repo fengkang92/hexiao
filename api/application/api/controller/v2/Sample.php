@@ -1,6 +1,6 @@
 <?php
 
-namespace app\api\controller\v1;
+namespace app\api\controller\v2;
 
 use app\api\model\Auth;
 use app\api\model\BoxCourse;
@@ -102,11 +102,12 @@ class Sample extends Controller
 
     public function test4($orderNo='AB29483050272132')
     {
+        echo "blacky";die();
         $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
         //echo $save_path;die;
         $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
 
-        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'http://apilab.dayaartist.com/index.php/api/v1/sample/sms?orderNo='.$orderNo;
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
 
         $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
 
@@ -120,8 +121,7 @@ class Sample extends Controller
 
         }
         $img_path = '/qrcode/' . $filename;
-//        print_r($img_path);die();
-//        echo "<img src='http://apilab.dayaartist.com/".$img_path."'>";die();
+        echo "<img src='http://apilab.dayaartist.com/".$img_path."'>";die();
         return OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
@@ -130,11 +130,9 @@ class Sample extends Controller
         return rand(pow(10, ($length - 1)), pow(10, $length) - 1);
     }
 
-    public function sendSMS($id=1)
+    public function sendSMS($id=705)
     {
-
         $orderDetail = OrderModel::get($id);
-        var_dump($orderDetail);die();
         if (!$orderDetail) {
             throw new OrderException();
         }
