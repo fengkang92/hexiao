@@ -21,7 +21,21 @@ class Platform extends Controller
 				'data' => ''
 			];
 		}
-		$shoplist = $shoplist->toarray();
+
+        $shoplist = $shoplist->toarray();
+
+        //print_r($shoplist);die;
+
+        foreach ($shoplist as $key => $value) {
+            $img[] = $value['imgs'];
+            unset($shoplist[$key]['imgs']);
+        }
+        //print_r($img);die;
+		foreach ($img as $key => $value) {
+            foreach ($value as $k => $v) {
+                $shoplist[$key]['img'][] = $v['url'];
+            }
+        }
 		return $shoplist;
 	}
 
@@ -30,7 +44,6 @@ class Platform extends Controller
      * @url /product/:
      * @param int $id 商品id号
      * @return Product
-     * @throws ProductException
      */
     public function shopDetails($id)
     {
@@ -41,7 +54,6 @@ class Platform extends Controller
         }
 
         $product = $product->toarray();
-
         $imgs = $product['imgs'];
 
         unset($product['imgs']);

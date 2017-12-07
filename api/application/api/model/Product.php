@@ -38,7 +38,7 @@ class Product extends BaseModel
      */
     public static function getProductlist()
     {
-        $shopList = self::select();
+        $shopList = self::with('imgs')->select();
         return $shopList;
     }
 }
