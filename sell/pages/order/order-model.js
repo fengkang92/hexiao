@@ -12,7 +12,7 @@ class Order extends Base{
     //获取传统商品详情
     getProductInfo(id, callback){
         var param = {
-            url: 'product_order/' + id,
+			url: 'platform/shopDetails?id=' + id,
             sCallback: function (data) {
                 callback && callback(data);
             }
@@ -20,22 +20,11 @@ class Order extends Base{
         this.request(param);
     }
 
-	//获取预约课程详情
-	getTimeInfo(id, callback) {
-		var param = {
-			url: 'course/reserve?id=' + id,
-			sCallback: function (data) {
-				callback && callback(data);
-			}
-		};
-		this.request(param);
-	}
-
     /*下订单*/
     doOrder(param,callback){
         var that=this;
         var allParams = {
-            url: 'order',
+			url: 'order',
             type:'post',
             data:{products:param},
             sCallback: function (data) {
@@ -57,7 +46,7 @@ class Order extends Base{
     * */
     execPay(orderNumber,callback){
         var allParams = {
-            url: 'pay/pre_order',
+			url: 'pay/pre_order',
             type:'post',
             data:{id:orderNumber},
             sCallback: function (data) {

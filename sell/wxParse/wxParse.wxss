@@ -1,22 +1,25 @@
 .wxParse{
-    margin: 0 5px !important;
-    font-size: 14px !important;
+    margin: 0 0px !important;
+    font-size: 16px !important;
 	background: #fff !important;
 }
 .wxParse .wxParse-p .wxParse-inline{
-	/* color: #999 !important; 
-	background: #fff !important; */
+	color: #666 !important; 
+	background: #fff !important; 
 }
 .wxParse .wxParse-p .wxParse-strong .wxParse-inline{
-	/* color: #999 !important;
-	font-size: 14px !important; */
+	color: #666 !important;
+	font-size: 16px !important; 
 }
 
 .wxParse-inline{
-    /* margin: 0 !important;
-    padding: 0 !important;
-	line-height: 30px !important;
-	font-size: 14px !important; */
+	font-size:16px !important;
+	line-height:30px !important;
+	color:#666;
+}
+.wxParse-img{
+    overflow: hidden;
+	margin: 10rpx 0;
 }
 
 /* .wxParse-pre,.wxParse-tt,.wxParse-code,.wxParse-kbd,.wxParse-samp{font-family:monospace}
@@ -41,9 +44,6 @@
     width:100%;
 }
 
-.wxParse-img{
-    overflow: hidden;
-}
 
 .wxParse-blockquote {
     margin: 0;

@@ -123,11 +123,11 @@
     font-weight: 500;
     line-height: 20px;
     color: #333;
-    padding: 40rpx;
+    padding: 40rpx 30rpx;
 }
 
 .info_detail {
-    padding: 0 40rpx;
+    padding: 0 40rpx; 
     background-color: white;
     height: auto;
 }

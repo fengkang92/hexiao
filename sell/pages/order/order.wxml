@@ -2,10 +2,10 @@
 <view class="container order-container">
     <!--商品展示-->
     <view class="product-item">
-        <image class="item-left" src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg" mode="aspectFill"></image>
+        <image class="item-left" src="{{order.img[0]}}" mode="aspectFill"></image>
         <view class="item-middle">
-            <view class="item-title">文艺社剧场先行版--名侦探毛利小五郎&&名侦探屈原文艺社剧场先行版--名侦探毛利小五郎&&名侦探屈原</view>
-            <view class="item-price">￥50</view>
+            <view class="item-title">{{order.name}}</view>
+            <view class="item-price">￥{{order.price}}</view>
         </view>
     </view>
 
@@ -27,9 +27,9 @@
         <view class="choose-title">数量</view>
         <view class="choose-content">
             <view class='choose-num'>
-				<view class='num-down'>-</view>
-				<view class='num-show'>1</view>
-				<view class='num-add'>+</view>
+				<view class='num-down' bindtap='pickDown'>-</view>
+				<view class='num-show'>{{num}}</view>
+				<view class='num-add' bindtap='pickAdd'>+</view>
 			</view>
         </view>
     </view>
@@ -38,7 +38,7 @@
 	    <view class="choose-title">购票人姓名</view>
         <view class="choose-content">
 			<view class='input'>
-				<input placeholder='请输入购票人姓名'></input>
+				<input placeholder='请输入购票人姓名' bindinput='bindNameInput'></input>
 			</view>
         </view>
     </view>
@@ -47,14 +47,14 @@
 		<view class="choose-title">购票人手机号码</view>
         <view class="choose-content">
 			<view class='input'>
-				<input placeholder='请输入购票人手机号码'></input>
+				<input placeholder='请输入购票人手机号码' bindinput='bindMobileInput'></input>
 			</view>
         </view>
     </view>
 
     <!--结算-->
     <view class="footer-account-box order-accounts">
-        <view class="total-account">总计:￥50</view>
+        <view class="total-account">总计:{{sumMoney}}</view>
         <view class="pay" ontap="pay">立即支付</view>
     </view>
 </view>

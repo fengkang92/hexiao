@@ -23,53 +23,56 @@ Page({
      */
 	onLoad: function (options) {
 		this._loadData();
-		this._getUserAddressInfo();
 	},
 	_loadData: function () {
 		var that = this;
-		wx.getUserInfo({
-			success: function (res) {
-				console.log(res)
-				that.setData({
-					userInfo: res.userInfo,
-					loadingHidden: true
-				})
-			},
-			fail: function (res, callBack) {
-
-				wx.showModal({
-					title: '警告',
-					content: '您点击了拒绝授权,将无法正常显示个人信息,点击确定重新获取授权。',
+		wx.login({
+			success: function () {
+				wx.getUserInfo({
 					success: function (res) {
-						if (res.confirm) {
-							wx.openSetting({
-								success: (res) => {
-									console.log(res);
-									if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
-										wx.getUserInfo({
-											success: function (res) {
-												that.setData({
-													userInfo: res.userInfo,
-													loadingHidden: true
-												});
-												that._postData(res.userInfo)
+						console.log(res);
+						that.setData({
+							nickName: res.userInfo.nickName,
+							avatarUrl: res.userInfo.avatarUrl,
+						})					
+					},
+					fail: function (res, callBack) {
+						wx.showModal({
+							title: '警告',
+							content: '您点击了拒绝授权,将无法正常显示个人信息,点击确定重新获取授权。',
+							success: function (res) {
+								if (res.confirm) {
+									wx.openSetting({
+										success: (res) => {
+											if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
+												wx.getUserInfo({
+													success: function (res) {
+														that.setData({
+															nickName: res.userInfo.nickName,
+															avatarUrl: res.userInfo.avatarUrl,
+														})
+													},
+												})
 											}
-										})
-									}
-								},
-								fail: function (res) {
-									typeof callBack == "function" && callBack({
-										avatarUrl: '../../images/icon/user@default.png',
-										nickName: 'Literature'
+										},
+										fail: function (res) {
+											that.setData({
+												nickName: 'Literature',
+												avatarUrl: '../../images/icon/user@default.png',
+											})
+										}
 									})
 								}
-							})
-						}
+							}
+						})
 					}
-
 				})
-
-
+			},
+			fail: function () {
+				that.setData({
+					nickName: 'Literature',
+					avatarUrl: '../../images/icon/user@default.png',
+				})
 			}
 		})
 	},
@@ -85,64 +88,6 @@ Page({
 				})
 				my.postData(info, (res) => {
 					console.log(res);
-				})
-			}
-		})
-	},
-
-	//获取用户地址信息
-	_getUserAddressInfo: function () {
-		address.getAddress((res) => {
-			this._bindAddressInfo(res);
-		})
-	},
-	//绑定用户地址信息
-	_bindAddressInfo: function (res) {
-		this.setData({
-			addressInfo: res
-		})
-	},
-	/*修改或者添加地址信息*/
-	editAddress: function (event) {
-		var that = this;
-		wx.chooseAddress({
-			success: function (res) {
-				var addressInfo = {
-					name: res.userName,
-					mobile: res.telNumber,
-					totalDetail: address.setAddressInfo(res)
-				};
-				if (res.telNumber) {
-					that._bindAddressInfo(addressInfo);
-					//保存地址
-					address.submitAddress(res, (flag) => {
-						if (!flag) {
-							that.showTips('操作提示', '地址信息更新失败！');
-						}
-					});
-				}
-				//模拟器上使用
-				else {
-					that.showTips('操作提示', '地址信息更新失败,手机号码信息为空！');
-				}
-			},
-			fail: function(res){
-				wx.showModal({
-					title: '警告',
-					content: '您点击了拒绝授权,将无法查看并管理地址信息，点击确定重新获取授权。',
-					success: function (res) {
-						if (res.confirm) {
-							wx.openSetting({
-								success: (res) => {
-									console.log(res);
-								},
-								fail: function (res) {
-	
-								}
-							})
-						}
-					}
-
 				})
 			}
 		})

@@ -4,32 +4,30 @@
 .container {
     border-top: solid 1px #e6e6e6;
     background-color: #fff;
-    position: relative;
-    padding: 40rpx;
 }
 
 .title {
     font-size: 22px;
     font-weight: 500;
     color: #242424;
+	padding: 40rpx;
 }
 
 .scroll {
-    margin-top: 40rpx;
-    width: 100%;
+	margin-left: 40rpx;
     display: flex;
     flex-direction: column;
     white-space: nowrap;
 }
 
 .scroll-item {
-    width: 100%;
+    width: 670rpx;
     display: inline-block;
-    margin-right: 40rpx;
+    margin-right: 20rpx;
 }
 
 .scroll-item:last-child {
-    margin-right: 0rpx;
+	padding-right: 60rpx; 
 }
 
 .scroll-img {
@@ -56,11 +54,10 @@
 }
 
 .second {
-    margin-top: 40rpx;
+    margin: 40rpx;
 	padding-top: 40rpx;
 	padding-bottom: 40rpx;
     position: relative;
-     margin-bottom: 40rpx; 
 	border-top: solid 1rpx #efefef;
 	border-bottom: solid 1rpx #efefef;
 }
@@ -81,10 +78,12 @@
     color: #242424;
     line-height: 68rpx;
     text-align: center;
+	font-size: 14px;
 }
 
 .title-down {
     margin-top: 10rpx;
+	margin-left: 40rpx;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0px;
@@ -93,6 +92,7 @@
 
 .gift {
     margin-top: 40rpx;
+	padding: 0 40rpx;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

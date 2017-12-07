@@ -23,19 +23,18 @@ Page({
         home.getProductsData((res) => {
 			console.log(res);
             this.setData({
-				// productsArr: res.product,
-				// timeArr:res.time
+				productsArr: res,
             });
         });
     },
 
     //推荐商品进入商品详情
-    onProductsItemTap: function (event) {
+	onproductTap: function (event) {
 		//判断是传统商品还是预约商品
         var id = home.getDataSet(event, 'id');
-        var type = home.getDataSet(event, 'type');
+		console.log(id);
         wx.navigateTo({
-            url: '../product/product?id=' + id + '&type=' + type,
+            url: '../product/product?id=' + id,
         })
     },
 

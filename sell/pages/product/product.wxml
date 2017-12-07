@@ -3,17 +3,19 @@
 
 <view class="container detail_container">
     <view class="shop_topic_img">
-        <swiper indicator-dots="{{true}}" indicator-color="white" circular="{{false}}">
-            <swiper-item>
-                <image src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg" mode="aspectFill"></image>
-            </swiper-item>
+        <swiper indicator-dots="{{true}}" indicator-color="white">
+			<block wx:for="{{product.img}}">
+            	<swiper-item>
+                	<image src="{{item}}" mode="aspectFill"></image>
+            	</swiper-item>
+			</block>
         </swiper>
     </view>
 
     <view class='shop_detail'>
-        <view class='shop_title'>文艺社小剧场--剧场先行版</view>
-        <view class='shop_author'>来黑弧，享受视觉盛宴</view>
-        <view class='shop_price'>¥50.00</view>
+        <view class='shop_title'>{{product.name}}</view>
+        <view class='shop_author'>{{product.describe}}</view>
+        <view class='shop_price'>¥{{product.price}}</view>
     </view>
 
     <view class='shop_data'>
@@ -25,8 +27,7 @@
         <view class='info-title'>活动详情</view>
 		<view class='info_detail'>
 		    <view class="wxParse">
-        		123
-                <!-- <template is="wxParse" data="{{wxParseData:content.nodes}}" /> -->
+                 <template is="wxParse" data="{{wxParseData:content.nodes}}" /> 
         	</view>
 		</view>
     </view>
@@ -44,7 +45,7 @@
 
     <!-- 底部立即购买 -->
     <view class="cart-box">
-        <view class="product-counts">￥50</view>
+        <view class="product-counts">￥{{product.price}}</view>
         <view class="add-cart-btn {{product.stock==0?'disabled':''}}" bindtap="submitOrder">
             <text>{{product.stock==0?'商品已下架':'立即购买'}}</text>
         </view>

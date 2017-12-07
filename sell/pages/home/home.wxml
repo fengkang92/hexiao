@@ -3,9 +3,9 @@
 
 <view class="container">
     <view class='title'>活动推荐</view>
-    <scroll-view scroll-x class='scroll' style='width:100%'>
+    <scroll-view scroll-x class='scroll' data-id='{{productsArr[0].id}}' bindtap='onproductTap'>
         <view class='scroll-item'>
-            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
+            <image mode="aspectFill" class='scroll-img' src="../../images/home/123.gif"></image>
             <view class='scroll-bottom'>
                 <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
                 <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
@@ -27,9 +27,9 @@
         </view>
     </scroll-view>
 
-    <view class='second'>
+    <view class='second' data-id='{{productsArr[0].id}}' bindtap='onproductTap'>
         <image class='second-bottom' mode="aspectFill" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-        <view class='second-tip'>NEW</view>
+        <view class='second-tip'>{{productsArr[0].is_pre==1?'早鸟票':'正式版'}}</view>
     </view>
 
     <view class='title'>周边小物</view>
