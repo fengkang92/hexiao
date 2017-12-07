@@ -1,0 +1,26 @@
+<template name="listItem">
+    <view class='list-item' bindtap='itemTap'>
+        <view class="list-name">文艺社剧场版抢先体验票文艺社剧场版抢先体验票文艺社剧场版抢先体验票文艺社剧场版抢先体验票文艺社剧场版抢先体验票文艺社剧场版抢先体验票</view>
+        <view class='list-attr'>
+            <text class='list-code'>1234 5678 1234</text>
+            <text class='list-status'>已使用</text>
+        </view>
+        <view class='list-time'>核销时间：2017-12-5 18:23:23</view>
+    </view>
+    <view class='list-item' bindtap='itemTap'>
+        <view class="list-name">文艺社剧场版抢先体验票</view>
+        <view class='list-attr'>
+            <text class='list-code'>1234 5678 1234</text>
+            <text class='list-status'>已使用</text>
+        </view>
+        <view class='list-time'>核销时间：2017-12-5 18:23:23</view>
+    </view>
+    <view class='list-item' bindtap='itemTap'>
+        <view class="list-name">文艺社剧场版抢先体验票</view>
+        <view class='list-attr'>
+            <text class='list-code'>1234 5678 1234</text>
+            <text class='list-status'>已使用</text>
+        </view>
+        <view class='list-time'>核销时间：2017-12-5 18:23:23</view>
+    </view>
+</template>

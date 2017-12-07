@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/menu/menu",
+        "pages/input/input",
+        "pages/detail/detail",
+        "pages/list/list",
+        "pages/search/search",
+        "pages/search-list/search-list",
+        "pages/search-detail/search-detail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#242424",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    }
+}

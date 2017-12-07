@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+	<view class='search'>
+		<view class='search-tip'>请输入关键词</view>
+            <input class='input' value='{{word}}' type="text" confirm-type="done" placeholder-style="color:#999" bindinput="codeInput" />
+		<view class='btn' bindtap='searchTap'>搜索</view>
+	</view>
+</view>

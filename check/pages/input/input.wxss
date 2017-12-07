@@ -1,0 +1,34 @@
+/* pages/input/input.wxss */
+.input{
+	margin-top: 340rpx;
+	padding: 0 60rpx;
+}
+.input-tips{
+	font-size: 26px;
+	color: #666;
+}
+.input-put{
+	border-bottom: solid 1rpx #e5e5e5;
+	margin-top: 60rpx;
+	height:100rpx;
+}
+.input-put input{
+	font-size: 36px;
+	color: #242424;
+	line-height: 60rpx;
+	display: block;
+	height: 100rpx;
+	font-weight: 500;
+}
+.input-btn{
+	width: 620rpx;
+	height: 100rpx;
+	margin: 100rpx auto 0;
+	line-height: 100rpx;
+	text-align: center;
+	background: #232323;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 100rpx;
+}

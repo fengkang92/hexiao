@@ -1,0 +1,8 @@
+<!--pages/search-list/search-list.wxml-->
+<import src="../tpls/list-tpl/list-item.wxml" />
+
+<view class='container'>
+	<view class='search-list'>
+		<template is="listItem"></template>
+	</view>
+</view>

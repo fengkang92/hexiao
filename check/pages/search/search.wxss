@@ -1,0 +1,31 @@
+/* pages/search/search.wxss */
+.search{
+	margin-top: 340rpx;
+	padding: 0 60rpx;
+}
+.search-tip{
+	font-size: 24px;
+	color: #666;
+}
+.input{
+	display: block;
+	margin-top: 20rpx;
+	border-bottom: solid 1rpx #e5e5e5;
+	font-size: 32px;
+	color: #242424;
+	line-height: 100rpx;
+	height: 100rpx;
+	font-weight: 500;
+}
+.btn{
+	width: 620rpx;
+	height: 100rpx;
+	margin: 300rpx auto 0;
+	line-height: 100rpx;
+	text-align: center;
+	background: #232323;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 100rpx;
+}
