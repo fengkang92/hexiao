@@ -12,7 +12,7 @@ use think\Route;
 
 Route::get('api/:version/platform/shopDetails', 'api/:version.Platform/shopDetails');
 Route::get('api/:version/platform/shoplist', 'api/:version.Platform/shoplist');
-
+Route::get('api/:version/login', 'api/:version.Login/login');
 
 //核销
 Route::get('api/:version/writeoff/qrcode', 'api/:version.Writeoff/qrcode');
