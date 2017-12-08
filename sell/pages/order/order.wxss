@@ -62,6 +62,13 @@
 	padding-top: 40rpx;
 	padding-bottom: 40rpx;
 }
+.choose:last-child{
+	border-bottom:solid 1rpx #efefef;
+}
+.choose2{
+	padding: 40rpx;
+	border-top: solid #efefef 30rpx;
+}
 .choose-title{
 	font-size: 16px;
 	font-weight: 500;

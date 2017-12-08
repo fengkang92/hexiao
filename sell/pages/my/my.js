@@ -22,15 +22,17 @@ Page({
      * 生命周期函数--监听页面加载
      */
 	onLoad: function (options) {
+		this._getUserInfo();
 		this._loadData();
 	},
-	_loadData: function () {
+	_getUserInfo: function () {
 		var that = this;
 		wx.login({
 			success: function () {
 				wx.getUserInfo({
 					success: function (res) {
 						console.log(res);
+						that._postData(res.userInfo);
 						that.setData({
 							nickName: res.userInfo.nickName,
 							avatarUrl: res.userInfo.avatarUrl,
@@ -47,6 +49,7 @@ Page({
 											if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
 												wx.getUserInfo({
 													success: function (res) {
+														that._postData(res.userInfo);
 														that.setData({
 															nickName: res.userInfo.nickName,
 															avatarUrl: res.userInfo.avatarUrl,
@@ -92,26 +95,17 @@ Page({
 			}
 		})
 	},
-	//进入我的订单
-	onMyOrderTap: function () {
-		wx.navigateTo({
-			url: '../my-order/my-order',
+	//获取订单
+	_loadData:function(){
+		my.getOrders(1,(res)=>{
+			this.setData({
+				orderList: res.data,
+				index: res.current_page
+			})
 		})
 	},
-	//客服电话
-	onMakePhoneCall: function () {
-		wx.makePhoneCall({
-			phoneNumber: '010-53511056',
-		})
-	},
-	//关于我们
-	onShowModal: function () {
-		wx.showModal({
-			title: '盒子文艺社',
-			content: '一个线上线下以“艺术生活化”极致感受体验的空间，同时也是一个集中艺术、音乐、戏剧、阅读、美食、生活艺术、艺术生活为内容的体验集合地，愿您与伴侣和孩子共享文化艺术融入生活，坚信人文关怀，将文化艺术的种子植入自身。',
-			showCancel: false
-		})
-	},
+
+
     /**
      * 用户点击右上角分享
      */

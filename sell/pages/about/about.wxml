@@ -1,0 +1,33 @@
+<!--pages/about/about.wxml-->
+<view class="container my-container">
+    <view class="my-header">
+         <image src="{{avatarUrl}}"></image> 
+        <text class="name">{{nickName}}</text>
+    </view>
+    <!--地址管理-->
+    <view class="my-address">
+        <view class="item-title" ontap="editAddress">
+            地址管理
+            <image src="../../images/icon/arrow@right.png"></image>
+        </view>
+        <view class="item-title item-title-border-none" bindtap="onMyOrderTap">
+            我的订单
+            <image src="../../images/icon/arrow@right.png"></image>
+        </view>
+    </view>
+
+    <view class="my-order">
+        <view class="item-title" bindtap="onMakePhoneCall">
+            客服电话
+            <text class="tel">010-53511030</text>
+            <image src="../../images/icon/arrow@right.png"></image>
+        </view>
+        <view class="item-title" bindtap="onShowModal">
+            关于我们
+            <image src="../../images/icon/arrow@right.png"></image>
+        </view>
+    </view>
+</view>
+<!-- <loading hidden="{{loadingHidden}}">
+  加载中...
+</loading> -->

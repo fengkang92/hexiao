@@ -5,57 +5,6 @@ class My extends Base {
 		super()
 	}
 
-	// 得到用户微信信息
-	getUserInfo(callBack) {
-		var that = this;
-		wx.login({
-			success:function(){
-				wx.getUserInfo({
-					success:function(res){
-						typeof callBack == "function" && callBack(res)
-					},
-					fail:function(res,callBack){
-						wx.showModal({
-							title: '警告',
-							content: '您点击了拒绝授权,将无法正常显示个人信息,点击确定重新获取授权。',
-							success:function(res){
-								if(res.confirm){
-									wx.openSetting({
-										success: (res) => {
-											if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
-												wx.getUserInfo({
-													success: function (res) {
-														typeof callBack == "function" && callBack(res);
-														var userInfo = res.userInfo;
-														this.setData({
-															nickName: userInfo.nickName,
-															avatarUrl: userInfo.avatarUrl,
-														})
-													},
-												})
-											}
-										},
-										fail:function(res){
-											typeof callBack == "function" && callBack({
-												avatarUrl: '../../images/icon/user@default.png',
-												nickName: 'Literature'
-											})
-										}
-									})
-								}
-							}
-						})
-					}
-				})
-			},
-			fail:function(){
-				typeof callBack == "function" && callBack({
-					avatarUrl: '../../images/icon/user@default.png',
-					nickName: 'Literature'
-				})
-			}
-		})
-	};
 	//向后台传递用户数据
 	postData(param, callback) {
 		var param = {
@@ -67,6 +16,32 @@ class My extends Base {
 			}
 		};
 		this.request(param);
+	}
+	//获取订单列表
+	getOrders(pageIndex, callback) {
+		var allParams = {
+			url: 'order/by_user',
+			data: { page: pageIndex },
+			type: 'get',
+			sCallback: function (data) {
+				callback && callback(data);  //1 未支付  2，已支付  3，已发货，4已支付，但库存不足
+			}
+		};
+		this.request(allParams);
+	}
+	/*获得订单的具体内容*/
+	getOrderInfoById(id, callback) {
+		var that = this;
+		var allParams = {
+			url: 'order/' + id,
+			sCallback: function (data) {
+				callback && callback(data);
+			},
+			eCallback: function () {
+
+			}
+		};
+		this.request(allParams);
 	}
 
 }

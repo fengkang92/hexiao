@@ -23,6 +23,7 @@ Page({
 		product.getProductInfo(this.data.id, (data) => {
 			console.log(data)
 			that.setData({
+				id:data.id,
 				product: data,
 				content: WxParse.wxParse('content', 'html', data.content, that, 5)
 			});

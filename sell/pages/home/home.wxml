@@ -3,58 +3,37 @@
 
 <view class="container">
     <view class='title'>活动推荐</view>
-    <scroll-view scroll-x class='scroll' data-id='{{productsArr[0].id}}' bindtap='onproductTap'>
+    <scroll-view scroll-x="true" class='scroll' data-id='1' bindtap='onproductTap'>
         <view class='scroll-item'>
-            <image mode="aspectFill" class='scroll-img' src="../../images/home/123.gif"></image>
+            <image mode="aspectFill" class='scroll-img' src="../../images/home/banner1.jpg"></image>
             <view class='scroll-bottom'>
-                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
-                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
+                <view class='scroll-title'>华熙LIVE，五棵松灯光节！</view>
+                <view class='scroll-time'>2017/12/24 - 2018/3-4 17:00--22:00</view>
             </view>
         </view>
         <view class='scroll-item'>
-            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
+            <image mode="aspectFill" class='scroll-img' src="../../images/home/banner2.jpg"></image>
             <view class='scroll-bottom'>
-                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
-                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
-            </view>
-        </view>
-        <view class='scroll-item'>
-            <image mode="aspectFill" class='scroll-img' src="http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg"></image>
-            <view class='scroll-bottom'>
-                <view class='scroll-title'>文艺社剧场--请你立刻扑街</view>
-                <view class='scroll-time'>2018/2/31 - 2018/3-31 8：00--20：00</view>
+                <view class='scroll-title'>作“孽”的健康夜生活</view>
+                <view class='scroll-time'>这是一场出色的灯光秀，诚邀你来作“孽”哇！</view>
             </view>
         </view>
     </scroll-view>
 
-    <view class='second' data-id='{{productsArr[0].id}}' bindtap='onproductTap'>
-        <image class='second-bottom' mode="aspectFill" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-        <view class='second-tip'>{{productsArr[0].is_pre==1?'早鸟票':'正式版'}}</view>
+    <view class='second' data-id='1' bindtap='onproductTap'>
+        <image class='second-bottom' mode="aspectFill" src='../../images/home/ticket.jpg'></image>
+        <view class='second-tip'>{{productsArr[0].is_pre==1?'早鸟票':'正式票'}}</view>
     </view>
 
     <view class='title'>周边小物</view>
     <view class='title-down'>周边小礼物</view>
     <view class='gift'>
-        <view class='gift-item'>
-            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-            <view class='gift-item-name'>文艺社小气球🎈文艺社小气球🎈</view>
-            <view class='gift-item-price'>￥ 50</view>
-        </view>
-        <view class='gift-item'>
-            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-            <view class='gift-item-name'>文艺社小气球🎈</view>
-            <view class='gift-item-price'>￥ 50</view>
-        </view>
-        <view class='gift-item'>
-            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-            <view class='gift-item-name'>文艺社小气球🎈</view>
-            <view class='gift-item-price'>￥ 50</view>
-        </view>
-        <view class='gift-item'>
-            <image class='gift-item-img' mode="widthFix" src='http://cs.cms.joyfamliy.com:2017/Data/UploadFiles/literature/product-draw@8.jpg'></image>
-            <view class='gift-item-name'>文艺社小气球🎈</view>
-            <view class='gift-item-price'>￥ 50</view>
-        </view>
+        <block wx:for="{{productsArr}}">
+            <view class='gift-item' data-id='{{item.id}}' bindtap='onproductTap'>
+                <image class='gift-item-img' mode="widthFix" src='{{item.main_img_url}}'></image>
+                <view class='gift-item-name'>{{item.name}}</view>
+            </view>
+        </block>
     </view>
 
 </view>

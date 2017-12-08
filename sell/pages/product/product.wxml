@@ -4,18 +4,18 @@
 <view class="container detail_container">
     <view class="shop_topic_img">
         <swiper indicator-dots="{{true}}" indicator-color="white">
-			<block wx:for="{{product.img}}">
-            	<swiper-item>
-                	<image src="{{item}}" mode="aspectFill"></image>
-            	</swiper-item>
-			</block>
+            <block wx:for="{{product.img}}">
+                <swiper-item>
+                    <image src="{{item}}" mode="aspectFill"></image>
+                </swiper-item>
+            </block>
         </swiper>
     </view>
 
     <view class='shop_detail'>
         <view class='shop_title'>{{product.name}}</view>
         <view class='shop_author'>{{product.describe}}</view>
-        <view class='shop_price'>¥{{product.price}}</view>
+        <view wx:if="{{product.id==1}}" class='shop_price'>¥{{product.price}}</view>
     </view>
 
     <view class='shop_data'>
@@ -25,26 +25,36 @@
 
     <view class="shop_info">
         <view class='info-title'>活动详情</view>
-		<view class='info_detail'>
-		    <view class="wxParse">
-                 <template is="wxParse" data="{{wxParseData:content.nodes}}" /> 
-        	</view>
-		</view>
+        <view class='info_detail'>
+            <view class="wxParse">
+                <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+            </view>
+        </view>
     </view>
 
-    <view class="shop-tips" style='margin-bottom:120rpx'>
+    <view wx:if="{{product.id==1}}" class="shop-tips" style='margin-bottom:120rpx'>
         <view class='tips-title'>温馨提示</view>
-		<view class='tips-detail'>
-			<view>使用日期：2017.12.25 - 2018.3.4</view>
-			<view>使用时间：17:00-22:00</view>
-			<view>活动地点：北京市海淀区复兴路69号</view>
-			<view>该活动暂不支持退款，请您合理安排好时间</view>
-			<view>购买时请您正确填写购买人姓名及手机号码，该手机号码用于收取票务信息</view>
-		</view>
+        <view class='tips-detail'>
+            <view>使用日期：2017.12.24 - 2018.3.4</view>
+            <view>使用时间：17:00-22:00</view>
+            <view>活动地点：北京市海淀区复兴路69号</view>
+            <view>该活动暂不支持退款，请您合理安排好时间</view>
+            <view>购买时请您正确填写购买人姓名及手机号码，该手机号码用于收取票务信息</view>
+        </view>
+    </view>
+
+	<view wx:if="{{product.id!=1}}" class="shop-tips">
+        <view class='tips-title'>温馨提示</view>
+        <view class='tips-detail'>
+            <view>购买方式：活动现场</view>
+            <view>购买地点：五棵松华熙灯光节</view>
+            <view>活动日期：2017.12.24 - 2018.3.4</view>
+            <view>活动时间：17:00-22:00</view>
+        </view>
     </view>
 
     <!-- 底部立即购买 -->
-    <view class="cart-box">
+    <view class="cart-box" wx:if="{{product.id==1}}" >
         <view class="product-counts">￥{{product.price}}</view>
         <view class="add-cart-btn {{product.stock==0?'disabled':''}}" bindtap="submitOrder">
             <text>{{product.stock==0?'商品已下架':'立即购买'}}</text>

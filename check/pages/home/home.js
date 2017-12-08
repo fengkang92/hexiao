@@ -29,10 +29,25 @@ Page({
 	},
 
 	login:function(){
-		if (this.data.userName && this.data.userName){
-			wx.navigateTo({
-				url: '../menu/menu',
+		if (this.data.userName && this.data.passWord){
+			home.check(this.data.userName, this.data.passWord,(res)=>{
+				console.log(res);
+				if (res.code == 200){
+					wx.navigateTo({
+						url: '../menu/menu',
+					})
+				}else{
+					wx.showModal({
+						title: '提示',
+						content: res.msg,
+						showCancel: false,
+						success: function (res) {
+							return;
+						}
+					})
+				}
 			})
+
 		}else{
 			wx.showModal({
 				title: '提示',
@@ -70,12 +85,5 @@ Page({
 				});
 			}
 		})
-	},
-
-    //分享效果
-    onShareAppMessage: function () {
-        return {
-			
-        }
-    }
+	}
 })

@@ -27,7 +27,6 @@
 
 .shop_detail {
     padding: 40rpx 40rpx 30rpx 40rpx;
-    min-height: 200rpx;
     background-color: #fff;
     display: flex;
     flex-direction: column;

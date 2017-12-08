@@ -34,7 +34,7 @@
         </view>
     </view>
 
-    <view class='choose'>
+    <view class='choose2'>
 	    <view class="choose-title">购票人姓名</view>
         <view class="choose-content">
 			<view class='input'>
@@ -43,7 +43,7 @@
         </view>
     </view>
 
-	<view class='choose' style='margin-bottom:100rpx'>
+	<view class='choose' style='margin-bottom:200rpx;border-bottom:solid 1rpx #efefef'>
 		<view class="choose-title">购票人手机号码</view>
         <view class="choose-content">
 			<view class='input'>

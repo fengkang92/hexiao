@@ -21,9 +21,9 @@ Page({
 
     _loadData: function () {
         home.getProductsData((res) => {
-			console.log(res);
+			// console.log(res.splice(1, 3));
             this.setData({
-				productsArr: res,
+				productsArr: res.splice(1,3),
             });
         });
     },
