@@ -7,6 +7,6 @@
  */
 return [
     'token_salt' => 'HHsTieBU377mJtKr',
-    'pay_back_url' => 'https://api.joyfamliy.com/index.php/api/v1/pay/notify'
+    'pay_back_url' => 'https://cs.api.joyfamliy.com/index.php/api/v1/pay/notify'
 //   Ngrok
 ];

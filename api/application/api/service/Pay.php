@@ -74,7 +74,7 @@ class Pay
         $wxOrderData->SetBody('文艺社');
         $wxOrderData->SetOpenid($openid);
 //        $wxOrderData->SetNotify_url(config('secure.pay_back_url'));
-        $wxOrderData->SetNotify_url('https://api.joyfamliy.com/index.php/api/v1/pay/notify');
+        $wxOrderData->SetNotify_url('https://cs.api.joyfamliy.com/index.php/api/v1/pay/notify');
 
         return $this->getPaySignature($wxOrderData);
     }

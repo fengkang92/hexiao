@@ -6,8 +6,5 @@
  * Time: 14:08
  */
 return [
-//    'img_prefix' => 'http://blacky.com/images_literature'
-//    'img_prefix' => 'http://blacky.com/images'
-     // 'img_prefix' => 'https://api.joyfamliy.com/images_literature'
-'img_prefix' => 'http://apilab.dayaartist.com'
+    'img_prefix' => 'http://cs.cms.joyfamliy.com'
 ];
