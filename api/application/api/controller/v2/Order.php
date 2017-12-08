@@ -57,12 +57,13 @@ class Order extends BaseController
     public function getDetail($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-//        增加uid判断
+        //增加uid判断
         $uid = Token::getCurrentUid();
-        $orderDetail = OrderModel::getOrderDetail($id, $uid);
+        $orderDetail = OrderModel::getOrderDetail($id,$uid);
         if (!$orderDetail) {
             throw new OrderException();
         }
+        //print_r($orderDetail);die;
         return $orderDetail;
     }
 
@@ -77,7 +78,7 @@ class Order extends BaseController
     {
         (new PagingParameter())->goCheck();
         $uid = Token::getCurrentUid();
-        if ($admin_id = 0) {
+        if ($admin_id == 0) {
             $pagingOrders = OrderModel::getSummaryByUser($uid, $page, $size);
         } else {
             $pagingOrders = OrderModel::getSummaryByAdmin($admin_id, $page, $size);
@@ -144,10 +145,33 @@ class Order extends BaseController
         }
     }
 
-    public function checkOrder($id){
-        (new IDMustBePositiveInt())->goCheck();
-        $result = OrderModel::checkOrderStatus();
-
+    public function checkOrder($order_no,$status){
+        //echo 111;die;
+        $order_data = OrderModel::checkOrderStatus($order_no);
+        if (empty($order_data)) {
+            return [
+                'code' => 404,
+                'msg' => '订单不存在'
+            ];
+        }
+        $order_data = $order_data->toArray();
+        if ($order_data['status'] == $status) {
+            return [
+                'code' => 200,
+                'msg' => '成功'
+            ];
+        }
+        $res = OrderModel::uptOrderStatus($order_no,$status);
+        if (empty($res)) {
+            return [
+                'code' => 500,
+                'msg' => '服务器出错'
+            ];
+        }
+        return [
+            'code' => 200,
+            'msg' => '成功'
+        ];
     }
 }
 

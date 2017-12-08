@@ -19,6 +19,14 @@ class Order extends BaseModel
         return json_decode($value);
     }
 
+    public function getCodeImgAttr($value)
+    {
+        if (empty($value)) {
+            return null;
+        }
+        return json_decode($value);
+    }
+
     public function getSnapAddressAttr($value)
     {
         if (empty($value)) {
@@ -63,20 +71,24 @@ class Order extends BaseModel
     public static function getOrderDetail($id, $uid)
     {
         $orderDetail = self::get($id);
-        if ($orderDetail['user_id'] == $uid) {
-            if ($orderDetail['time_id'] !== null) {
-                $orderDetail = self::with('serviceTime')
-                    ->where('id', '=', $id)
-                    ->find();
-                $orderDetail['data'] = date('y年m月d日', $orderDetail['serviceTime']['start_time']);
-                $orderDetail['time'] = date('H:I', $orderDetail['serviceTime']['start_time']) . '--' . date('h:i', $orderDetail['serviceTime']['end_time']);
-                return $orderDetail = $orderDetail->hidden(['prepay_id', 'service_time', 'serviceTime']);
-            } else {
+        if (!empty($orderDetail)) {
+            if ($orderDetail['user_id'] == $uid) {
                 return $orderDetail->hidden(['prepay_id']);
             }
-
+        }else{
+            return '';
         }
+    }
 
+    //查看订单状态
+    public static function checkOrderStatus($order_no){
+        $order_data = self::where('order_no',$order_no)->find();
+        return $order_data;
+    }
 
+    //修改订单状态
+    public static function uptOrderStatus($order_no,$status){
+        $res = self::where('order_no',$order_no)->update(array('status',$status));
+        return $res;
     }
 }
