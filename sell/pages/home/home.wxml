@@ -3,19 +3,26 @@
 
 <view class="container">
     <view class='title'>活动推荐</view>
-    <scroll-view scroll-x="true" class='scroll' data-id='1' bindtap='onproductTap'>
-        <view class='scroll-item'>
+    <scroll-view scroll-x="true" class='scroll'>
+        <view class='scroll-item' data-id='1' bindtap='onproductTap'>
             <image mode="aspectFill" class='scroll-img' src="../../images/home/banner1.jpg"></image>
             <view class='scroll-bottom'>
-                <view class='scroll-title'>华熙LIVE，五棵松灯光节！</view>
-                <view class='scroll-time'>2017/12/24 - 2018/3-4 17:00--22:00</view>
+                <view class='scroll-title'>“作”孽的健康夜生活</view>
+                <view class='scroll-time'>这是一场出色的灯光秀，诚邀你来“作”孽哇！</view>
             </view>
         </view>
-        <view class='scroll-item'>
+        <view class='scroll-item' data-id='2' bindtap='onproductTap'>
             <image mode="aspectFill" class='scroll-img' src="../../images/home/banner2.jpg"></image>
             <view class='scroll-bottom'>
-                <view class='scroll-title'>作“孽”的健康夜生活</view>
-                <view class='scroll-time'>这是一场出色的灯光秀，诚邀你来作“孽”哇！</view>
+                <view class='scroll-title'>彩色发光花</view>
+                <view class='scroll-time'>每一款灯光的照射下，展现你的魅力</view>
+            </view>
+        </view>
+		<view class='scroll-item' data-id='3' bindtap='onproductTap'>
+            <image mode="aspectFill" class='scroll-img' src="../../images/home/banner3.jpg"></image>
+            <view class='scroll-bottom'>
+                <view class='scroll-title'>发光波波球 </view>
+                <view class='scroll-time'>自带blingbling闪耀特效</view>
             </view>
         </view>
     </scroll-view>

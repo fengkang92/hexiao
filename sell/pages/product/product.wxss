@@ -2,7 +2,7 @@
 @import "../tpls/products/ThemeProducts/ThemeProducts-tpl.wxss";
 
 .detail_container {
-    border-top: solid 1px #e6e6e6;
+
 }
 
 .shop_topic_img {
@@ -35,22 +35,24 @@
 .shop_title {
     font-size: 20px;
     color: #333;
-    line-height: 26px;
+    line-height: 30px;
     font-weight: 500;
     text-align: left;
 }
 
 .shop_author {
-    font-size: 14px;
-    color: #999;
-    margin-top: 20rpx;
+	margin-top: 10rpx;
     text-align: left;
+	font-size: 16px;
+    line-height: 26px;
+    color: #666;
 }
 
 .shop_price {
+	margin-top: 10rpx;
     font-size: 20px;
+	line-height: 30px;
     color: #ad0015;
-    margin-top: 20rpx;
     font-weight: 500;
 }
 
@@ -63,7 +65,8 @@
 
 .shop_data view {
     font-size: 16px;
-    line-height: 30px;
+	line-height: 26px;
+	margin-top: 10rpx;
     color: #666;
 }
 
@@ -122,7 +125,7 @@
     font-weight: 500;
     line-height: 20px;
     color: #333;
-    padding: 40rpx 30rpx;
+    padding: 40rpx 40rpx;
 }
 
 .info_detail {

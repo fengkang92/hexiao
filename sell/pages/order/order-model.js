@@ -1,12 +1,9 @@
-
-
 import {Base} from '../../utils/base.js'
 
 class Order extends Base{
 
     constructor(){
         super();
-        this._storageKeyName='newOrder';
     }
 
     //获取传统商品详情
@@ -28,7 +25,6 @@ class Order extends Base{
             type:'post',
             data:{products:param},
             sCallback: function (data) {
-                that.execSetStorageSync(true);
                 callback && callback(data);
             },
             eCallback:function(){
@@ -101,17 +97,6 @@ class Order extends Base{
             }
         };
         this.request(allParams);
-    }
-
-    /*本地缓存 保存／更新*/
-    execSetStorageSync(data){
-        wx.setStorageSync(this._storageKeyName,data);
-    };
-
-    /*是否有新的订单*/
-    hasNewOrder(){
-       var flag = wx.getStorageSync(this._storageKeyName);
-       return flag==true;
     }
 
 }

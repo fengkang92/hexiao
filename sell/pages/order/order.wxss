@@ -3,7 +3,6 @@
 .order-container {
     overflow-x: hidden;
     font-size: 28rpx;
-    border-top: solid 1px #e6e6e6;
 }
 
 /* 商品展示 */

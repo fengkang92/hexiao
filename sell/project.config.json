@@ -34,6 +34,12 @@
 					"name": "product",
 					"pathName": "pages/product/product",
 					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "order-detail",
+					"pathName": "pages/order-detail/order-detail",
+					"query": ""
 				}
 			]
 		}
