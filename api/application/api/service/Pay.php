@@ -47,11 +47,12 @@ class Pay
             ->find();
 //        print_r($order->toArray());die();
         $order = $order->toArray();
-        if (isset($order['time_id'])) {
-            $status = $OrderService->checkCourseOrderStock($this->orderID);
-        } else {
-            $status = $OrderService->checkOrderStock($this->orderID);
-        }
+//        if (isset($order['time_id'])) {
+//            $status = $OrderService->checkCourseOrderStock($this->orderID);
+//        } else {
+//            $status = $OrderService->checkOrderStock($this->orderID);
+//        }
+        $status = $OrderService->checkOrderStock($this->orderID);
         if (!$status['pass']) {
             return $status;
         }
