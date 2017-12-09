@@ -80,7 +80,7 @@ class Order extends BaseModel
         }
     }
 
-    public static function getOrderDetail2($id)
+    public static function getOrderDetailByChecker($id)
     {
         $orderDetail = self::get($id);
         if (!empty($orderDetail)) {

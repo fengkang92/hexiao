@@ -73,11 +73,11 @@ class Order extends BaseController
      * @throws OrderException
      * @throws \app\lib\exception\ParameterException
      */
-    public function getDetail2($id)
+    public function getDetailByChecker($id)
     {
         (new IDMustBePositiveInt())->goCheck();
         //增加uid判断
-        $orderDetail = OrderModel::getOrderDetail2($id);
+        $orderDetail = OrderModel::getOrderDetailByChecker($id);
         if (!$orderDetail) {
             throw new OrderException();
         }

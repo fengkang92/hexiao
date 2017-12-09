@@ -98,6 +98,7 @@ Route::get('api/:version/address', 'api/:version.Address/getUserAddress');
 //Order
 Route::post('api/:version/order', 'api/:version.Order/placeOrder');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);
+Route::get('api/:version/order/by_checker/:id', 'api/:version.Order/getDetailByChecker',[], ['id'=>'\d+']);
 Route::put('api/:version/order/delivery', 'api/:version.Order/delivery');
 
 //不想把所有查询都写在一起，所以增加by_user，很好的REST与RESTFul的区别
