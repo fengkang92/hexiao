@@ -59,7 +59,7 @@ class Order extends BaseController
         (new IDMustBePositiveInt())->goCheck();
         //增加uid判断
         $uid = Token::getCurrentUid();
-        $orderDetail = OrderModel::getOrderDetail($id);
+        $orderDetail = OrderModel::getOrderDetail($id,$uid);
         if (!$orderDetail) {
             throw new OrderException();
         }
