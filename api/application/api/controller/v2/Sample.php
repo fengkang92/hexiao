@@ -102,12 +102,12 @@ class Sample extends Controller
 
     public function test4($orderNo='AB29483050272132')
     {
-//        echo "blacky";die();
+        $order = OrderModel::where('id', '=', 1)->find();
         $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
         //echo $save_path;die;
         $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
 
-        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : $order['order_no'];
 
         $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
 
@@ -121,7 +121,7 @@ class Sample extends Controller
 
         }
         $img_path = '/qrcode/' . $filename;
-//        print_r($img_path);die();
+        print_r($img_path);die();
         echo "<img src='http://artists.com/".$img_path."'>";die();
         return OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
