@@ -19,12 +19,9 @@ class Order extends BaseModel
         return json_decode($value);
     }
 
-    public function getCodeImgAttr($value)
+    public function getCodeImgAttr($value, $data)
     {
-        if (empty($value)) {
-            return null;
-        }
-        return json_decode($value);
+        return $this->prefixImgUrl($value, $data);
     }
 
     public function getSnapAddressAttr($value)
@@ -68,21 +65,21 @@ class Order extends BaseModel
         return $this->belongsTo('BoxServiceTime', 'time_id', 'id');
     }
 
-    public static function getOrderDetail($id, $uid)
+    public static function getOrderDetail($id)
     {
         $orderDetail = self::get($id);
         if (!empty($orderDetail)) {
-            if ($orderDetail['user_id'] == $uid) {
+//            if ($orderDetail['user_id'] == $uid) {
                 return $orderDetail->hidden(['prepay_id']);
-            }
-        }else{
-            return '';
+//            }
+//        }else{
+//            return '';
         }
     }
 
-    public static function getOrderDetailByChecker($id)
+    public static function getOrderDetailByChecker($order_no)
     {
-        $orderDetail = self::get($id);
+        $orderDetail = self::where('order_no','=',$order_no);
         if (!empty($orderDetail)) {
             return $orderDetail->hidden(['prepay_id']);
         }else{

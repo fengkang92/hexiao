@@ -25,11 +25,11 @@ use think\Controller;
 
 class Order extends BaseController
 {
-    protected $beforeActionList = [
-        'checkExclusiveScope' => ['only' => 'placeOrder'],
-        'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
-        'checkSuperScope' => ['only' => 'delivery,getSummary']
-    ];
+//    protected $beforeActionList = [
+//        'checkExclusiveScope' => ['only' => 'placeOrder'],
+//        'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
+//        'checkSuperScope' => ['only' => 'delivery,getSummary']
+//    ];
 
     /**
      * 下单
@@ -58,11 +58,12 @@ class Order extends BaseController
     {
         (new IDMustBePositiveInt())->goCheck();
         //增加uid判断
-        $uid = Token::getCurrentUid();
-        $orderDetail = OrderModel::getOrderDetail($id,$uid);
+//        $uid = Token::getCurrentUid();
+        $orderDetail = OrderModel::getOrderDetail($id);
         if (!$orderDetail) {
             throw new OrderException();
         }
+//        print_r($orderDetail);die;
         return $orderDetail->toArray();
     }
 
@@ -73,11 +74,10 @@ class Order extends BaseController
      * @throws OrderException
      * @throws \app\lib\exception\ParameterException
      */
-    public function getDetailByChecker($id)
+    public function getDetailByChecker($order_no)
     {
         (new IDMustBePositiveInt())->goCheck();
-        //增加uid判断
-        $orderDetail = OrderModel::getOrderDetailByChecker($id);
+        $orderDetail = OrderModel::getOrderDetailByChecker($order_no);
         if (!$orderDetail) {
             throw new OrderException();
         }
@@ -91,7 +91,7 @@ class Order extends BaseController
      * @return array
      * @throws \app\lib\exception\ParameterException
      */
-    public function getSummaryByUser($page = 1, $size = 15, $admin_id = 0)
+    public function getSummaryByUser($page = 1, $size = 999, $admin_id = 0)
     {
         (new PagingParameter())->goCheck();
         $uid = Token::getCurrentUid();
@@ -133,7 +133,7 @@ class Order extends BaseController
      * @return array
      * @throws \app\lib\exception\ParameterException
      */
-    public function getSummary($page = 1, $size = 20)
+    public function getSummary($page = 1, $size = 999)
     {
         (new PagingParameter())->goCheck();
 //        $uid = Token::getCurrentUid();
