@@ -48,7 +48,7 @@ class Order extends BaseController
     }
 
     /**
-     * 获取订单详情
+     * 用户获取订单详情
      * @param $id
      * @return static
      * @throws OrderException
@@ -60,6 +60,24 @@ class Order extends BaseController
         //增加uid判断
         $uid = Token::getCurrentUid();
         $orderDetail = OrderModel::getOrderDetail($id,$uid);
+        if (!$orderDetail) {
+            throw new OrderException();
+        }
+        return $orderDetail->toArray();
+    }
+
+    /**
+     * 商户获取订单详情
+     * @param $id
+     * @return static
+     * @throws OrderException
+     * @throws \app\lib\exception\ParameterException
+     */
+    public function getDetail2($id)
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        //增加uid判断
+        $orderDetail = OrderModel::getOrderDetail2($id);
         if (!$orderDetail) {
             throw new OrderException();
         }

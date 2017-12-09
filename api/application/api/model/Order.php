@@ -80,6 +80,16 @@ class Order extends BaseModel
         }
     }
 
+    public static function getOrderDetail2($id)
+    {
+        $orderDetail = self::get($id);
+        if (!empty($orderDetail)) {
+            return $orderDetail->hidden(['prepay_id']);
+        }else{
+            return '';
+        }
+    }
+
     //查看订单状态
     public static function checkOrderStatus($order_no){
         $order_data = self::where('order_no',$order_no)->find();
