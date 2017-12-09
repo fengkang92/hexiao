@@ -2,24 +2,21 @@
 @import "../tpls/products/HomeProducts/HomeProducts-tpl.wxss";
 
 .container {
-    border-top: solid 1px #e6e6e6;
     background-color: #fff;
 }
 
 .title {
     font-size: 22px;
+	line-height: 22px;
     font-weight: 500;
     color: #242424;
     padding: 40rpx;
 }
 
 .scroll {
-    /* padding-left: 40rpx;
-	padding-right: 40rpx; */
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    /* background: red; */
 }
 
 .scroll-item {
@@ -59,7 +56,7 @@
 }
 
 .second {
-    margin: 40rpx;
+    margin: 36rpx 40rpx 0rpx 40rpx;
     padding-top: 40rpx;
     padding-bottom: 40rpx;
     position: relative;
@@ -88,7 +85,6 @@
 }
 
 .title-down {
-    margin-top: 10rpx;
     margin-left: 40rpx;
     font-size: 14px;
     line-height: 14px;

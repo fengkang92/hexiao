@@ -8,7 +8,7 @@ Page({
 		num:1,        //用户购买数量
 		productPrice: 0,    //商品单价
 		sumMoney: 0,     //用户选择数量后总价
-		orderStatus: 0,   //订单状态，0还未生成订单，刚从商品详情过来，可以修改地址，1未支付，2已支付
+		orderStatus: 0,   //订单状态状态 1待支付 2待使用 3已使用 4已作废
 		name:null,
 		mobile:null
 	},
@@ -143,7 +143,7 @@ Page({
 		this.setData({
 			isCanPay: false
 		})
-		var str = this.data.productDetailInfo.name + this.data.productDetailInfo.describe;
+		var str = this.data.order.name;
 		str += ' 缺货';
 		wx.showModal({
 			title: '下单失败',

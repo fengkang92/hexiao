@@ -20,6 +20,7 @@
 .wxParse-img{
     overflow: hidden;
 	margin: 10rpx 0;
+	width: 100%;
 }
 
 /* .wxParse-pre,.wxParse-tt,.wxParse-code,.wxParse-kbd,.wxParse-samp{font-family:monospace}

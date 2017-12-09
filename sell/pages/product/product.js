@@ -33,13 +33,13 @@ Page({
 	},
 	//点击查看地图
 	onAddressTap: function (event) {
-		wx.openLocation({
-			latitude: 39.899117,
-			longitude: 116.47062,
-			scale: 28,
-			name: '黑弧数码文化传媒股份有限公司',
-			address: '北京市朝阳区百子湾路32号二十二院街艺术区6号楼20号'
-		})
+		// wx.openLocation({
+		// 	latitude: 39.899117,
+		// 	longitude: 116.47062,
+		// 	scale: 28,
+		// 	name: '黑弧数码文化传媒股份有限公司',
+		// 	address: '北京市朝阳区百子湾路32号二十二院街艺术区6号楼20号'
+		// })
 	},
 
 	/*提交订单*/

@@ -1,11 +1,7 @@
 
 import { Order } from '../order/order-model.js';
-// import { Cart } from '../cart/cart-model.js';
-// import { Address } from '../../utils/address.js';
 
 var order = new Order();
-// var cart = new Cart();
-// var address = new Address();
 
 Page({
 
@@ -25,12 +21,15 @@ Page({
   },
   _loadData:function(id){
 	  order.getOrderInfoById(id, (res) => {
-		  console.log(res);
+		  var code = res.order_no;
+		  var result = [];
+		  for (var i = 0, len = code.length; i < len; i += 4) {
+			  result.push(code.slice(i, i + 4));
+		  }
 		  this.setData({
+			  code: result,
 			  id:res.id,
-			  orderInfo:res,
-			  address: res.snap_address,
-			  item: res.snap_items[0]
+			  order:res,
 		  })
 	  })
   },
@@ -56,18 +55,26 @@ Page({
 				  url: '../pay-result/pay-result?id=' + id + '&flag=' + flag + '&from=order'
 			  });
 		  }else{
-			//   wx.showModal({
-			// 	  title: '黑弧文艺社',
-			// 	  content: '正在开放中，敬请期待...',
-			// 	  showCancel: false,
-			// 	  success: function (res) {
-			// 		  wx.switchTab({
-			// 			  url: '../home/home'
-			// 		  })
-			// 	  }
-			//   })
+			  wx.showModal({
+				  title: '达雅文化',
+				  content: '系统错误，请稍后再试！',
+				  showCancel: false,
+				  success: function (res) {
+					  wx.switchTab({
+						  url: '../home/home'
+					  })
+				  }
+			  })
 		  }
 	  });
+  },
+  //查看二维码
+  onShowImage: function (event) {
+	  var src = event.currentTarget.dataset.src;
+	  wx.previewImage({
+		  current: src, // 当前显示图片的http链接
+		  urls: [src] // 需要预览的图片http链接列表
+	  })
   },
 
 })

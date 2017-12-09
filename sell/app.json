@@ -5,15 +5,14 @@
         "pages/my/my",
         "pages/order/order",
         "pages/pay-result/pay-result",
-        "pages/my-order/my-order",
-        "pages/order-detail/orderDetail",
+        "pages/order-detail/order-detail",
         "pages/about/about"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#242424",
+        "navigationBarTextStyle": "white",
         "navigationBarTitleText": "",
-        "backgroundColor": "#eeeeee",
+        "backgroundColor": "#242424",
         "backgroundTextStyle": "light",
         "enablePullDownRefresh": false
     },

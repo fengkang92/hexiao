@@ -10,7 +10,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   background-color: #fff;
-  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微锟斤拷锟脚猴拷, STHeiti, 锟斤拷锟斤拷细锟斤拷, sans-serif;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", STHeiti, sans-serif;
 }
 
 .empty{
@@ -23,4 +23,7 @@
 .empty-wrapper{
 	width: 100%;
 	background: #fff;
+}
+image{
+	overflow: hidden;
 }

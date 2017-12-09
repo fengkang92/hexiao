@@ -11,8 +11,8 @@ Page({
             });
         },
         viewOrder:function(){
-            wx.redirectTo({
-                url: '../my-order/my-order'
+            wx.switchTab({
+                url: '../my/my'
             });
         }
     }

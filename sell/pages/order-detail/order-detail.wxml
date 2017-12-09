@@ -1,0 +1,84 @@
+<!--订单详情-->
+<view class="container order-container">
+    <!--商品展示-->
+    <view class="order">
+        <view class='order-wrapper'>
+            <view class="item-title">{{order.snap_items[0].name}}</view>
+        </view>
+    </view>
+
+    <view class="order">
+        <view class='order-wrapper'>
+            <view class="item-top">活动日期</view>
+            <view class='item-bottom'>2017.12.24 - 2018.3.4</view>
+        </view>
+    </view>
+
+    <view class="order">
+        <view class='order-wrapper'>
+            <view class="item-top">活动时间</view>
+            <view class='item-bottom'>17:00 - 22:00</view>
+        </view>
+    </view>
+
+    <view class="order">
+        <view class='order-wrapper' style='border-bottom:none'>
+            <view class="item-top">活动地点</view>
+            <view class='item-bottom'>北京市海淀区复兴路69号</view>
+        </view>
+    </view>
+
+    <view class="row" style='margin-top:30rpx'>
+        <view class='row-wrapper'>
+            <view class="row-left">预定人</view>
+            <view class='row-right'>{{order.feature}}</view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class='row-wrapper'>
+            <view class="row-left">手机号</view>
+            <view class='row-right'>{{order.express}}</view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class='row-wrapper' style='border-bottom:none'>
+            <view class="row-left">数量</view>
+            <view class='row-right'>x{{order.total_count}}</view>
+        </view>
+        <view class='qrcode' wx:if="{{order.status!=1}}">
+            <view class='qr-num'>
+                <block wx:for="{{code}}">
+                    <text class='qr-code'>{{item}}</text>
+                </block>
+            </view>
+            <image bindtap='onShowImage' data-src="{{order.code_img}}" mode='scaleToFill' class='qr-img' src='{{order.code_img}}'></image>
+        </view>
+    </view>
+
+    <view class="row" style='margin-top:30rpx'>
+        <view class='row-wrapper'>
+            <view class="row-left">订单编号</view>
+            <view class='row-right'>{{order.order_no}}</view>
+        </view>
+    </view>
+
+    <view class="row">
+        <view class='row-wrapper'>
+            <view class="row-left">订单时间</view>
+            <view class='row-right'>{{order.create_time}}</view>
+        </view>
+    </view>
+
+    <view class="row" data-id='{{order.status}}'>
+        <view class="row-wrapper {{order.status==1?'bottom':''}}" style='border-bottom:none'>
+            <view class="row-left">实际支付</view>
+            <view class='row-right price'>{{order.total_price}}元</view>
+        </view>
+    </view>
+    <!--结算-->
+    <view class="footer-account-box order-accounts" wx:if="{{order.status==1}}">
+        <view class="pay" data-id='{{order.id}}' ontap="pay">立即支付</view>
+    </view>
+</view>

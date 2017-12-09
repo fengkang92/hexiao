@@ -1,33 +1,14 @@
 <!--pages/about/about.wxml-->
-<view class="container my-container">
-    <view class="my-header">
-         <image src="{{avatarUrl}}"></image> 
-        <text class="name">{{nickName}}</text>
-    </view>
-    <!--地址管理-->
-    <view class="my-address">
-        <view class="item-title" ontap="editAddress">
-            地址管理
-            <image src="../../images/icon/arrow@right.png"></image>
+<view class="container">
+    <view class='about'>
+        <view class='about-top'>
+            <view class='about-title'>关于我们</view>
+            <view class='about-content'>专注于新媒体艺术的创作与宣传，致力新媒体艺术平台，引领艺术新潮流。创作包含多种艺术形式与学科技术、3D videomapping、全息影像、互动影像。</view>
+            <view class='about-content line'>工作室主要成员由中国美术学院与香港科技大学组成，并与不同领域的专业人士不断合作，通过不断发展新的技术和材料，从而提出新的艺术可能。</view>
+            <view class='about-title'>联系我们</view>
+            <view class='about-content'>TEL：132-6336-3865</view>
+            <view class='about-content line' style='margin-top:6rpx'>Web：www.dayaartist.com</view>
         </view>
-        <view class="item-title item-title-border-none" bindtap="onMyOrderTap">
-            我的订单
-            <image src="../../images/icon/arrow@right.png"></image>
-        </view>
-    </view>
-
-    <view class="my-order">
-        <view class="item-title" bindtap="onMakePhoneCall">
-            客服电话
-            <text class="tel">010-53511030</text>
-            <image src="../../images/icon/arrow@right.png"></image>
-        </view>
-        <view class="item-title" bindtap="onShowModal">
-            关于我们
-            <image src="../../images/icon/arrow@right.png"></image>
-        </view>
+        <view class='change' bindtap='change'>切换至用户</view>
     </view>
 </view>
-<!-- <loading hidden="{{loadingHidden}}">
-  加载中...
-</loading> -->

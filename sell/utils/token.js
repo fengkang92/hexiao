@@ -5,60 +5,60 @@
 import { Config } from 'config.js';
 
 class Token {
-    constructor() {
-		this.verifyUrl = 'http://apilab.dayaartist.com/index.php/api/v1/token/verify';
-		this.tokenUrl = 'http://apilab.dayaartist.com/index.php/api/v1/token/user';
-    }
+	constructor() {
+		this.verifyUrl = Config.restUrl + 'token/verify';
+		this.tokenUrl = Config.restUrl + 'token/user';
+	}
 
-    verify() {
-        var token = wx.getStorageSync('token');
-        if (!token) {
-            this.getTokenFromServer();
-        }
-        else {
-            this._veirfyFromServer(token);
-        } 
-    }
+	verify() {
+		var token = wx.getStorageSync('token');
+		if (!token) {
+			this.getTokenFromServer();
+		}
+		else {
+			this._veirfyFromServer(token);
+		}
+	}
 
-    _veirfyFromServer(token) {
-        var that = this;
-        wx.request({
-            url: that.verifyUrl,
-            method: 'POST',
-            data: {
-                token: token
-            },
-            success: function (res) {
+	_veirfyFromServer(token) {
+		var that = this;
+		wx.request({
+			url: that.verifyUrl,
+			method: 'POST',
+			data: {
+				token: token
+			},
+			success: function (res) {
 				console.log(res);
-                var valid = res.data.isValid;
-                if(!valid){
-                    that.getTokenFromServer();
-                }
-            }
-        })
-    }
+				var valid = res.data.isValid;
+				if (!valid) {
+					that.getTokenFromServer();
+				}
+			}
+		})
+	}
 
-    getTokenFromServer(callBack) {
-        var that  = this;
-        wx.login({
-            success: function (res) {
+	getTokenFromServer(callBack) {
+		var that = this;
+		wx.login({
+			success: function (res) {
 				console.log(res);
 				console.log(123);
-                wx.request({
-                    url: that.tokenUrl,
-                    method:'POST',
-                    data:{
-                        code:res.code
-                    },
-                    success:function(res){
+				wx.request({
+					url: that.tokenUrl,
+					method: 'POST',
+					data: {
+						code: res.code
+					},
+					success: function (res) {
 						console.log(res);
-                        wx.setStorageSync('token', res.data.token);
-                        callBack&&callBack(res.data.token);
-                    }
-                })
-            }
-        })
-    }
+						wx.setStorageSync('token', res.data.token);
+						callBack && callBack(res.data.token);
+					}
+				})
+			}
+		})
+	}
 }
 
-export {Token};
+export { Token };

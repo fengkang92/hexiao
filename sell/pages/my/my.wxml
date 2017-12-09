@@ -2,6 +2,7 @@
     <view class="my-header">
         <image src="{{avatarUrl}}"></image>
         <text class="name">{{nickName}}</text>
+		<view class='about' bindtap='about'>关于我们</view>
     </view>
     <!--订单管理-->
     <view class='my-order'>
@@ -9,11 +10,11 @@
         <view class='order-list'>
 
 			<block wx:for="{{orderList}}">
-			    <view class='list-item'>
+			    <view class='list-item' data-type='{{item.id}}' bindtap='onOrderTap'>
 					<image class='item-img' src='{{item.snap_img}}' mode=""></image>
 					<view class='item-bottom'>
 						<view class='item-name'>{{item.snap_name}}</view>
-						<view class='item-time'>{{item.order_no}}</view>
+						<view class='item-time'>2017.12.25 - 2018.3.4  17:00-22:00</view>
 					</view>
 					<view class='item-pop' data-status="{{item.status}}">
 						<text class='unfinish' wx:if="{{item.status==2}}">待使用</text>

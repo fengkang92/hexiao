@@ -17,6 +17,7 @@ class My extends Base {
 		};
 		this.request(param);
 	}
+	
 	//获取订单列表
 	getOrders(pageIndex, callback) {
 		var allParams = {
@@ -29,6 +30,7 @@ class My extends Base {
 		};
 		this.request(allParams);
 	}
+
 	/*获得订单的具体内容*/
 	getOrderInfoById(id, callback) {
 		var that = this;

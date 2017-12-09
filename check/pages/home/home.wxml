@@ -9,7 +9,7 @@
                 <view class="login-view">
                     <view class="login-left">账号：</view>
                     <view class="login-middle">
-                        <input value='{{userName}}' type="number" confirm-type="done" placeholder-style="color:#999" bindinput="userNameInput" />
+                        <input value='{{userName}}' type="text" confirm-type="done" placeholder-style="color:#999" bindinput="userNameInput" />
                     </view>
                 </view>
             </view>

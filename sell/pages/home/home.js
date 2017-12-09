@@ -69,7 +69,7 @@ Page({
 			},
 			fail:function(){
 				wx.showModal({
-					title: '黑弧文艺社',
+					title: '达雅文化',
 					content: '系统错误，请稍后重试！',
 					showCancel: false,
 					success: function (res) {

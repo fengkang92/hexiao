@@ -19,8 +19,8 @@
     </view>
 
     <view class='shop_data'>
-        <view>2017.12.25 - 2018.3.4 17:00-22:00</view>
-        <view>北京市海淀区复兴路69号</view>
+        <view>{{product.duration}}</view>
+        <view>{{product.address}}</view>
     </view>
 
     <view class="shop_info">
