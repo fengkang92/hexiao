@@ -108,13 +108,13 @@ class WxNotify extends \WxPayNotify
      * @param $orderId
      * @return mixed
      */
-    private function addCodeImgById($orderNo)
+    private function addCodeImgById($orderId)
     {
         $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
         //echo $save_path;die;
         $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
 
-        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'https://api.dayaartist.com/index.php/api/v2/order/'.$orderId;
 
         $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
 
@@ -128,7 +128,7 @@ class WxNotify extends \WxPayNotify
 
         }
         $img_path = '/qrcode/' . $filename;
-        OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
+        OrderModel::where('id', '=', $orderId)->update(['code_img' => $img_path]);
     }
 
 }

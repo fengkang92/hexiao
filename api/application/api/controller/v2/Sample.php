@@ -121,7 +121,8 @@ class Sample extends Controller
 
         }
         $img_path = '/qrcode/' . $filename;
-        echo "<img src='http://apilab.dayaartist.com/".$img_path."'>";die();
+//        print_r($img_path);die();
+        echo "<img src='http://artists.com/".$img_path."'>";die();
         return OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
