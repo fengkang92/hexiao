@@ -14,7 +14,7 @@
 					<image class='item-img' src='{{item.snap_img}}' mode=""></image>
 					<view class='item-bottom'>
 						<view class='item-name'>{{item.snap_name}}</view>
-						<view class='item-time'>2017.12.25 - 2018.3.4  17:00-22:00</view>
+						<view class='item-time'>2017.12.24 - 2018.3.4  17:00-22:00</view>
 					</view>
 					<view class='item-pop' data-status="{{item.status}}">
 						<text class='unfinish' wx:if="{{item.status==2}}">待使用</text>
