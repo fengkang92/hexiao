@@ -312,7 +312,7 @@ class Order
         $snap['orderPrice'] = $status['orderPrice'];
         $snap['totalCount'] = $status['totalCount'];
         $snap['pStatus'] = $status['pStatusArray'];
-        $snap['snapAddress'] = json_encode($this->getUserAddress());
+//        $snap['snapAddress'] = json_encode($this->getUserAddress());
         $snap['snapName'] = $this->products[0]['name'];
         $snap['snapImg'] = $this->products[0]['main_img_url'];
 
