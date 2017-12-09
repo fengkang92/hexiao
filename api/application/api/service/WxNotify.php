@@ -60,6 +60,8 @@ class WxNotify extends \WxPayNotify
                     {
                         $this->updateOrderStatus($order->id, true);
                         $this->reduceStock($stockStatus);
+                        $this->addCodeImgById($order->id);
+
                     }
                     else
                     {
@@ -99,6 +101,34 @@ class WxNotify extends \WxPayNotify
             OrderStatusEnum::PAID_BUT_OUT_OF;
         OrderModel::where('id', '=', $orderID)
             ->update(['status' => $status]);
+    }
+
+    /**
+     * 增加二维码图片路径
+     * @param $orderId
+     * @return mixed
+     */
+    private function addCodeImgById($orderNo)
+    {
+        $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
+        //echo $save_path;die;
+        $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/';        //图片在网页上显示的路径
+
+        $qr_data = isset($_GET['qr_data']) ? $_GET['qr_data'] : 'www.api.dayaartist.com?orderNo='.$orderNo;
+
+        $qr_level = isset($_GET['qr_level']) ? $_GET['qr_level'] : 'H';
+
+        $qr_size = isset($_GET['qr_size']) ? $_GET['qr_size'] : '10';
+
+        $save_prefix = isset($_GET['save_prefix']) ? $_GET['save_prefix'] : 'ZETA';
+
+        if ($filename = createQRcode($save_path, $qr_data, $qr_level, $qr_size, $save_prefix)) {
+
+            $pic = $web_path . $filename;
+
+        }
+        $img_path = '/qrcode/' . $filename;
+        OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
 }
