@@ -1,0 +1,661 @@
+
+
+.swiper-slide {
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.slide1 {
+    background-image: url(../img/bg1.jpg);
+}
+
+.slide2 {
+    background-image: url(../img/bg1.jpg);
+}
+
+.slide3 {
+    background-image: url(../img/bg1.jpg);
+}
+
+.slide4 {
+    background-image: url(../img/bg1.jpg);
+}
+
+.slide5 {
+    background-image: url(../img/bg2.jpg);
+}
+
+.pagination {
+    position: fixed;
+    z-index: 100;
+    margin-top: -81.5px;
+    top: 50%;
+    right: 17px;
+}
+
+.swiper-pagination-switch {
+    width: 9px;
+    height: 9px;
+    background: #000;
+    opacity: 0.2;
+    border-radius: 50%;
+    display: block;
+    margin: 7px 7px 13px;
+    cursor: pointer;
+}
+
+.swiper-active-switch {
+    background: #000;
+    opacity: 1;
+}
+
+.home {
+    width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 160px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+.home1 {
+    box-sizing: border-box;
+    height: 50px;
+    border-left: solid 5px #ffd943;
+    margin-left: -1px;
+}
+
+.home2 {
+    margin-top: 120px;
+    height: 280px;
+    position: relative;
+}
+
+.home2-1 {
+    margin-left: 40px;
+    font-family: "DIN Condensed";
+    color: #000;
+    font-weight: bold;
+    font-size: 80px;
+    float: left;
+    line-height: 90px;
+    overflow: hidden;
+    height: 270px;
+}
+
+.home2-2 {
+    position: absolute;
+    left: 1000px;
+    top: -20px;
+    width: 1000px;
+    height: 300px;
+    background: #ffd943;
+
+}
+
+.home3 {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 170px;
+    /*background: red;*/
+}
+.home3-1-wrapper{
+    position: absolute;
+    top: 0;
+    right: 667px;
+    width: 1000px;
+    height: 170px;
+    background: #ffd943;
+    overflow: hidden;
+}
+
+.home3-1 {
+    position: absolute;
+    top: 0;
+    right: 667px;
+    width: 1000px;
+    height: 170px;
+    /*background: #ffd943;*/
+    overflow: hidden;
+}
+
+.home3-1-1 {
+    position: absolute;
+    top: 55px;
+    right: 350px;
+    font-weight: bold;
+}
+
+.home3-1-2 {
+    position: absolute;
+    top: 80px;
+    right: 350px;
+    font-weight: bold;
+}
+
+.home3-1-3 {
+    position: absolute;
+    top: 105px;
+    right: 350px;
+    font-weight: bold;
+    font-family: "DIN Condensed";
+}
+
+.home3-2 {
+    position: absolute;
+    bottom: 170px;
+    right: 330px;
+    width: 5px;
+    height: 50px;
+    background: #ffd943;
+}
+
+.home3-3 {
+    position: absolute;
+    bottom: 125px;
+    right: 0;
+    width: 20px;
+}
+
+.home3-3-1 {
+    width: 20px;
+    height: 20px;
+    background: #ffd943;
+}
+
+.home3-3-2 {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.case {
+    width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 160px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+.case1 {
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    border-left: solid 5px #ffd943;
+    margin-left: -1px;
+    padding-left: 40px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+.case1>span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.case2 {
+    margin-top: 22px;
+    height: 620px;
+    width: 100%;
+    position: relative;
+}
+
+.case2-1 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    overflow: hidden;
+    height: 150px;
+}
+
+
+
+.case3 {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 1000px;
+    height: 170px;
+    /*background: red;*/
+}
+
+.case3-1 {
+    position: absolute;
+    top: 0;
+    right: 1013px;
+    width: 1000px;
+    height: 170px;
+}
+
+.case3-1-1 {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    font-weight: bold;
+}
+
+.case3-1-2 {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    font-weight: bold;
+}
+
+.case3-1-3 {
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    font-weight: bold;
+    font-family: "DIN Condensed";
+}
+
+.case3-2 {
+    position: absolute;
+    bottom: 170px;
+    left: 328px;
+    width: 5px;
+    height: 50px;
+    background: #ffd943;
+}
+
+.case3-4 {
+    background: url(../img/offline_pic.jpg);
+    width: 550px;
+    height: 340px;
+    position: absolute;
+    bottom: 0;
+    left: 334px;
+}
+.case3-5 {
+    width: 1000px;
+    height: 170px;
+    background: #ffd943;
+    position: absolute;
+    bottom: 340px;
+    left: 666px;
+}
+
+.case3-3 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 20px;
+}
+
+.case3-3-1 {
+    width: 20px;
+    height: 20px;
+    background: #ffd943;
+}
+
+.case3-3-2 {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.online {
+    width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 160px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+.online1 {
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    border-left: solid 5px #ffd943;
+    margin-left: 332px;
+    padding-left: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+.online1>span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.online2 {
+    margin-top: 22px;
+    height: 570px;
+    width: 100%;
+    position: relative;
+}
+
+.online2-1 {
+    position: absolute;
+    top: 0;
+    left: 372px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.online2-3 {
+    position: absolute;
+    left: 667px;
+    bottom: 215px;
+    width: 332px;
+    height: 250px;
+    background: #ffd943;
+}
+
+.online3 {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 1000px;
+    height: 170px;
+    /*background: red;*/
+}
+
+.online3-1 {
+    background: url("../img/online_pic.jpg");
+    width: 793px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 667px;
+}
+
+.online3-2 {
+    position: absolute;
+    bottom: 300px;
+    left: 0px;
+    width: 5px;
+    height: 50px;
+    background: #ffd943;
+}
+
+.online3-3 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 20px;
+}
+
+.online3-3-1 {
+    width: 20px;
+    height: 20px;
+    background: #ffd943;
+}
+
+.online3-3-2 {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.workshop {
+    width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 160px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+
+
+.workshop1 {
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    border-left: solid 5px #ffd943;
+    padding-left: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 331px;
+    left: 666px;
+}
+.workshop1>span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.workshop2 {
+    position: absolute;
+    top: 405px;
+    left: 707px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    overflow: hidden;
+    height: 150px;
+}
+.workshop-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 1000px;
+    height: 170px;
+    /*background: red;*/
+}
+.workshop3 {
+    background: url("../img/workshop_pic.jpg");
+    width: 1451px;
+    height: 300px;
+    position: absolute;
+    top: 310px;
+    right: 667px;
+    /*left: -1116px;*/
+}
+.workshop3-1 {
+    background: #ffd943;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 310px;
+    right: 1117px;
+}
+
+.workshop4 {
+    position: absolute;
+    top: 0;
+    right: 1013px;
+    width: 1000px;
+    height: 170px;
+}
+
+.workshop4-1-1 {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    font-weight: bold;
+}
+
+.workshop4-1-2 {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    font-weight: bold;
+}
+
+.workshop4-1-3 {
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    font-weight: bold;
+    font-family: "DIN Condensed";
+}
+
+.workshop5 {
+    width: 667px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffd943;
+}
+
+.workshop6 {
+    position: absolute;
+    bottom: 170px;
+    left: 332px;
+    width: 5px;
+    height: 50px;
+    background: #ffd943;
+}
+
+.workshop7 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 20px;
+}
+
+.workshop7-1 {
+    width: 20px;
+    height: 20px;
+    background: #ffd943;
+}
+
+.workshop7-2 {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact {
+    width: 1000px;
+    margin: 160px auto 0;
+    position: relative;
+}
+
+.contact1 {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    border-left: solid 5px #fff;
+    padding-left: 40px;
+    font-weight: bold;
+}
+.contact1>span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact2 {
+    position: absolute;
+    top: 111px;
+    left: 40px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    overflow: hidden;
+    height: 152px;
+}
+
+.contact3 {
+    position: absolute;
+    left: 40px;
+    top: 300px;
+    font-family: "DIN Condensed";
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    height: 45px;
+}
+
+.contact4 {
+    position: absolute;
+    left: 40px;
+    top: 342px;
+    font-family: "DIN Condensed";
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    height: 45px;
+}
+
+.contact5 {
+    position: absolute;
+    left: 40px;
+    top: 420px;
+    overflow: hidden;
+    height: 70px;
+}
+
+.contact5-1-1 {
+    font-weight: bold;
+}
+
+.contact5-1-2 {
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.contact5-1-3 {
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: "DIN Condensed";
+}
+
+.contact6 {
+    position: absolute;
+    top: 300px;
+    left: 667px;
+    width: 5px;
+    height: 50px;
+    background: #fff;
+}
+
+.contact7 {
+    position: absolute;
+    right: 40px;
+    top: 420px;
+    display: flex;
+    overflow: hidden;
+}
+
+.contact7 > img {
+    width: 86px;
+    height: 86px;
+    margin-left: 20px;
+}
+
+.contact8 {
+    position: absolute;
+    top: 590px;
+    right: 0;
+    width: 20px;
+}
+
+.contact8-1 {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+}
+
+.contact8-2 {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}

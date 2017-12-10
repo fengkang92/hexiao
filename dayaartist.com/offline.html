@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京惠风达雅爱和畅文化传媒有限公司</title>
+    <meta name="Keywords" content="北京惠风达雅爱和畅文化传媒有限公司,惠风达雅爱和畅,达雅光影秀,全息投影技术,灯光秀,智能机器人">
+    <meta name="Description" content="北京惠风达雅爱和畅文化传媒有限公司，组织文化艺术交流；健康管理（须经审批的诊疗活动除外）；健康咨询（须经审批的诊疗活动除外）；教育咨询（不含中介服务）；技术开发、技术推广服务、技术咨询、技术服务；承办展览展示活动；经济信息咨询；会议服务；设计、制作、代理、发布广告；企业形象策划；翻译服务；摄影服务；货物进出口、技术进出口、代理进出口；销售文化用品、机械设备、乐器、服装、鞋帽、针纺织品、日用品、工艺品、电子产品、玩具；演出经纪。">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/offline.css">
+</head>
+<body>
+<div class="header-wrapper">
+    <div class="header">
+        <div class="logo"></div>
+        <div class="topbar cf">
+            <span class="topbarItem1"><a href="index.html">首页</a></span>
+            <span class="topbarItem2"><a class="on" href="offline.html">线下案例</a></span>
+            <span class="topbarItem2"><a href="#">线上平台</a></span>
+            <span class="topbarItem2"><a href="#">工作坊</a></span>
+            <span class="topbarItem2"><a href="contact.html">联系我们</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-wrapper">
+    <div class="topPic">
+        <img src="img/offline-1.png" alt="">
+    </div>
+    <div class="container">
+
+        <div class="mt100">
+            <div class="text-bold offline-title">人工智能</div>
+        </div>
+
+        <div class="mt50 show1">
+            <a href="offline1.html">
+                <div class="show1-1"><img class="lazy" width="880" height="500" data-original="img/offline-5.png" alt=""></div>
+                <div class="show1-2"><img class="lazy" width="600" height="400" data-original="img/offline-2.png" alt=""></div>
+                <div class="show1-3">
+                    <p class="p1">未来世界键盘手</p>
+                    <p class="p2">钢琴机器人全能挑战古典音乐大师经典<br />作品音乐会</p>
+                    <p class="p3">2017/5/30 - 2017/6/7</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt100">
+            <div class="text-bold offline-title">灯光装置</div>
+        </div>
+
+        <div class="mt50 show2">
+            <a href="offline2.html">
+                <div class="show2-1"><img class="lazy" width="880" height="500" data-original="img/offline-5.png" alt=""></div>
+                <div class="show2-2"><img class="lazy" width="600" height="400" data-original="img/offline-3.png" alt=""></div>
+                <div class="show2-3">
+                    <p class="p1">华熙灯光节</p>
+                    <p class="p2">2017 冬天国内最高质量最国际化<br />的灯光节</p>
+                    <p class="p3">2017/12/25 - 2018/3/4</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt100">
+            <div class="text-bold offline-title">舞蹈演出</div>
+        </div>
+
+        <div class="mt50 show3">
+            <a href="offline3.html">
+                <div class="show3-1"><img class="lazy" width="880" height="500" data-original="img/offline-5.png" alt=""></div>
+                <div class="show3-2"><img class="lazy" width="600" height="400"data-original="img/offline-4.png" alt=""></div>
+                <div class="show3-3">
+                    <p class="p1">这一天，那些事</p>
+                    <p class="p2">古舞团的即兴舞蹈艺术 - The Arts of<br />mprovisation</p>
+                    <p class="p3">2017/7/13 - 2017/7/15</p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="row1">联系我们</div>
+        <div class="row2"><img class="lazy" width="130" height="130" data-original="img/qr1.png" alt=""></div>
+        <div class="row2"><img class="lazy" width="130" height="130" data-original="img/qr2.png" alt=""></div>
+        <div class="row3">© 惠风达雅爱和畅  京ICP备16017804号-2 </div>
+    </div>
+</footer>
+
+<script src="js/base/jquery-1.10.1.min.js"></script>
+<script src="js/base/jquery.lazyload.min.js"></script>
+<script src="js/base/wScratchPad.min.js"></script>
+<script src="js/base/setviewport.js"></script>
+<script src="js/base/idangerous.swiper.min.js"></script>
+<script src="js/base/TweenMax.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("img.lazy").lazyload();
+        $(function () {
+            var an1 = true;
+            var an2 = true;
+            var an3 = true;
+            $(window).scroll(function (event) {
+                var winPos = $(window).scrollTop();
+                if (winPos > 171 && winPos < 371) {
+                    if (an1) {
+                        an1 = false;
+                        animate1();
+                    }
+                }
+                if (winPos > 800 && winPos < 1000) {
+                    if (an2) {
+                        an2 = false;
+                        animate2();
+                    }
+                }
+                if (winPos > 1400 && winPos < 1600) {
+                    if (an3) {
+                        an3 = false;
+                        animate3();
+                    }
+                }
+//                console.log(winPos)
+            });
+            reset();
+            animate1();
+
+            function reset() {
+                TweenMax.to('.show1-1', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show1-2', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show1-3', 0, {height: 0, ease: Linear.easeIn});
+
+                TweenMax.to('.show2-1', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show2-2', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show2-3', 0, {height: 0, ease: Linear.easeIn});
+
+                TweenMax.to('.show3-1', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show3-2', 0, {height: 0, ease: Expo.easeIn});
+                TweenMax.to('.show3-3', 0, {height: 0, ease: Linear.easeIn});
+            }
+
+            function animate1() {
+                reset();
+                TweenMax.to('.show1-1', .8, {height: 500, ease: Cubic.easeOut});
+                TweenMax.to('.show1-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
+                TweenMax.to('.show1-3', .8, {
+                    height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
+                        an1 = true;
+                    }
+                })
+            }
+
+            function animate2() {
+                reset();
+                TweenMax.to('.show2-1', .8, {height: 500, ease: Cubic.easeOut});
+                TweenMax.to('.show2-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
+                TweenMax.to('.show2-3', .8, {
+                    height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
+                        an2 = true;
+                    }
+                })
+            }
+
+            function animate3() {
+                reset();
+                TweenMax.to('.show3-1', .8, {height: 500, ease: Cubic.easeIn});
+                TweenMax.to('.show3-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
+                TweenMax.to('.show3-3', .8, {
+                    height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
+                        an3 = true;
+                    }
+                })
+            }
+        })
+    });
+</script>
+</body>
+</html>

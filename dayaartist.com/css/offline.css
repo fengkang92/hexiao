@@ -1,0 +1,126 @@
+.topPic{
+    width: 100%;
+}
+.topPic>img{
+    display: block;
+    width: 100%;
+}
+.offline-title{
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 72px;
+    letter-spacing: 0px;
+    color: #232323;
+}
+.show1{
+    width: 1000px;
+    height: 460px;
+    position: relative;
+}
+.show1-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+}
+.show1-2{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    overflow: hidden;
+
+}
+.show1-3{
+    position: absolute;
+    height: 250px;
+    bottom: 120px;
+    left: 660px;
+    overflow: hidden;
+}
+.p1{
+    font-family: MicrosoftYaHei;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 72px;
+    letter-spacing: 0px;
+    color: #232323;
+}
+.p2{
+    margin-top: 20px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #232323;
+}
+.p3{
+    margin-top: 53px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+.show2{
+    width: 1000px;
+    height: 460px;
+    position: relative;
+}
+.show2-1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+.show2-2{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    overflow: hidden;
+
+}
+.show2-3{
+    position: absolute;
+    height: 250px;
+    bottom: 120px;
+    left: 60px;
+    overflow: hidden;
+}
+
+.show3{
+    width: 1000px;
+    height: 460px;
+    position: relative;
+
+}
+.show3-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+}
+.show3-2{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    overflow: hidden;
+
+}
+.show3-3{
+    position: absolute;
+    height: 250px;
+    bottom: 120px;
+    left: 660px;
+    overflow: hidden;
+}
