@@ -76,7 +76,8 @@ class Order extends BaseController
      */
     public function getDetailByChecker($order_no)
     {
-        (new IDMustBePositiveInt())->goCheck();
+//        (new IDMustBePositiveInt())->goCheck();
+//        print_r($order_no);die();
         $orderDetail = OrderModel::getOrderDetailByChecker($order_no);
         if (!$orderDetail) {
             throw new OrderException();
@@ -162,9 +163,17 @@ class Order extends BaseController
         }
     }
 
-    public function checkOrder($order_no,$status){
+    /**
+     * 根据订单号核销
+     * @param $order_no
+     * @param $status 1.待支付 2.已支付，待使用 3.已使用
+     * @return array
+     */
+    public function checkOrderStatus($order_no, $status, $admin_id)
+    {
         //echo 111;die;
         $order_data = OrderModel::checkOrderStatus($order_no);
+//        print_r($order_data);die();
         if (empty($order_data)) {
             return [
                 'code' => 404,
@@ -172,13 +181,14 @@ class Order extends BaseController
             ];
         }
         $order_data = $order_data->toArray();
+//        print_r($order_data);die();
         if ($order_data['status'] == $status) {
             return [
-                'code' => 200,
-                'msg' => '成功'
+                'code' => 201,
+                'msg' => '已经核销，不用重复操作！'
             ];
         }
-        $res = OrderModel::uptOrderStatus($order_no,$status);
+        $res = OrderModel::uptOrderStatus($order_no, $status, $admin_id);
         if (empty($res)) {
             return [
                 'code' => 500,
@@ -187,7 +197,7 @@ class Order extends BaseController
         }
         return [
             'code' => 200,
-            'msg' => '成功'
+            'msg' => '核销成功！'
         ];
     }
 }

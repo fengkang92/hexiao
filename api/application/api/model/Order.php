@@ -68,9 +68,10 @@ class Order extends BaseModel
     public static function getOrderDetail($id)
     {
         $orderDetail = self::get($id);
+//        print_r($orderDetail);die();
         if (!empty($orderDetail)) {
 //            if ($orderDetail['user_id'] == $uid) {
-                return $orderDetail->hidden(['prepay_id']);
+            return $orderDetail->hidden(['prepay_id']);
 //            }
 //        }else{
 //            return '';
@@ -79,23 +80,28 @@ class Order extends BaseModel
 
     public static function getOrderDetailByChecker($order_no)
     {
-        $orderDetail = self::where('order_no','=',$order_no);
+//        print_r($order_no);die();
+        $orderDetail = self::where('order_no', '=', $order_no)->find();
+//        print_r($orderDetail);die();
         if (!empty($orderDetail)) {
             return $orderDetail->hidden(['prepay_id']);
-        }else{
+        } else {
             return '';
         }
     }
 
     //查看订单状态
-    public static function checkOrderStatus($order_no){
-        $order_data = self::where('order_no',$order_no)->find();
+    public static function checkOrderStatus($order_no)
+    {
+        $order_data = self::where('order_no', $order_no)->find();
+//        print_r($order_data);die();
         return $order_data;
     }
 
     //修改订单状态
-    public static function uptOrderStatus($order_no,$status){
-        $res = self::where('order_no',$order_no)->update(array('status',$status));
+    public static function uptOrderStatus($order_no, $status,$admin_id)
+    {
+        $res = self::where('order_no', $order_no)->update(['status' => $status, 'admin_id' => $admin_id]);
         return $res;
     }
 }
