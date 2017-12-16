@@ -106,6 +106,7 @@ Route::put('api/:version/order/delivery', 'api/:version.Order/delivery');
 //不想把所有查询都写在一起，所以增加by_user，很好的REST与RESTFul的区别
 Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
 Route::get('api/:version/order/paginate', 'api/:version.Order/getSummary');
+Route::get('api/:version/order/generateOrder', 'api/:version.Order/generateOrder');
 
 //Pay
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
