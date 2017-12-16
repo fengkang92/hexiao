@@ -8,8 +8,6 @@
 
 namespace app\api\controller\v1;
 
-use app\api\model\Order as OrderModel;
-
 use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\PagingParameter;
 use app\api\model\BoxCoursePlan;
