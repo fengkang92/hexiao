@@ -22,6 +22,7 @@ use app\api\validate\PagingParameter;
 use app\lib\exception\OrderException;
 use app\lib\exception\SuccessMessage;
 use think\Controller;
+use think\Db;
 
 class Order extends BaseController
 {
@@ -206,38 +207,34 @@ class Order extends BaseController
      */
     public function generateOrder()
     {
-        //for ($i=0; $i < 1; $i++) {
-        //订单号
-        $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
-        $orderSn =
-            $yCode[intval(date('Y'))-2017].strtoupper(dechex(date('m'))).date('d').substr(time(),-3).substr(microtime(),2,3).sprintf('%02d', rand(0,99));
 
-        //二维码
-        $save_path = BASE_PATH . 'qrcode/';  //图片存储的绝对路径
-        //echo $save_path;die;
-        $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/'; //图片在网页上显示的路径
+        for ($i=0; $i < 10; $i++) {
+            //订单号
+            $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
+            $orderSn =
+                $yCode[intval(date('Y'))-2017].strtoupper(dechex(date('m'))).date('d').substr(time(),-3).substr(microtime(),2,3).sprintf('%02d', rand(0,99));
 
-        $qr_data = $orderSn;
+            //二维码
+            $save_path = BASE_PATH . 'qrcode/';  //图片存储的绝对路径
+            //echo $save_path;die;
+            $web_path = 'http://' . $_SERVER['HTTP_HOST'] . '/qrcode/'; //图片在网页上显示的路径
 
-        $qr_level = 'H';
+            $qr_data = $orderSn;
 
-        $qr_size = '10';
+            $qr_level = 'H';
 
-        $save_prefix = 'ZETA';
+            $qr_size = '10';
 
-        $filename = createQRcode($save_path, $qr_data, $qr_level, $qr_size, $save_prefix);
+            $save_prefix = 'ZETA';
 
-        $img_path = '/qrcode/' . $filename;
+            $filename = createQRcode($save_path, $qr_data, $qr_level, $qr_size, $save_prefix);
 
-        $data = array('order_no'=>$orderSn,'create_time'=>time(),'status'=>1,'code_img'=>$img_path,'snap_name'=>'华熙LIVE，五棵松灯光节（赠票）');
-        $res = OrderModel::create($data);
-        if ($res) {
-            echo 1;
-        }else{
-            echo 2;
+            $img_path = '/qrcode/' . $filename;
+
+            $data = array('order_no'=>$orderSn,'create_time'=>time(),'status'=>1,'total_price'=>0,'total_count'=>1,'code_img'=>$img_path,'snap_name'=>'华熙LIVE，五棵松灯光节（赠票）');
+            
+            Db::name('order')->insert($data);
         }
-        //}
-
     }
 }
 
