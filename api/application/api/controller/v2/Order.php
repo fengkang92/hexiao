@@ -81,9 +81,16 @@ class Order extends BaseController
 //        print_r($order_no);die();
         $orderDetail = OrderModel::getOrderDetailByChecker($order_no);
         if (!$orderDetail) {
-            throw new OrderException();
+            return [
+                'code' =>  400,
+                'data' => '',
+                'msg' => '订单不存在！'
+            ];
         }
-        return $orderDetail->toArray();
+        return [
+            'code' => 200,
+            'data' => $orderDetail->toArray();
+        ];
     }
 
     /**
