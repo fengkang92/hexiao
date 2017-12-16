@@ -21,12 +21,14 @@ use think\Controller;
 use think\Loader;
 use think\Request;
 use app\api\service\SmsSender;
+use AliyunSms\api_demo\SmsDemo;
 
 /*
  * Resource Sample
  */
 
-Loader::import('SMS.SendTemplateSMS', EXTEND_PATH, '.php');
+//Loader::import('SMS.SendTemplateSMS', EXTEND_PATH, '.php');
+//Loader::import('AliyunSms.SmsDemo', EXTEND_PATH, '.php');
 
 class Sample extends Controller
 {
@@ -100,7 +102,7 @@ class Sample extends Controller
         $m = input('post.');
     }
 
-    public function test4($orderNo='AB29483050272132')
+    public function test4($orderNo = 'AB29483050272132')
     {
         $order = OrderModel::where('id', '=', 1)->find();
         $save_path = isset($_GET['save_path']) ? $_GET['save_path'] : BASE_PATH . 'qrcode/';  //图片存储的绝对路径
@@ -121,8 +123,10 @@ class Sample extends Controller
 
         }
         $img_path = '/qrcode/' . $filename;
-        print_r($img_path);die();
-        echo "<img src='http://artists.com/".$img_path."'>";die();
+        print_r($img_path);
+        die();
+        echo "<img src='http://artists.com/" . $img_path . "'>";
+        die();
         return OrderModel::where('order_no', '=', $orderNo)->update(['code_img' => $img_path]);
     }
 
@@ -131,25 +135,22 @@ class Sample extends Controller
         return rand(pow(10, ($length - 1)), pow(10, $length) - 1);
     }
 
-    public function sendSMS($id=705)
+    public function sendSMS()
     {
-        $orderDetail = OrderModel::get($id);
-        if (!$orderDetail) {
-            throw new OrderException();
-        }
-        $memberService = BoxMemberService::where('id', '=', $orderDetail->time)->find();
-        $boxCourseService = BoxCourseService::get($orderDetail->service_id);
-        $memberService = BoxMemberService::get($orderDetail->time);
-        $boxCoursePlan = BoxCoursePlan::get($boxCourseService->course_plan_id);
-        $serviceTime = BoxServiceTime::get($orderDetail->time_id);
-        $phoneNumber = $memberService->ytel;
-        $code = $this->generate_code(6);
-        $url = 'https://cs.api.joyfamliy.com/lock/student/Index/';
-        $params = array($orderDetail->snap_name, $orderDetail->total_count, $orderDetail->total_price,$url,$code);
-        $paramsTeacher = array($boxCourseService->server_name,$memberService->yname,$boxCoursePlan->server_name,date('y-m-d H:i',$serviceTime->start_time),$url);
-        $SmsSender = new SmsSender();
-        $SmsSender->SmsSingleSender($phoneNumber, 51756, $params);
-        $SmsSender->SmsSingleSender($boxCourseService->tel, 51766, $paramsTeacher);
-        $this->setCacheByOrderId($id,$code);
+//        return 'blacky';
+
+// 调用示例：
+        set_time_limit(0);
+        header('Content-Type: text/plain; charset=utf-8');
+
+        $response = SmsDemo::sendSms();
+        echo "发送短信(sendSms)接口返回的结果:\n";
+        print_r($response);
+
+        sleep(2);
+
+        $response = SmsDemo::querySendDetails();
+        echo "查询短信发送情况(querySendDetails)接口返回的结果:\n";
+        print_r($response);
     }
 }
