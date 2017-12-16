@@ -21,7 +21,7 @@ class Login extends Controller
                     'code' => 200,
                     'msg' => '登陆成功'
                     'data' => [
-                        'id' => $admininfo;
+                        'id' => $admininfo['id'];
                     ]
                 ];
             } else {
