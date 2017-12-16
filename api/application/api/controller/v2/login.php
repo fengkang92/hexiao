@@ -20,6 +20,9 @@ class Login extends Controller
                 return [
                     'code' => 200,
                     'msg' => '登陆成功'
+                    'data' => [
+                        'id' => $admininfo;
+                    ]
                 ];
             } else {
                 return [
