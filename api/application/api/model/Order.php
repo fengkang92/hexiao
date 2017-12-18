@@ -8,7 +8,7 @@ use think\Model;
 
 class Order extends BaseModel
 {
-    protected $hidden = ['delete_time', 'update_time'];
+    protected $hidden = ['delete_time', 'create_time'];
     protected $autoWriteTimestamp = true;
 
     public function getSnapItemsAttr($value)
@@ -65,16 +65,16 @@ class Order extends BaseModel
         return $this->belongsTo('BoxServiceTime', 'time_id', 'id');
     }
 
-    public static function getOrderDetail($id)
+    public static function getOrderDetail($id,$uid)
     {
         $orderDetail = self::get($id);
 //        print_r($orderDetail);die();
         if (!empty($orderDetail)) {
-//            if ($orderDetail['user_id'] == $uid) {
+            if ($orderDetail['user_id'] == $uid) {
             return $orderDetail->hidden(['prepay_id']);
-//            }
-//        }else{
-//            return '';
+            }
+        }else{
+            return '';
         }
     }
 

@@ -26,11 +26,11 @@ use think\Db;
 
 class Order extends BaseController
 {
-//    protected $beforeActionList = [
-//        'checkExclusiveScope' => ['only' => 'placeOrder'],
-//        'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
-//        'checkSuperScope' => ['only' => 'delivery,getSummary']
-//    ];
+    protected $beforeActionList = [
+        'checkExclusiveScope' => ['only' => 'placeOrder'],
+        'checkPrimaryScope' => ['only' => 'getDetail'],
+        'checkSuperScope' => ['only' => 'delivery,getSummary']
+    ];
 
     /**
      * 下单
@@ -59,8 +59,8 @@ class Order extends BaseController
     {
         (new IDMustBePositiveInt())->goCheck();
         //增加uid判断
-//        $uid = Token::getCurrentUid();
-        $orderDetail = OrderModel::getOrderDetail($id);
+        $uid = Token::getCurrentUid();
+        $orderDetail = OrderModel::getOrderDetail($id,$uid);
         if (!$orderDetail) {
             throw new OrderException();
         }
@@ -89,7 +89,7 @@ class Order extends BaseController
         }
         return [
             'code' => 200,
-            'data' => $orderDetail->toArray();
+            'data' => $orderDetail->toArray()
         ];
     }
 
@@ -103,8 +103,8 @@ class Order extends BaseController
     public function getSummaryByUser($page = 1, $size = 999, $admin_id = 0)
     {
         (new PagingParameter())->goCheck();
-        $uid = Token::getCurrentUid();
         if ($admin_id == 0) {
+            $uid = Token::getCurrentUid();
             $pagingOrders = OrderModel::getSummaryByUser($uid, $page, $size);
         } else {
             $pagingOrders = OrderModel::getSummaryByAdmin($admin_id, $page, $size);
