@@ -1,0 +1,94 @@
+
+.container {
+    border-top: solid 1px #e6e6e6;
+    background-color: #fff;
+    position: relative;
+}
+.logo{
+	margin-top: 80rpx;
+}
+.logo image{
+	width: 280rpx;
+	height: 280rpx;
+	margin: auto;
+	display: block;
+}
+.login-container{
+	margin-top: 100rpx;
+}
+.login-wrapper{
+	margin: 0 120rpx;
+}
+/* 属性选择 */
+
+
+.login-wrapper {
+    margin: 0 80rpx;
+}
+
+.login-item {
+    border-bottom: solid 1px #e5e5e5;
+    line-height: 120rpx;
+    font-size: 18px;
+	box-sizing: border-box;
+}
+.login-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.login-left {
+    width: 160rpx;
+    font-size: 18px;
+    color: #666;
+	line-height: 120rpx;
+}
+
+.login-middle {
+	font-size: 30px;
+	line-height: 120rpx;
+    padding-left: 20rpx;
+    text-align: left;
+    color: #242424;
+    flex: 1; 
+}
+.login-middle input{
+	line-height: 120rpx;
+	height: 120rpx;
+	font-weight: 500;
+}
+.login-btn{
+	width: 620rpx;
+	height: 100rpx;
+	margin: 100rpx auto 0;
+	line-height: 100rpx;
+	text-align: center;
+	background: #232323;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 100rpx;
+}
+.login-change{
+	margin-top: 80rpx;
+	text-align: center;
+	line-height: 38rpx;	
+	height: 38rpx;
+}
+.login-change image{
+	width: 38rpx;
+	height: 38rpx;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+}
+.login-change text{
+	line-height: 38rpx;
+	margin-left: 20rpx;
+	color: #666;
+	font-size: 18px;
+}
+
+

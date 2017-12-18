@@ -1,0 +1,16 @@
+<template name="listItem">
+
+	<block wx:for="{{orderArr}}">
+		<view class='list-item' wx:if="{{select||(item.status==Tabindex)}}" data-id='{{item.order_no}}' bindtap='itemTap'>
+			<view class="list-name">{{item.snap_name}}</view>
+			<view class='list-attr'>
+				<text class='list-code'>{{item.order_no}}</text>
+				<text class='list-status' wx:if="{{item.status==2}}">未使用</text>
+				<text class='list-status' wx:if="{{item.status==3}}">已使用</text>
+				<text class='list-status' wx:if="{{item.status==4}}">已作废</text>
+			</view>
+			<view class='list-time'>核销时间：{{item.update_time}}</view>
+		</view>
+
+	</block>
+</template>

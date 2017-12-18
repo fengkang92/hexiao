@@ -1,0 +1,10 @@
+<!--pages/input/input.wxml-->
+<view class='container'>
+	<view class='input'>
+		<view class='input-tips'>请输入12位核销码</view>
+		<view class='input-put'>
+            <input value='{{code}}' confirm-type="done" placeholder-style="color:#999" bindinput="codeInput" />
+		</view>
+		<view class='input-btn' bindtap='onSureTap'>提交验证</view>
+	</view>
+</view>

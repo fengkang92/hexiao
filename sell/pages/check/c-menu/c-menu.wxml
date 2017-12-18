@@ -1,0 +1,27 @@
+<view class="container">
+	<view class='menu'>
+		<view class='menu-floor' style='border-bottom:solid 1rpx #e5e5e5'>
+			<view class='menu-item' style='border-right:solid 1rpx #e5e5e5' bindtap='onQrTap'>
+				<image src='../../../images/check/ico_erweima.png'></image>
+				<view>二维码验票</view>
+			</view>
+			<view class='menu-item' bindtap='onNumTap'>
+				<image src='../../../images/check/ico_piaohao.png'></image>
+				<view>输入票号验票</view>
+			</view>
+		</view>
+		<view class='menu-floor'>
+			<view class='menu-item' bindtap='onListTap' style='border-right:solid 1rpx #e5e5e5'>
+				<image src='../../../images/check/ico_yanzhenegjilu.png'></image>
+				<view>验证记录</view>
+			</view>
+			 <view class='menu-item' bindtap='change' >
+				<image src='../../../images/check/ico_qiehuanyonghu.png'></image>
+				<view>切换至用户</view>
+			</view> 
+		</view>
+	
+	</view>
+
+
+</view>

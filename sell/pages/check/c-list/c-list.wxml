@@ -1,0 +1,31 @@
+<!--pages/list/list.wxml-->
+<import src="../../tpls/list-tpl/list-item.wxml" />
+
+<view class='container'>
+    <view class='list-top'>
+        <view class='top-banner'>
+            <block wx:for="{{['全部','已使用','已作废']}}">
+                <view class='top-tab' data-index="{{index}}" bindtap='ontabChange'>
+                    <text class="{{currentTabsIndex==index?'on':''}}">{{item}}</text>
+                </view>
+            </block>
+
+        </view>
+        <!-- <view class='top-search' bindtap='searchTap'>
+            <image src='../../../images/check/ico_sousuo.png'></image>
+        </view> -->
+    </view>
+
+    <view class='list-body'> 
+        <view wx:if="{{currentTabsIndex==0}}">
+            <template is="listItem" data="{{orderArr:orderArr,select:true}}"></template>
+        </view>
+        <view wx:if="{{currentTabsIndex==1}}">
+            <template is="listItem" data="{{orderArr:orderArr,select:false,Tabindex:3}}"></template>
+        </view>
+        <view wx:if="{{currentTabsIndex==2}}">
+            <template is="listItem" data="{{orderArr:orderArr,select:false,Tabindex:4}}"></template>
+        </view>
+    </view>
+
+</view>

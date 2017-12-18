@@ -1,0 +1,58 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="container">
+    <view class='detail'>
+
+        <view class='detail-head'>
+            <view class='head-top'>
+                <view class='detail-head-left'>
+                    <view class='detail-name'>{{detail.feature}}</view>
+                </view>
+				<!-- 订单状态状态 1待支付 2待使用 3已使用 4已作废 -->
+                <view bindtap='forSure' wx:if="{{orderStatus==2}}" class='detail-btn'>确认验票</view> 
+				<view wx:if="{{orderStatus==4}}" class='del'>已作废</view>   
+                <view wx:if="{{orderStatus==3}}" class='detail-sure'>
+                    <image src='../../../images/check/ico_chenggong.png'></image>
+                </view>
+            </view>
+            <view class='detail-code'>
+				<block wx:for="{{code}}">
+					<text>{{item}}</text>
+				</block>
+			</view>
+        </view>
+
+        <view class='detail-body'>
+            <view class='detail-item'>
+                <view class='detail-item-key'>姓名</view>
+                <view class='detail-item-value'>{{detail.feature}}</view>
+            </view>
+            <view class='detail-item'>
+                <view class='detail-item-key'>报名人数</view>
+                <view class='detail-item-value'>{{detail.total_count}} 人</view>
+            </view>
+            <view class='detail-item'>
+                <view class='detail-item-key'>联系方式</view>
+                <view class='detail-item-value'>{{detail.express}}</view>
+            </view>
+            <view class='detail-item'>
+                <view class='detail-item-key'>价格</view>
+                <view class='detail-item-value'>{{detail.total_price}} 元</view>
+            </view>
+            <view class='detail-item'>
+                <view class='detail-item-key'>门票名称</view>
+                <view class='detail-item-value'>{{detail.snap_name}}</view>
+            </view>
+
+            <view class='return' bindtap='revise' wx:if="{{orderStatus==3}}">
+                <text>恢复可用</text>
+                <image src='../../../images/check/ico_chexiao.png'></image>
+            </view>
+			<view class='return' bindtap='delete' wx:if="{{orderStatus==2}}" >
+                <text>作废</text>
+                <image src='../../../images/check/ico_chexiao.png'></image>
+            </view>
+        </view>
+
+    </view>
+</view>

@@ -20,6 +20,7 @@
 						<text class='unfinish' wx:if="{{item.status==2}}">待使用</text>
 						<text class='fininshed' wx:if="{{item.status==3}}">已完成</text>
 						<text class='unpay' wx:if="{{item.status==1}}">待支付</text>
+						<text class='fininshed' wx:if="{{item.status==4}}">已作废</text>
 					</view>
 				</view>
 			</block>

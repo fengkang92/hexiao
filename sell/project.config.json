@@ -40,6 +40,24 @@
 					"name": "order-detail",
 					"pathName": "pages/order-detail/order-detail",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/check/c-menu/c-menu",
+					"pathName": "pages/check/c-menu/c-menu",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "pages/check/c-detail/c-detail",
+					"pathName": "pages/check/c-detail/c-detail",
+					"query": "code=AC1509502669"
+				},
+				{
+					"id": -1,
+					"name": "menu",
+					"pathName": "pages/check/c-menu/c-menu",
+					"query": ""
 				}
 			]
 		}

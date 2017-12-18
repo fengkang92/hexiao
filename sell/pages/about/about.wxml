@@ -9,6 +9,6 @@
             <view class='about-content'>TEL：132-6336-3865</view>
             <view class='about-content line' style='margin-top:6rpx'>Web：www.dayaartist.com</view>
         </view>
-        <view class='change' bindtap='change'>切换至用户</view>
+        <view class='change' bindtap='change'>切换至商家版</view>
     </view>
 </view>

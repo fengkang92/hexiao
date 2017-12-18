@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="logo">
+        <image src='../../../images/check/logo.png'></image>
+    </view>
+
+    <view class='login-container'>
+        <view class="login-wrapper">
+            <view class="login-item">
+                <view class="login-view">
+                    <view class="login-left">账号：</view>
+                    <view class="login-middle">
+                        <input value='{{userName}}' type="text" confirm-type="done" placeholder-style="color:#999" bindinput="userNameInput" />
+                    </view>
+                </view>
+            </view>
+            <view class="login-item">
+                <view class="login-view">
+                    <view class="login-left">密码：</view>
+                    <view class="login-middle">
+                        <input password="{{true}}" value='{{passWord}}' confirm-type="done" placeholder-style="color:#999" bindinput="userPassInput" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+	<view class='login-btn' bindtap='login'>登录</view>
+	<view class='login-change' bindtap='change'>
+		<image src='../../../images/check/ico_qiehuan.png'></image>
+		<text>切换到用户版</text>
+	</view>
+
+</view>

@@ -1,0 +1,130 @@
+/* pages/detail/detail.wxss */
+
+.detail {
+    padding: 0 60rpx;
+}
+
+.detail-head {
+    padding: 60rpx 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1rpx #e5e5e5;
+}
+
+.head-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*水平居中*/
+}
+
+.detail-head-left {
+    flex: 1;
+}
+
+.detail-name {
+    font-size: 30px;
+    color: #242424;
+	font-weight: 500;
+}
+
+.detail-code {
+    margin-top: 20rpx;
+    font-size: 18px;
+    color: #666;
+	font-weight: 500;
+}
+.detail-code text{
+	margin-right: 10rpx;
+}
+
+.detail-head-right {
+    width: 240rpx;
+    font-size: 0;
+}
+
+.detail-btn {
+    width: 240rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #242424;
+    color: #fff;
+    text-align: center;
+    border-radius: 45rpx;
+    font-size: 18px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.detail-sure {
+    width: 240rpx;
+    height: 100rpx;
+    margin: auto;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.detail-sure image {
+    width: 100rpx;
+    height: 100rpx;
+    display: block;
+    margin: auto;
+}
+
+.detail-body {
+    margin-top: 60rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+}
+
+.detail-item-key {
+    width: 230rpx;
+    font-size: 18px;
+    color: #666;
+}
+
+.detail-item-value {
+    flex: 1;
+    font-size: 18px;
+    color: #242424;
+	font-weight: 500;
+}
+
+.return {
+    margin-top: 60rpx;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0;
+    align-items: center; /*垂直居中*/
+    justify-content: right; /*水平居中*/
+}
+
+.return image {
+    width: 30rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.return text {
+    font-size: 18px;
+    color: #666;
+    vertical-align: middle;
+    align-items: center;
+}
+.del{
+	color: #ad0015;
+	width: 240rpx;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+    align-items: center;
+}

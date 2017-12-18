@@ -1,0 +1,66 @@
+/* pages/list/list.wxss */
+@import "../../tpls/list-tpl/list-item.wxss";
+
+
+.container{
+	background: #e6e6e6;
+	height: 100%;
+
+}
+.list-top {
+    height: 120rpx;
+    border-bottom: solid 1rpx #e5e5e5;
+    display: flex;
+    flex-direction: row;
+	background: #fff;
+}
+
+.top-banner {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*水平居中*/
+}
+
+.top-tab {
+    flex: 1;
+    text-align: center;
+    line-height: 120rpx;
+    box-sizing: border-box;
+}
+.top-tab text{
+	display: inline-block;
+	line-height: 120rpx;
+	color: #bebebe;
+}
+
+.on {
+    border-bottom: solid 6rpx #242424;
+	color: #242424 !important;
+	font-weight: 500 !important;
+}
+
+.top-search {
+    width: 100rpx;
+    height: 100rpx;
+    margin-top: 10rpx;
+	display: flex;
+    border-left: solid 2px #242424;
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*水平居中*/
+}
+
+.top-search image {
+    width: 36rpx;
+    height: 36rpx;
+    margin: auto;
+    display: block; 
+    vertical-align: middle;
+    align-items: center;
+}
+
+.list-body{
+	background: #e6e6e6;
+}
+

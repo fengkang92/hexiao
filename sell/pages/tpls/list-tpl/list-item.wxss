@@ -1,0 +1,30 @@
+.list-item{
+	margin-top: 30rpx;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 40rpx 60rpx;
+}
+.list-item:nth-child(1){
+	margin-top: 0rpx;
+
+}
+.list-name{
+	font-size: 18px;
+	color: #242424;
+	font-weight: 500;
+}
+.list-attr{
+	margin-top: 20rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #666;
+}
+.list-time{
+	margin-top: 20rpx;
+	border-top: solid 1rpx #e6e6e6;
+	padding-top: 20rpx;
+	font-size: 18px;
+	color: #666;
+}

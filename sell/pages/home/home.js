@@ -82,6 +82,8 @@ Page({
 
     //分享效果
     onShareAppMessage: function () {
-
+		return {
+			imageUrl: "/images/home/share.jpg"
+		}
     }
 })
