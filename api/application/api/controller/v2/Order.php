@@ -17,7 +17,6 @@ use app\api\model\Order as OrderModel;
 use app\api\service\Order as OrderService;
 use app\api\service\Token;
 use app\api\validate\IDMustBePositiveInt;
-use app\api\validate\PreOrder;
 use app\api\validate\OrderPlace;
 use app\api\validate\PagingParameter;
 use app\lib\exception\OrderException;
@@ -78,14 +77,7 @@ class Order extends BaseController
      */
     public function getDetailByChecker($order_no)
     {
-        $result = (new PreOrder())->goCheck();
-        if (!$result) {
-            return [
-                'code' =>  400,
-                'data' => '',
-                'msg' => '订单不存在！'
-            ];
-        }
+//        (new IDMustBePositiveInt())->goCheck();
 //        print_r($order_no);die();
         $orderDetail = OrderModel::getOrderDetailByChecker($order_no);
         if (!$orderDetail) {
