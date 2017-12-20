@@ -1,8 +1,0 @@
-/* pages/search-list/search-list.wxss */
-@import "../tpls/list-tpl/list-item.wxss";
-
-
-.container{
-	background: #e6e6e6;
-	height: 100%;
-}
