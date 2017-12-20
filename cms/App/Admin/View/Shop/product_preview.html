@@ -1,0 +1,158 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+
+    <style type="text/css">
+        .cl div {
+            margin-top: 3px
+        }
+    </style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 商品管理 <span class="c-gray en">&gt;</span> 商品预览 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i
+        class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form class="form form-horizontal" >
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">产品类型：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <if condition="$product_data.summary eq 1"> 主题活动
+                <else /> 传统商品
+                </if>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">产品名称：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data['pname']}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">产品分类：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data['cname']}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">计量单位：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.unit}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">副标题：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.describe}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">价格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                现价：{$product_data.price}元
+                <if condition="$product_data.discount eq 1">
+                <br>折扣价：{$product_data.discount_price}元
+                </if>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">库存：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.stock}
+            </div>
+        </div>
+
+        <div id="abouts" <if condition="$product_data.summary eq 2"> style="display: none" </if>>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">有效时间：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    {$product_data.duration}
+                </div>
+            </div>
+            <div class="row cl" id="abouts">
+                <label class="form-label col-xs-4 col-sm-2">预约时间：</label>
+                <div id="wrap" class="formControls col-xs-8 col-sm-9">
+                    <div class="addData" style="margin-bottom: 5px;float: left;">
+                        <volist name="product_data.time_data" id="v" empty="暂时没有数据">
+                            <p>{$v.start_time} - {$v.end_time}</p>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">商品地址：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    {$product_data.address}
+                </div>
+            </div>
+        </div>
+        
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">标签：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.tname} , {$product_data.detail}
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">产品参数：</label>
+            <div class="formControls col-xs-8 col-sm-9" id="par">
+                <volist name="product_data.product_property" id="v" empty="暂时没有数据">
+                    <p>{$v.name}：{$v.detail}</p>
+                </volist>
+            </div>
+        </div>
+        <div class="row cl" <if condition="$product_data.product_feature eq '' "> style="display: none" </if>>
+            <label class="form-label col-xs-4 col-sm-2">商品规格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.product_feature}
+            </div>
+        </div>
+        
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">详细内容：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {$product_data.content|htmlspecialchars_decode=###}
+            </div>
+        </div>
+        
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">商品图片：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img src="{$product_data.main_img_url}" width='200'>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">热推产品：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <if condition="$product_data.hot eq 1"> 是
+                <else /> 否
+                </if>
+            </div>
+        </div>
+        <div class="row cl" <if condition="$product_data.hot eq 2"> style="display: none" </if> >
+            <label class="form-label col-xs-4 col-sm-2">首页展示图片：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img src="{$product_data.home_img_url}" width='200'>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <LINK rel="Bookmark" href="__PUBLIC__/favicon.ico">
+    <LINK rel="Shortcut Icon" href="__PUBLIC__/favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/style.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <!--/meta 作为公共模版分离出去-->
+
+    <link href="__PUBLIC__/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 服务产品 <span class="c-gray en">&gt;</span> 课程添加 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i
+        class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="" method="post" class="form form-horizontal" id="form-article-add" onsubmit="return ac_from();" enctype="multipart/form-data">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分店：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:90%">
+                <select class="select" name="chain_id" id="chain_id" onchange="getchid();">
+                    <option value="">请选择</option>
+                    <volist name="chain" id="v">
+                        <option value="{$v.id}" 
+                            <if condition="$v.id eq $course_plan_data['chain_id']">
+                                selected="selected"
+                            </if>
+                        >{$v.ch_name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>空间服务：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:90%">
+                <select class="select" name="sid" id="sid" onchange="getsid();">
+                    <option value="">请选择</option>
+                    <if condition="$course_plan_data">
+                        <volist name="course_data" id="v">
+                            <option value="{$v.sid}" 
+                                <if condition="$v.sid eq $course_plan_data['sid']">
+                                    selected="selected" 
+                                </if>
+                                >{$v.name}
+                            </option>
+                        </volist>
+                    </if>
+                </select>
+                <span id="coursedesc" style="color:red;font-size: 12px;"></span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>供应商：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:90%">
+                <select class="select" name="suppiler_id" id="suppiler_id">
+                    <option value="">请选择</option>
+                    <if condition="$course_plan_data">
+                        <volist name="supplier_data" id="v">
+                            <option value="{$v.id}" 
+                                <if condition="$v.id eq $course_plan_data['suppiler_id']">
+                                    selected="selected" 
+                                </if>
+                                >{$v.su_name}
+                            </option>
+                        </volist>
+                    </if>
+                </select>
+                <span id="supplierdesc" style="color:red;font-size: 12px;"></span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>课程名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="server_name" id="server_name" class="input-text" style="width:90%" value="{$course_plan_data['server_name']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">副标题：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="discribe" class="input-text" style="width:90%" value="{$course_plan_data['discribe']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">时间段：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div class="col-sm-6 col-xs-6 addData" style="margin-bottom: 5px;margin-left: -15px;">
+                    <input type="text" name="start_time" value="{$course_plan_data['start_time']}" placeholder="开始时间" class="input-text" style=" width:45%" onclick="WdatePicker()">
+                    -
+                    <input type="text" name="end_time" value="{$course_plan_data['end_time']}" placeholder="结束时间" class="input-text" style=" width:45%" onclick="WdatePicker()">
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">单位：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="unit" id="unit" class="input-text" style="width:90%" value="{$course_plan_data['unit']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>标签：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="tag" id="tag" placeholder="多个关键字用|(竖线)隔开，限10个关键字" class="input-text" style="width:90%" value="{$course_plan_data['tag']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">类型：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="types" id="types" placeholder="类型" class="input-text" style="width:90%" value="{$course_plan_data['types']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">提前预约：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="advance" id="advance" placeholder="提前预约时间，以小时为单位 24" class="input-text" style="width:90%" value="{$course_plan_data['advance']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">费用包括：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="cost" id="cost" placeholder="费用包括" class="input-text" style="width:90%" value="{$course_plan_data['cost']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">温馨提示：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="prompt" id="prompt" placeholder="温馨提示：" class="input-text" style="width:90%" value="{$course_plan_data['prompt']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>详细内容：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor" type="text/plain" style="width:100%;height:400px;">{$course_plan_data.content|htmlspecialchars_decode=###}</script>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>课程图片：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <if condition="$course_plan_data neq '' ">
+                   <img src="{$course_plan_data.main_img_url}" width="250"
+                     style="margin-bottom: 3px;"/>
+                <br/>
+                </if>
+                <input type="file" name="file" id="file" value="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">热推产品：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                 <input type="radio" name="hot" id="yes"
+                       value="1" <?php echo $course_plan_data['hot']==1 ? 'checked="checked"' : null?>/> 是 &nbsp;
+                <input type="radio" name="hot" id="no"
+                       value="0" <?php echo $course_plan_data['hot']!=1 ? 'checked="checked"' : null?>/> 否
+            </div>
+        </div>
+        <if condition="$course_plan_data.hot eq 1" >
+            <div class="row cl" id="home">
+                <label class="form-label col-xs-4 col-sm-2">首页展示图片：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <if condition="$course_plan_data.home_img_url neq '' ">
+                       <img src="{$course_plan_data.home_img_url}" width="250"
+                         style="margin-bottom: 3px;"/>
+                    <br/>
+                    </if>
+                    <input type="file" name="file_home" id="file_hpme" value="">
+
+                </div>
+            </div>
+        </if>
+            <input type="hidden" name="id" value="{$course_plan_data['id']}">
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button onClick="" class="btn btn-primary radius" type="submit"><i
+                        class="Hui-iconfont">&#xe632;</i> 保存并提交审核
+                </button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">
+                    &nbsp;&nbsp;取消&nbsp;&nbsp;
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui.admin/js/H-ui.admin.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var ue = UE.getEditor('editor');
+    });
+    //显示首页图片
+    $('#yes').on('click',function(){
+        $('#home').show();
+    })
+    //隐藏首页图片
+    $('#no').on('click',function(){
+        $('#home').hide();
+    })
+
+    //参数添加
+    $('.add_parameter').on('click',function(){
+        $('#par').append('<input type="text" name="parameter[]" placeholder="参数名和参数用中文冒号：隔开" class="input-text" style="width:90%;margin-bottom: 8px">');
+    })
+
+    //添加预约时间
+    document.getElementsByClassName('add_about')[0].onclick = function (argument) {
+        var cNode = document.getElementsByClassName('addData')[0].cloneNode(true);
+        cNode.children[0].value = "";
+        cNode.children[1].value = "";
+        document.getElementById('wrap').appendChild(cNode);
+    }
+    //选择分店相应的盒子
+    function getchid()
+    {
+        var chid = $('#chain_id').val();
+        if (chid == '') {
+            $('#sid').html('<option value="">请选择</option>');
+            $('#suppiler_id').html('<option value="">请选择</option>');
+            $('#box_course_plan').html('<option value="">请选择</option>');
+            $('#box_course_service').html('<option value="">请选择</option>');
+            $('#coursedesc').html('');
+            $('#supplierdesc').html('');
+            $('#courseplandesc').html('');
+            $('#servicendesc').html('');
+            return;
+        }
+        var str = '';
+        $.ajax({
+            url : '{:U("Booking/getCourse")}',
+            type : 'GET',
+            data : {chid:chid},
+            dataType: 'json',
+            success : function(data){
+                if (data != '') {
+                    $.each(data,function(j,v){
+                        str += '<option value="' + v.sid + '">-- ' + v.name + '</option>';
+                    })
+                    $('#sid').html('<option value="">请选择</option>');
+                    $('#sid').append(str);
+                    $('#supplierdesc').html('');
+                }else{
+                    $('#coursedesc').html('&nbsp;&nbsp; * 该分类下没有空间服务，请先添加');
+                }
+            }
+        })
+    }
+
+    //选择盒子相应供应商
+    function getsid() {
+        var sid = $('#sid').val();
+        if (sid == '') {
+            $('#suppiler_id').html('<option value="">请选择</option>');
+            $('#box_course_plan').html('<option value="">请选择</option>');
+            $('#box_course_service').html('<option value="">请选择</option>');
+            $('#courseplandesc').html('');
+            $('#servicendesc').html('');
+            $('#coursedesc').html('');
+            return;
+        }
+        var htmls = '';
+        $.post('{:U("Booking/getsid")}', {sid: sid}, function (data) {
+            if (data.code == 1) {
+                var supplier = data.value;
+                for (var i = 0; i < supplier.length; i++) {
+                    htmls += '<option value="' + supplier[i].id + '">-- ' + supplier[i].su_name + '</option>';
+                }
+                $('#suppiler_id').html('<option value="">请选择</option>');
+                $('#suppiler_id').append(htmls);
+                $('#supplierdesc').html('');
+            } else {
+                $('#supplierdesc').html('&nbsp;&nbsp; * '+ data.message);
+            }
+        }, "json");
+    }
+
+
+    //验证表单空值
+    function ac_from(){
+
+        var chain_id=document.getElementById('chain_id').value;
+        if(chain_id.length<1){
+            alert('请选择分店');
+            return false;
+        }
+
+        var sid=document.getElementById('sid').value;
+        if(sid.length<1){
+            alert('请选择空间');
+            return false;
+        }
+
+        var suppiler_id=document.getElementById('suppiler_id').value;
+        if(suppiler_id.length<1){
+            alert('请选择供应商');
+            return false;
+        }
+
+        var server_name=document.getElementById('server_name').value;
+        if(server_name.length<1){
+            alert('课程名不能为空');
+            return false;
+        }
+
+//        var unit=document.getElementById('unit').value;
+//        if(unit.length<1){
+//            alert('单位不能为空');
+//            return false;
+//        }
+
+        var tag=document.getElementById('tag').value;
+        if(tag.length<1){
+            alert('单位不能为空');
+            return false;
+        }
+
+    }
+    
+</script>
+</body>
+</html>
