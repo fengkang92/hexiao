@@ -1,0 +1,306 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <LINK rel="Bookmark" href="__PUBLIC__/favicon.ico">
+    <LINK rel="Shortcut Icon" href="__PUBLIC__/favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/style.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <!--/meta 作为公共模版分离出去-->
+
+    <link href="__PUBLIC__/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 服务产品 <span
+        class="c-gray en">&gt;</span> 老师添加 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
+                                              href="javascript:location.replace(location.href);" title="刷新"><i
+        class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="" method="post" class="form form-horizontal" id="form-article-add" onsubmit="return ac_from();"
+          enctype="multipart/form-data">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">分店：</label>
+            <div class="formControls col-xs-8 col-sm-9 "> <span class="select-box" style="width:90%">
+                <select class="select" name="chain" id="chain" onchange="getcid();">
+                    <option value="">请选择</option>
+                    <if condition="$chain_id">
+                        <option value="{$chain_id['id']}" selected="selected">{$chain_id['ch_name']}</option>
+                    </if>
+                    <volist name="chain" id="v" empty="暂时没有数据">
+                        <option value="{$v.id}">--{$v.ch_name}</option>
+                    </volist>
+                </select>
+                <span style="color:red;font-size: 12px;">&nbsp;&nbsp; * 必选项</span>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">空间服务：</label>
+            <div class="formControls col-xs-8 col-sm-9 "> <span class="select-box" style="width:90%">
+                <select class="select" name="box_course" id="box_course" onchange="getsid();">
+                    <option value="">请选择</option>
+                    <if condition="$course_id">
+                        <option value="{$course_id['sid']}" selected="selected">{$course_id['name']}</option>
+                    </if>
+            </select>
+            <span id="coursedesc" style="color:red;font-size: 12px;">&nbsp;&nbsp; * 必选项</span>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">供应商：</label>
+            <div class="formControls col-xs-8 col-sm-9 "> <span class="select-box" style="width:90%">
+                <select class="select" name="box_supplier" id="box_supplier" onchange="getpid();">
+                    <option value="">请选择</option>
+                    <if condition="$supplier_id">
+                        <option value="{$supplier_id['id']}" selected="selected">{$supplier_id['su_name']}</option>
+                    </if>
+            </select>
+            <span id="supplierdesc" style="color:red;font-size: 12px;">&nbsp;&nbsp; * 必选项</span>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">课程：</label>
+            <div class="formControls col-xs-8 col-sm-9 "> <span class="select-box" style="width:90%">
+                <select class="select" name="box_course_plan" id="box_course_plan">
+                    <option value="">请选择</option>
+                    <if condition="$plan_id">
+                        <option value="{$plan_id['id']}" selected="selected">{$plan_id['server_name']}</option>
+                    </if>
+            </select>
+            <span id="plandesc" style="color:red;font-size: 12px;">&nbsp;&nbsp; * 必选项</span>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>老师姓名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="server_name" id="server_name" class="input-text" style="width:90%"
+                       value="{$courseService['server_name']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教龄：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:90%">
+                <select class="select" name="experience" id="experience">
+                    <option value="{$courseService['experience']}">初始值：{$courseService['experience']}</option>
+                    <option value="1-2年">1-2年</option>
+                    <option value="2-4年">2-4年</option>
+                    <option value="4-6年">4-6年</option>
+                    <option value="6-8年">6-8年</option>
+                    <option value="8-10年">8-10年</option>
+                    <option value="10年以上">10年以上</option>
+                </select>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>适合学员：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:90%">
+                <select class="select" name="students" id="students">
+                    <option value="{$courseService['students']}">初始值：{$courseService['students']}</option>
+                    <option value="零基础">零基础</option>
+                    <option value="初级">初级</option>
+                    <option value="中级">中级</option>
+                    <option value="高级">高级</option>
+                </select>
+            </span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>适合年龄：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="age" placeholder="" class="input-text" style="width:90%" value="{$courseService['age']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>价格：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="price" placeholder="" class="input-text" style="width:90%"
+                       value="{$courseService['price']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">折扣价：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="discount" placeholder="" class="input-text" style="width:90%"
+                       value="{$courseService['discount']}">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>手机号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="tel" placeholder="" class="input-text" style="width:90%"
+                       value="{$courseService['tel']}">
+            </div>
+        </div>
+        <!--<div class="row cl">-->
+        <!--<label class="form-label col-xs-4 col-sm-2">老师头像：</label>-->
+        <!--<div class="formControls col-xs-8 col-sm-9">-->
+        <!--<if condition="$course_plan_data neq '' ">-->
+        <!--<img src="{$course_plan_data.main_img_url}" width="250"-->
+        <!--style="margin-bottom: 3px;"/>-->
+        <!--<br/>-->
+        <!--</if>-->
+        <!--<input type="file" name="file" id="file" value="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">介绍详情：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor" type="text/plain" style="width:100%;height:400px;">{$courseService.introduce|htmlspecialchars_decode=###}</script>
+            </div>
+        </div>
+            <input type="hidden" name="id" value="{$courseService['id']}">
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button onClick="" class="btn btn-primary radius" type="submit"><i
+                        class="Hui-iconfont">&#xe632;</i> 保存并提交审核
+                </button>
+                <button onClick="self.location=document.referrer;" class="btn btn-default radius" type="button">
+                    &nbsp;&nbsp;取消&nbsp;&nbsp;
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui.admin/js/H-ui.admin.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__PUBLIC__/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var ue = UE.getEditor('editor');
+    });
+
+    //    选择分店下盒子相应分类
+    function getcid() {
+        var id = $('#chain').val();
+        $.post('{:U("getcid")}', {id: id}, function (data) {
+            if (data.courselist != '') {
+                var htmls = '<option value="">请选择</option>';
+                var cate = data.courselist;
+                for (var i = 0; i < cate.length; i++) {
+                    htmls += '<option value="' + cate[i].sid + '">-- ' + cate[i].name + '</option>';
+                }
+                $('#box_course').html(htmls);
+                $('#coursedesc').html('&nbsp;&nbsp; * 必选项');
+            } else {
+                $('#box_course').html('<option value="">请选择</option>');
+                $('#coursedesc').html('&nbsp;&nbsp; * 该分类下没有盒子类型，请先添加');
+            }
+        }, "json");
+    }
+
+    //    选择盒子下供应商相应分类
+    function getsid() {
+        var sid = $('#box_course').val();
+        $.post('{:U("getsid")}', {sid: sid}, function (data) {
+            if (data.supplierlist != '') {
+                var htmls = '<option value="">请选择</option>';
+                var cate = data.supplierlist;
+                for (var i = 0; i < cate.length; i++) {
+                    htmls += '<option value="' + cate[i].id + '">-- ' + cate[i].su_name + '</option>';
+                }
+                $('#box_supplier').html(htmls);
+                $('#supplierdesc').html('&nbsp;&nbsp; * 必选项');
+            } else {
+                $('#box_supplier').html('<option value="">请选择</option>');
+                $('#supplierdesc').html('&nbsp;&nbsp; * 该分类下没有供应商，请先添加');
+            }
+
+        }, "json");
+    }
+
+    //    选择供应商下服务内容相应分类
+    function getpid() {
+        var suid = $('#box_supplier').val();
+        $.post('{:U("getpid")}', {suid: suid}, function (data) {
+            if (data.planlist != '') {
+                var htmls = '<option value="">请选择</option>';
+                var cate = data.planlist;
+                for (var i = 0; i < cate.length; i++) {
+                    htmls += '<option value="' + cate[i].id + '">-- ' + cate[i].server_name + '</option>';
+                }
+                $('#box_course_plan').html(htmls);
+                $('#plandesc').html('&nbsp;&nbsp; * 必选项');
+            } else {
+                $('#box_course_plan').html('<option value="">请选择</option>');
+                $('#plandesc').html('&nbsp;&nbsp; * 该分类下没有课程，请先添加');
+            }
+
+        }, "json");
+    }
+
+    //验证表单空值
+    function ac_from() {
+
+        var chain_id = document.getElementById('chain').value;
+        if (chain_id.length < 1) {
+            alert('请选择分店');
+            return false;
+        }
+
+        var sid = document.getElementById('box_course').value;
+        if (sid.length < 1) {
+            alert('请选择空间');
+            return false;
+        }
+
+        var suppiler_id = document.getElementById('box_supplier').value;
+        if (suppiler_id.length < 1) {
+            alert('请选择供应商');
+            return false;
+        }
+
+        var server_name = document.getElementById('box_course_plan').value;
+        if (server_name.length < 1) {
+            alert('请选择课程');
+            return false;
+        }
+
+        var server_name = document.getElementById('server_name').value;
+        if (server_name.length < 1) {
+            alert('请填写老师');
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>
