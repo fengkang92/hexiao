@@ -18,6 +18,8 @@ Route::get('api/:version/generateOrder', 'api/:version.Token/generateOrder');
 //核销
 Route::get('api/:version/writeoff/qrcode', 'api/:version.Writeoff/qrcode');
 
+//微信分享
+Route::get('api/:version/wxshare/share', 'api/:version.Wxshare/share');
 
 //Sample
 //Route::get('api/:version/sample/:key', 'api/:version.Sample/getSample');
