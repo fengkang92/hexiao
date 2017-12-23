@@ -12,7 +12,7 @@
     <view class='choose'>
         <view class="choose-title">选择日期</view>
         <view class="choose-content">
-            <view class='choose-item'>2018.01.01 - 2018.03.04</view>
+            <view class='choose-item'>2018.01.01 - 2018.02.28</view>
         </view>
     </view>
 
