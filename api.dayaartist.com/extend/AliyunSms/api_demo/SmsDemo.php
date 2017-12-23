@@ -75,17 +75,17 @@ class SmsDemo
         $request = new SendSmsRequest();
 
         // 必填，设置短信接收号码
-        $request->setPhoneNumbers("15510996092");
+        $request->setPhoneNumbers("15510697937");
 
         // 必填，设置签名名称，应严格按"签名名称"填写，请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/sign
         $request->setSignName("惠风达雅爱和畅");
 
         // 必填，设置模板CODE，应严格按"模板CODE"填写, 请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/template
-        $request->setTemplateCode("SMS_117570035");
+        $request->setTemplateCode("SMS_117570029");
 
         // 可选，设置模板参数, 假如模板中存在变量需要替换则为必填项
         $request->setTemplateParam(json_encode(Array(  // 短信模板中字段的值
-            "code"=>"12345",
+            "code"=>"15510996092",
             "product"=>"dsd"
         )));
 
@@ -100,36 +100,6 @@ class SmsDemo
 
         return $acsResponse;
 
-    }
-
-    /**
-     * 短信发送记录查询
-     * @return stdClass
-     */
-    public static function querySendDetails() {
-
-        // 初始化QuerySendDetailsRequest实例用于设置短信查询的参数
-        $request = new QuerySendDetailsRequest();
-
-        // 必填，短信接收号码
-        $request->setPhoneNumber("12345678901");
-
-        // 必填，短信发送日期，格式Ymd，支持近30天记录查询
-        $request->setSendDate("20170718");
-
-        // 必填，分页大小
-        $request->setPageSize(10);
-
-        // 必填，当前页码
-        $request->setCurrentPage(1);
-
-        // 选填，短信发送流水号
-        $request->setBizId("yourBizId");
-
-        // 发起访问请求
-        $acsResponse = static::getAcsClient()->getAcsResponse($request);
-
-        return $acsResponse;
     }
 
 }

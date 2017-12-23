@@ -137,20 +137,12 @@ class Sample extends Controller
 
     public function sendSMS()
     {
-//        return 'blacky';
-
 // 调用示例：
         set_time_limit(0);
         header('Content-Type: text/plain; charset=utf-8');
 
         $response = SmsDemo::sendSms();
         echo "发送短信(sendSms)接口返回的结果:\n";
-        print_r($response);
-
-        sleep(2);
-
-        $response = SmsDemo::querySendDetails();
-        echo "查询短信发送情况(querySendDetails)接口返回的结果:\n";
         print_r($response);
     }
 }
