@@ -24,7 +24,7 @@
     <view class="order">
         <view class='order-wrapper' style='border-bottom:none'>
             <view class="item-top">活动地点</view>
-            <view class='item-bottom'>北京市海淀区复兴路69号</view>
+            <view class='item-bottom'>五棵松凯迪拉克馆旁（海淀区复兴路69号）</view>
         </view>
     </view>
 
