@@ -135,13 +135,13 @@ class Sample extends Controller
         return rand(pow(10, ($length - 1)), pow(10, $length) - 1);
     }
 
-    public function sendSMS()
+    public function sendSMS($name="blacky",$phone=15510996092,$code=1314)
     {
 // 调用示例：
         set_time_limit(0);
         header('Content-Type: text/plain; charset=utf-8');
 
-        $response = SmsDemo::sendSms();
+        $response = SmsDemo::sendSms($name,$phone,$code);
         echo "发送短信(sendSms)接口返回的结果:\n";
         print_r($response);
     }
