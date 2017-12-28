@@ -58,7 +58,7 @@ class WxNotify extends \WxPayNotify
                         $this->updateOrderStatus($order->id, true);
                         $this->reduceStock($stockStatus);
                         $this->addCodeImgById($order->id);
-                        $this->sendSMS($order->feature,$order->express,$order->orderNo,$order->total_count);
+                        $this->sendSMS($order->feature,$order->express,$order->order_no,$order->total_count);
 
                     } else {
                         $this->updateOrderStatus($order->id, false);
