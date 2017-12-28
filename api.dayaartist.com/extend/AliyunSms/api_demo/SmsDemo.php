@@ -69,7 +69,7 @@ class SmsDemo
      * 发送短信
      * @return stdClass
      */
-    public static function sendSms($name,$phone,$code) {
+    public static function sendSms($name,$phone,$code,$count) {
 
         // 初始化SendSmsRequest实例用于设置发送短信的参数
         $request = new SendSmsRequest();
@@ -81,12 +81,13 @@ class SmsDemo
         $request->setSignName("惠风达雅爱和畅");
 
         // 必填，设置模板CODE，应严格按"模板CODE"填写, 请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/template
-        $request->setTemplateCode("SMS_119075343");
+        $request->setTemplateCode("SMS_119078023");
 
         // 可选，设置模板参数, 假如模板中存在变量需要替换则为必填项
         $request->setTemplateParam(json_encode(Array(  // 短信模板中字段的值
             "name"=>"$name",
             "code"=>"$code",
+            "count"=>"$count",
         )));
 
         // 可选，设置流水号

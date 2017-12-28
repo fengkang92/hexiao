@@ -58,7 +58,7 @@ class WxNotify extends \WxPayNotify
                         $this->updateOrderStatus($order->id, true);
                         $this->reduceStock($stockStatus);
                         $this->addCodeImgById($order->id);
-                        $this->sendSMS($order->feature,$order->express,$order->orderNo);
+                        $this->sendSMS($order->feature,$order->express,$order->orderNo,$order->total_count);
 
                     } else {
                         $this->updateOrderStatus($order->id, false);
@@ -123,12 +123,12 @@ class WxNotify extends \WxPayNotify
         OrderModel::where('order_no', '=', $order['order_no'])->update(['code_img' => $img_path]);
     }
 
-    private function sendSMS($name,$phone,$code)
+    private function sendSMS($name,$phone,$code,$count)
     {
 // 调用示例：
         set_time_limit(0);
         header('Content-Type: text/plain; charset=utf-8');
-        SmsDemo::sendSms($name,$phone,$code);
+        SmsDemo::sendSms($name,$phone,$code,$count);
     }
 
 }
