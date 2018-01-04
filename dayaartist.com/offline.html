@@ -31,22 +31,6 @@
     <div class="container">
 
         <div class="mt100">
-            <div class="text-bold offline-title">人工智能</div>
-        </div>
-
-        <div class="mt50 show1">
-            <a href="offline1.html">
-                <div class="show1-1"><img class="lazy" width="880" height="500" data-original="img/offline-5.png" alt=""></div>
-                <div class="show1-2"><img class="lazy" width="600" height="400" data-original="img/offline-2.png" alt=""></div>
-                <div class="show1-3">
-                    <p class="p1">未来世界键盘手</p>
-                    <p class="p2">钢琴机器人全能挑战古典音乐大师经典<br />作品音乐会</p>
-                    <p class="p3">2017/5/30 - 2017/6/7</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="mt100">
             <div class="text-bold offline-title">灯光装置</div>
         </div>
 
@@ -58,6 +42,22 @@
                     <p class="p1">华熙灯光节</p>
                     <p class="p2">2017 冬天国内最高质量最国际化<br />的灯光节</p>
                     <p class="p3">2017/12/25 - 2018/3/4</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt100">
+            <div class="text-bold offline-title">人工智能</div>
+        </div>
+
+        <div class="mt50 show1">
+            <a href="offline1.html">
+                <div class="show1-1"><img class="lazy" width="880" height="500" data-original="img/offline-5.png" alt=""></div>
+                <div class="show1-2"><img class="lazy" width="600" height="400" data-original="img/offline-2.png" alt=""></div>
+                <div class="show1-3">
+                    <p class="p1">未来世界键盘手</p>
+                    <p class="p2">钢琴机器人全能挑战古典音乐大师经典<br />作品音乐会</p>
+                    <p class="p3">2017/5/30 - 2017/6/7</p>
                 </div>
             </a>
         </div>
@@ -107,16 +107,16 @@
             var an3 = true;
             $(window).scroll(function (event) {
                 var winPos = $(window).scrollTop();
-                if (winPos > 171 && winPos < 371) {
+                // if (winPos > 171 && winPos < 371) {
+                //     if (an2) {
+                //         an2 = false;
+                //         animate2();
+                //     }
+                // }
+                if (winPos > 800 && winPos < 1000) {
                     if (an1) {
                         an1 = false;
                         animate1();
-                    }
-                }
-                if (winPos > 800 && winPos < 1000) {
-                    if (an2) {
-                        an2 = false;
-                        animate2();
                     }
                 }
                 if (winPos > 1400 && winPos < 1600) {
@@ -128,7 +128,7 @@
 //                console.log(winPos)
             });
             reset();
-            animate1();
+            animate2();
 
             function reset() {
                 TweenMax.to('.show1-1', 0, {height: 0, ease: Expo.easeIn});
@@ -145,34 +145,34 @@
             }
 
             function animate1() {
-                reset();
+                // reset();
                 TweenMax.to('.show1-1', .8, {height: 500, ease: Cubic.easeOut});
                 TweenMax.to('.show1-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
                 TweenMax.to('.show1-3', .8, {
                     height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
-                        an1 = true;
+                        // an1 = true;
                     }
                 })
             }
 
             function animate2() {
-                reset();
+                // reset();
                 TweenMax.to('.show2-1', .8, {height: 500, ease: Cubic.easeOut});
                 TweenMax.to('.show2-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
                 TweenMax.to('.show2-3', .8, {
                     height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
-                        an2 = true;
+                        // an2 = true;
                     }
                 })
             }
 
             function animate3() {
-                reset();
+                // reset();
                 TweenMax.to('.show3-1', .8, {height: 500, ease: Cubic.easeIn});
                 TweenMax.to('.show3-2', .8, {height: 400, delay: .8, ease: Cubic.easeOut});
                 TweenMax.to('.show3-3', .8, {
                     height: 250, delay: 1.3, ease: Cubic.easeOut, onComplete: function () {
-                        an3 = true;
+                        // an3 = true;
                     }
                 })
             }

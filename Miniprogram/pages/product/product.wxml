@@ -35,7 +35,7 @@
     <view wx:if="{{product.id==1}}" class="shop-tips" style='margin-bottom:120rpx'>
         <view class='tips-title'>温馨提示</view>
         <view class='tips-detail'>
-            <view>使用日期：2018.01.01 - 2018.02.28</view>
+            <view>使用日期：2018.01.05 - 2018.02.28</view>
             <view>使用时间：17:00-22:00</view>
             <view>活动地点：五棵松凯迪拉克馆旁（海淀区复兴路69号）</view>
             <view>该活动暂不支持退款，请您合理安排好时间</view>
@@ -48,7 +48,7 @@
         <view class='tips-detail'>
             <view>购买方式：活动现场</view>
             <view>购买地点：五棵松凯迪拉克馆旁（海淀区复兴路69号）</view>
-            <view>活动日期：2018.01.01 - 2018.02.28</view>
+            <view>活动日期：2018.01.05 - 2018.02.28</view>
             <view>活动时间：17:00-22:00</view>
         </view>
     </view>
