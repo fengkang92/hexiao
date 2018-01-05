@@ -6,6 +6,8 @@ use think\Controller;
 use app\api\validate\IDMustBePositiveInt;
 use app\api\model\Product as ProductModel;
 use app\lib\exception\ProductException;
+use think\Loader;
+Loader::import('Share.jssdk', EXTEND_PATH, '.php'); 
 class Platform extends Controller
 {
 	/**
@@ -61,5 +63,14 @@ class Platform extends Controller
         	$product['img'][] = $v['url'];
         }
         return $product;
+    }
+
+    /**
+     * 微信分享
+     */
+    public function share($url)
+    {
+        $data = \jssdk::GetSignPackage($url);
+        return $data;
     }
 }

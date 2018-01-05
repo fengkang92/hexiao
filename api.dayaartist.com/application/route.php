@@ -12,6 +12,7 @@ use think\Route;
 
 Route::get('api/:version/platform/shopDetails', 'api/:version.Platform/shopDetails');
 Route::get('api/:version/platform/shoplist', 'api/:version.Platform/shoplist');
+Route::get('api/:version/platform/share', 'api/:version.Platform/share');
 Route::get('api/:version/login', 'api/:version.Login/login');
 Route::get('api/:version/generateOrder', 'api/:version.Token/generateOrder');
 
