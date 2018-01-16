@@ -14,7 +14,6 @@ Route::get('api/:version/platform/shopDetails', 'api/:version.Platform/shopDetai
 Route::get('api/:version/platform/shoplist', 'api/:version.Platform/shoplist');
 Route::get('api/:version/platform/share', 'api/:version.Platform/share');
 Route::get('api/:version/login', 'api/:version.Login/login');
-Route::get('api/:version/generateOrder', 'api/:version.Token/generateOrder');
 
 //核销
 Route::get('api/:version/writeoff/qrcode', 'api/:version.Writeoff/qrcode');
@@ -110,6 +109,7 @@ Route::put('api/:version/order/delivery', 'api/:version.Order/delivery');
 Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
 Route::get('api/:version/order/paginate', 'api/:version.Order/getSummary');
 Route::get('api/:version/order/generateOrder', 'api/:version.Order/generateOrder');
+Route::get('api/:version/order/getOrder', 'api/:version.Order/getOrder');
 
 //Pay
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');

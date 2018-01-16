@@ -212,10 +212,10 @@ class Order extends BaseController
     /**
      * 生成赠票记录
      */
-    public function generateOrder()
+    public function generateOrder($num)
     {
 
-        for ($i=0; $i < 10; $i++) {
+        for ($i=0; $i < $num; $i++) {
             //订单号
             $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
             $orderSn =
@@ -242,6 +242,16 @@ class Order extends BaseController
             
             Db::name('order')->insert($data);
         }
+    }
+
+    /**
+     * 订单号取出
+     */
+    public function getOrder()
+    {
+        $data = Db::table('order')->order('id desc')->limit(50)->column('order_no');
+        echo '<pre>';
+        print_r($data);
     }
 }
 
