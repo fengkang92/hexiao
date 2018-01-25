@@ -60,7 +60,7 @@ class Order extends BaseController
         (new IDMustBePositiveInt())->goCheck();
         //增加uid判断
         $uid = Token::getCurrentUid();
-        $orderDetail = OrderModel::getOrderDetail($id,$uid);
+        $orderDetail = OrderModel::getOrderDetail($id, $uid);
         if (!$orderDetail) {
             throw new OrderException();
         }
@@ -82,7 +82,7 @@ class Order extends BaseController
         $orderDetail = OrderModel::getOrderDetailByChecker($order_no);
         if (!$orderDetail) {
             return [
-                'code' =>  400,
+                'code' => 400,
                 'data' => '',
                 'msg' => '订单不存在！'
             ];
@@ -187,26 +187,31 @@ class Order extends BaseController
                 'code' => 404,
                 'msg' => '订单不存在'
             ];
-        }
-        $order_data = $order_data->toArray();
+        } elseif ($order_data['user_id'] != 0) {
+            $order_data = $order_data->toArray();
 //        print_r($order_data);die();
-        if ($order_data['status'] == $status) {
+            if ($order_data['status'] == $status) {
+                return [
+                    'code' => 201,
+                    'msg' => '已经核销，不用重复操作！'
+                ];
+            }
+            $res = OrderModel::uptOrderStatus($order_no, $status, $admin_id);
+            if (empty($res)) {
+                return [
+                    'code' => 500,
+                    'msg' => '服务器出错'
+                ];
+            }
             return [
-                'code' => 201,
-                'msg' => '已经核销，不用重复操作！'
+                'code' => 200,
+                'msg' => '核销成功！'
             ];
-        }
-        $res = OrderModel::uptOrderStatus($order_no, $status, $admin_id);
-        if (empty($res)) {
+        } elseif ($order_data['user_id'] == 0) {
             return [
-                'code' => 500,
-                'msg' => '服务器出错'
-            ];
+                'code' => 200,
+                'msg' => '核销成功！'];
         }
-        return [
-            'code' => 200,
-            'msg' => '核销成功！'
-        ];
     }
 
     /**
@@ -215,11 +220,11 @@ class Order extends BaseController
     public function generateOrder($num)
     {
 
-        for ($i=0; $i < $num; $i++) {
+        for ($i = 0; $i < $num; $i++) {
             //订单号
             $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
             $orderSn =
-                $yCode[intval(date('Y'))-2017].strtoupper(dechex(date('m'))).date('d').substr(time(),-3).substr(microtime(),2,3).sprintf('%02d', rand(0,99));
+                $yCode[intval(date('Y')) - 2017] . strtoupper(dechex(date('m'))) . date('d') . substr(time(), -3) . substr(microtime(), 2, 3) . sprintf('%02d', rand(0, 99));
 
             //二维码
             $save_path = BASE_PATH . 'qrcode/';  //图片存储的绝对路径
@@ -238,8 +243,8 @@ class Order extends BaseController
 
             $img_path = '/qrcode/' . $filename;
 
-            $data = array('order_no'=>$orderSn,'create_time'=>time(),'status'=>1,'total_price'=>0,'total_count'=>1,'code_img'=>$img_path,'snap_name'=>'华熙LIVE，五棵松灯光节（赠票）');
-            
+            $data = array('order_no' => $orderSn, 'create_time' => time(), 'status' => 1, 'total_price' => 0, 'total_count' => 1, 'code_img' => $img_path, 'snap_name' => '华熙LIVE，五棵松灯光节（赠票）');
+
             Db::name('order')->insert($data);
         }
     }
