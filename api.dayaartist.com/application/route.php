@@ -21,6 +21,11 @@ Route::get('api/:version/writeoff/qrcode', 'api/:version.Writeoff/qrcode');
 //微信分享
 Route::get('api/:version/wxshare/share', 'api/:version.Wxshare/share');
 
+//消息入队
+Route::get('api/:version/matrixs/newsPush', 'api/:version.matrixs/newsPush');
+Route::get('api/:version/matrixs/newsPop', 'api/:version.matrixs/newsPop');
+Route::get('api/:version/matrixs/newsClear', 'api/:version.matrixs/newsClear');
+
 //Sample
 //Route::get('api/:version/sample/:key', 'api/:version.Sample/getSample');
 Route::get('api/:version/sample/sms', 'api/:version.Sample/sendSMS');
