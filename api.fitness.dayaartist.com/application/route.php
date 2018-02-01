@@ -12,7 +12,7 @@ use think\Route;
 
 //接口
 //1. 场馆列表
-Route::get('api/:version/gymnasium/by_user', 'api/:version.gymnasium/getSummaryByUser');
+Route::get('api/:version/venue/venueList', 'api/:version.Venue/getVenueList');
 //2. 场馆经纬度
 Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/getLongitudeLatitudeByUser');
 //4. 场馆详情
