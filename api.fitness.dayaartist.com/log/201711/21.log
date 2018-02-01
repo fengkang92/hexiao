@@ -1,0 +1,28 @@
+[ 2017-11-21T11:01:51+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：1.089840s][吞吐率：0.92req/s] [内存消耗：3,319.77kb] [文件加载：51]
+
+---------------------------------------------------------------
+[ 2017-11-21T11:46:40+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.211635s][吞吐率：4.73req/s] [内存消耗：3,319.84kb] [文件加载：51]
+
+---------------------------------------------------------------
+[ 2017-11-21T14:57:50+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.050131s][吞吐率：19.95req/s] [内存消耗：1,891.51kb] [文件加载：41]
+
+---------------------------------------------------------------
+[ 2017-11-21T14:58:16+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.041055s][吞吐率：24.36req/s] [内存消耗：1,891.51kb] [文件加载：41]
+
+---------------------------------------------------------------
+[ 2017-11-21T14:58:58+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.055808s][吞吐率：17.92req/s] [内存消耗：1,891.00kb] [文件加载：41]
+
+---------------------------------------------------------------
+[ 2017-11-21T14:59:12+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.033280s][吞吐率：30.05req/s] [内存消耗：1,890.76kb] [文件加载：41]
+
+---------------------------------------------------------------
+[ 2017-11-21T14:59:19+08:00 ] ::1 ::1 POST /index.php/booking/v1/course_teacher/add
+[ log ] blacky.com/index.php/booking/v1/course_teacher/add [运行时间：0.033922s][吞吐率：29.48req/s] [内存消耗：1,890.98kb] [文件加载：41]
+
+---------------------------------------------------------------
