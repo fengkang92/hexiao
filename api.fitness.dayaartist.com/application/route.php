@@ -73,5 +73,5 @@ Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');
 Route::post('api/:version/pay/concurrency', 'api/:version.Pay/notifyConcurrency');
 
 //场馆列表
-Route::post('api/:version/pay/concurrency', 'api/:version.Pay/notifyConcurrency');
+Route::post('api/:version/venue/getVenueList', 'api/:version.Venue/getVenueList');
 
