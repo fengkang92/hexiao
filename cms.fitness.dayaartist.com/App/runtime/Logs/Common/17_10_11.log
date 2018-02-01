@@ -1,0 +1,1925 @@
+[ 2017-10-11T10:06:31+08:00 ] 210.12.125.246 /lib/jquery/1.9.1/jquery.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Lib
+
+[ 2017-10-11T10:06:31+08:00 ] 210.12.125.246 /static/h-ui/js/H-ui.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Static
+
+[ 2017-10-11T10:06:37+08:00 ] 124.126.205.228 /favicon.ico
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-10-11T10:25:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:25:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:27:13+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:27:13+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:27:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:27:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:27:55+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:29:44+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:30:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:30:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:31:05+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:31:05+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:41+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:41+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:57+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:32:57+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:33:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:33:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:33:25+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:33:25+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:33:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:34:40+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:34:40+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:35:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:35:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:35:28+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:36:02+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:38:38+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:38:38+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:07+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:13+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:13+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:32+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:39:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:40:03+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:40:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:40:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:40:34+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:40:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:41:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:41:39+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:41:39+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:41:46+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:42:18+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:42:32+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:42:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:43:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:43:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:43:47+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:43:58+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:43:58+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:02+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:02+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:06+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:06+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:13+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:28+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:44:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:54:09+08:00 ] 210.12.125.246 /lib/jquery/1.9.1/jquery.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+ERR: 无法加载模块:Lib
+
+[ 2017-10-11T10:54:09+08:00 ] 210.12.125.246 /static/h-ui/js/H-ui.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Static
+
+[ 2017-10-11T10:55:42+08:00 ] 210.12.125.246 /lib/jquery/1.9.1/jquery.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Lib
+
+[ 2017-10-11T10:55:42+08:00 ] 210.12.125.246 /static/h-ui/js/H-ui.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Static
+
+[ 2017-10-11T10:55:42+08:00 ] 210.12.125.246 /lib/jquery/1.9.1/jquery.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+ERR: 无法加载模块:Lib
+
+[ 2017-10-11T10:55:42+08:00 ] 210.12.125.246 /static/h-ui/js/H-ui.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Static
+
+[ 2017-10-11T10:59:42+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T10:59:42+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:06:59+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:06:59+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:07:16+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:07:16+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:08:13+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:14:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:14:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:17:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:38+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:38+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:54+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:19:54+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:20:23+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:20:23+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:20:38+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:20:38+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:20:51+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:21:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:21:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:21:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:21:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:17+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:23:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:24:15+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:24:15+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:28+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:28+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:41+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:41+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:25:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:47+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:26:47+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:27:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:27:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:28:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:28:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:08+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:15+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:34+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:52+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:29:52+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:30:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:30:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:31:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:31:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:31:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:31:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:45+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:45+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:56+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:32:56+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:33:31+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:33:31+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:35:26+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:35:26+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:35:51+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:35:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:18+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:18+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:35+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:35+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:59+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:36:59+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:44+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:44+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:56+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:37:56+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:38:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:38:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:38:26+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:38:26+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:39:48+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:39:48+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:39:57+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:39:57+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:12+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:12+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:45+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:45+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:55+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:40:55+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:38+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:43:38+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:44:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:44:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:22+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:22+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:33+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:44+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:44+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:50+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:46:50+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:02+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:03+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:06+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:06+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:12+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:12+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:19+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:25+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:47:25+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:48:42+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:48:43+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:48:49+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:48:49+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:49:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:49:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:35+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:35+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:43+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:43+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:50:52+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:10+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:24+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:27+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:31+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:51:42+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:53:06+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:53:06+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:53:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:53:46+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:54:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:54:01+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:54:51+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:54:51+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:55:06+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:55:06+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:03+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:14+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:14+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:25+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:25+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:41+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:56:41+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:57:57+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:57:57+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:58:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:58:30+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:58:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T11:58:49+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T12:08:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T12:08:20+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T13:37:53+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T13:38:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T13:38:04+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T14:37:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T14:37:29+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T14:37:45+08:00 ] 210.12.125.246 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-11T14:41:27+08:00 ] 124.126.205.228 /Public/static/h-ui.admin/js/comment.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+ERR: 无法加载模块:Public
+

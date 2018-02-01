@@ -1,0 +1,12 @@
+[ 2017-11-12T07:26:54+08:00 ] 106.11.225.225 /
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-11-12T07:26:54+08:00 ] 106.11.225.224 /
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+

@@ -1,0 +1,272 @@
+[ 2017-10-24T00:40:56+08:00 ] 119.147.207.152 /index.php/Admin/Shop/product_edit.html?id%3D132
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-10-24T02:34:47+08:00 ] 113.108.21.80 /
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-10-24T03:24:05+08:00 ] 112.90.82.218 /index.php/Admin/Shop/product_edit.html?id%3D125
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2017-10-24T04:16:57+08:00 ] 106.11.226.98 /
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-10-24T04:46:18+08:00 ] 112.90.82.218 /index.php/Admin/Shop/product/summary/0.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+
+[ 2017-10-24T04:56:21+08:00 ] 112.90.82.236 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+
+[ 2017-10-24T11:43:00+08:00 ] 89.178.3.52 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+
+[ 2017-10-24T11:43:01+08:00 ] 89.178.3.52 /index.php/Admin/Login/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-10-24T11:43:02+08:00 ] 89.178.3.52 /index.php/Admin/Login/lib/jquery/1.9.1/jquery.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+ERR: 非法操作:lib
+
+[ 2017-10-24T11:43:02+08:00 ] 89.178.3.52 /index.php/Admin/Login/static/h-ui/js/H-ui.min.js
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 非法操作:static
+
+[ 2017-10-24T13:39:21+08:00 ] 14.17.3.64 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-10-24T18:04:11+08:00 ] 101.226.64.174 /index.php/Admin/Supplier/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+
+[ 2017-10-24T18:13:23+08:00 ] 210.12.125.246 /
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-10-24T18:13:23+08:00 ] 210.12.125.246 /index.php/Admin/Login/code.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-10-24T18:13:25+08:00 ] 210.12.125.246 /index.php/Admin/Login/code.html?id=0.06187960542503834
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+
+[ 2017-10-24T18:13:29+08:00 ] 210.12.125.246 /?key=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+
+[ 2017-10-24T18:13:31+08:00 ] 210.12.125.246 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+
+[ 2017-10-24T18:13:31+08:00 ] 210.12.125.246 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-10-24T18:13:34+08:00 ] 210.12.125.246 /index.php/Admin/Shop/product.html?summary=0
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-10-24T18:13:38+08:00 ] 124.126.203.155 /index.php/Admin/Shop/product_edit.html?id=10
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2017-10-24T18:13:49+08:00 ] 210.12.125.246 /index.php/Admin/Shop/product_edit.html?id=10
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-10-24T18:13:50+08:00 ] 210.12.125.246 /index.php/Admin/Shop/product/summary/0.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+
+[ 2017-10-24T18:14:37+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-10-24T18:14:42+08:00 ] 210.12.125.246 /index.php/Admin/Lists/order.html?id=605
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+
+[ 2017-10-24T18:14:42+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-10-24T18:14:43+08:00 ] 210.12.125.246 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-10-24T18:14:43+08:00 ] 210.12.125.246 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+
+[ 2017-10-24T18:14:45+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-10-24T18:24:18+08:00 ] 210.12.125.246 /index.php/Admin/Lists/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2017-10-24T18:24:22+08:00 ] 210.12.125.246 /index.php/Admin/Lists/order.html?id=609
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+
+[ 2017-10-24T18:24:22+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+
+[ 2017-10-24T18:24:39+08:00 ] 210.12.125.246 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+
+[ 2017-10-24T18:24:39+08:00 ] 210.12.125.246 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+
+[ 2017-10-24T18:24:42+08:00 ] 210.12.125.246 /index.php/Admin/Lists/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+
+[ 2017-10-24T18:24:49+08:00 ] 210.12.125.246 /index.php/Admin/Lists/order.html?id=608
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+
+[ 2017-10-24T18:24:49+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+
+[ 2017-10-24T18:24:52+08:00 ] 210.12.125.246 /index.php/Admin/Lists/order.html?id=607
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2017-10-24T18:24:52+08:00 ] 210.12.125.246 /index.php/Admin/Lists/lists.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+
+[ 2017-10-24T18:24:54+08:00 ] 210.12.125.246 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+
+[ 2017-10-24T18:24:54+08:00 ] 210.12.125.246 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+
+[ 2017-10-24T18:24:55+08:00 ] 210.12.125.246 /index.php/Admin/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+
+[ 2017-10-24T18:24:55+08:00 ] 210.12.125.246 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+
+[ 2017-10-24T18:24:57+08:00 ] 210.12.125.246 /index.php/Admin/Lists/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2017-10-24T20:28:17+08:00 ] 113.108.21.80 /index.php/Admin/Lists/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-10-24T20:37:17+08:00 ] 113.108.21.80 /index.php/Admin/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' /data/www/cms.joyfamily.com.cn/App/Common/Conf/debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+

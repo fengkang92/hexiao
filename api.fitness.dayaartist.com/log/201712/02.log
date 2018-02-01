@@ -1,0 +1,28 @@
+[ 2017-12-02T13:57:56+08:00 ] ::1 ::1 GET /index.php/api/v1/doors/check_other?check_num=123456
+[ log ] blacky.com/index.php/api/v1/doors/check_other?check_num=123456 [运行时间：0.121490s][吞吐率：8.23req/s] [内存消耗：2,007.48kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:23:14+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.114383s][吞吐率：8.74req/s] [内存消耗：2,693.09kb] [文件加载：40]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:23:42+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.088182s][吞吐率：11.34req/s] [内存消耗：2,693.12kb] [文件加载：40]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:24:27+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.172798s][吞吐率：5.79req/s] [内存消耗：2,693.07kb] [文件加载：40]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:29:26+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.077535s][吞吐率：12.90req/s] [内存消耗：2,693.12kb] [文件加载：40]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:29:53+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.060980s][吞吐率：16.40req/s] [内存消耗：2,691.26kb] [文件加载：40]
+
+---------------------------------------------------------------
+[ 2017-12-02T16:37:37+08:00 ] ::1 ::1 GET /index.php/api/v1/writeoff/qrcode
+[ log ] dayaartist.com/index.php/api/v1/writeoff/qrcode [运行时间：0.084538s][吞吐率：11.83req/s] [内存消耗：2,693.14kb] [文件加载：40]
+
+---------------------------------------------------------------

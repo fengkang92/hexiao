@@ -1,0 +1,95 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 商品管理 <span class="c-gray en">&gt;</span> 打折 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i
+        class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="" method="post" class="form form-horizontal" id="form-article-add" onsubmit="return ac_from();" enctype="multipart/form-data">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>打折：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                 <input type="radio" name="is_discount" value="1" id="yes" <if condition="$product.discount eq 1"> checked="checked" </if> >是
+                &nbsp;&nbsp;&nbsp;<input type="radio" name="is_discount" value="2" id="no" <if condition="$product.discount eq 2"> checked="checked" </if>  >否
+            </div>
+        </div>
+        <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>原价：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" name="price" id="price" disabled value="{$product.price}" class="input-text" style="width:27.6%" placeholder="请填写原价">
+                    元
+                </div>
+            </div>
+        <div id="discount" <if condition="$product.discount eq 2"> style="display:none" </if>>
+            
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>折扣价：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" name="discount_price" id="discount_price" class="input-text" value="{$product.discount_price}" style="width:27.6%" placeholder="请填写折扣价">
+                    元
+                </div>
+            </div>
+            <script type="text/javascript" src="__PUBLIC__/admin/js/mydate.js"></script>
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>有效时间：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                     <input style="width:13%"  value="{$product.start_time}" placeholder="开始时间" class="input-text" id="start_time" name="start_time" type="text" onclick="WdatePicker({minDate:'%y-%M-{%d}'})"/> - <input style="width:13%" value="{$product.end_time}" placeholder="结束时间" class="input-text" id="end_time" name="end_time" type="text" onclick="WdatePicker({minDate:'%y-%M-{%d}'})"/>
+                     <input type="hidden" name="id" value="{$product.id}">
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i
+                        class="Hui-iconfont">&#xe632;</i> 保存提交
+                </button>
+                <button onClick="javascript:history.back(-1);" class="btn btn-default radius" type="button">
+                    &nbsp;&nbsp;取消&nbsp;&nbsp;
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="__PUBLIC__/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    $('#yes').on('click',function(){
+        $('#discount').show();
+    })
+    $('#no').on('click',function(){
+        $('#discount').hide();
+    })
+    //验证表单空值
+    function ac_from(){
+
+        var is_discount=document.getElementById('is_discount').value;
+        if(is_discount.length<1){
+            alert('打折');
+            return false;
+        }
+
+
+    }
+</script>
+</body>
+</html>

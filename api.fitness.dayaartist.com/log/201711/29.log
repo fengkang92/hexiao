@@ -1,0 +1,12 @@
+[ 2017-11-29T19:36:15+08:00 ] ::1 ::1 GET /index.php/api/v1/course/reserve?id=1
+[ log ] blacky.com/index.php/api/v1/course/reserve?id=1 [运行时间：0.437640s][吞吐率：2.28req/s] [内存消耗：3,876.87kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2017-11-29T19:36:21+08:00 ] ::1 ::1 GET /index.php/api/v1/course/reserve?id=4
+[ log ] blacky.com/index.php/api/v1/course/reserve?id=4 [运行时间：0.138371s][吞吐率：7.23req/s] [内存消耗：3,875.05kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2017-11-29T19:37:38+08:00 ] ::1 ::1 GET /index.php/api/v1/course/reserve?id=4
+[ log ] blacky.com/index.php/api/v1/course/reserve?id=4 [运行时间：0.194451s][吞吐率：5.14req/s] [内存消耗：3,875.27kb] [文件加载：60]
+
+---------------------------------------------------------------
