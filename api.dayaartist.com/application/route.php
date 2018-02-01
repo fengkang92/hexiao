@@ -25,6 +25,7 @@ Route::get('api/:version/wxshare/share', 'api/:version.Wxshare/share');
 Route::get('api/:version/matrixs/newsPush', 'api/:version.matrixs/newsPush');
 Route::get('api/:version/matrixs/newsPop', 'api/:version.matrixs/newsPop');
 Route::get('api/:version/matrixs/newsClear', 'api/:version.matrixs/newsClear');
+Route::get('api/:version/matrixs/testNewsPush', 'api/:version.matrixs/testNewsPush');
 
 //Sample
 //Route::get('api/:version/sample/:key', 'api/:version.Sample/getSample');

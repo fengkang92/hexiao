@@ -34,6 +34,23 @@ class Matrixs extends Controller
         echo $callback.'('.json_encode($data).')';
     }
 
+    public function testNewsPush($id)
+    {
+        if (!is_numeric($id)) {
+            return [
+                'code' => 400,
+                'msg' => '参数异常'
+            ];
+        }   
+        $redis = new Redis();
+        
+        $res = $redis->lpush('matrix',$id);
+        /*$num = $redis->lrange('matrix',0,-1);
+        echo $res.'<br>';
+        print_r($num);die;*/
+        return $res;
+    }
+
     /**
      * 矩阵出队
      * @param int $id 矩阵ID
@@ -44,10 +61,17 @@ class Matrixs extends Controller
     {  
         $redis = new Redis();
         $res = $redis->rpop('matrix');
+
         /*$num = $redis->lrange('matrix',0,-1);
         echo $res.'<br>';
         print_r($num);die;*/
-        $data['data'] = $res;
+
+        if (empty($res)) {
+            $data['data'] = 0; 
+        }else{
+           $data['data'] = $res; 
+        }
+
         return $data;
     }
 
