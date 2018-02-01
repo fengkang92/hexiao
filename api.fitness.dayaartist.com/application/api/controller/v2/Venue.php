@@ -16,10 +16,11 @@ use app\api\model\Ty_venue as VenueModel;
 
 class Venue extends Controller
 {    
-    public function getVenueList()
+    public function getVenueList($longitude,$latitude)
     {
 
-        VenueModel::VenueList();
+        $data = VenueModel::VenueList();
+        
     }
 
 }

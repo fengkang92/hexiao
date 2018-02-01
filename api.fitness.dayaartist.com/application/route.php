@@ -12,42 +12,24 @@ use think\Route;
 
 //接口
 //1. 场馆列表
+Route::get('api/:version/gymnasium/by_user', 'api/:version.gymnasium/getSummaryByUser');
 //2. 场馆经纬度
-//3. 预约课程列表
+Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/getLongitudeLatitudeByUser');
 //4. 场馆详情
+Route::get('api/:version/gymnasium/:id', 'api/:version.gymnasium/getDetail',[], ['id'=>'\d+']);
+//3. 预约课程列表
+Route::get('api/:version/course/by_user', 'api/:version.course/getSummaryByUser');
 //5. 课程详情
+Route::get('api/:version/course/:id', 'api/:version.course/getDetail',[], ['id'=>'\d+']);
 //6. 收藏
+Route::get('api/:version/favourite/collect', 'api/:version.favourite/getCollectByUser');
 //7. 取消收藏
+Route::get('api/:version/favourite/cancel', 'api/:version.favourite/getCancelByUser');
 //8. 收藏列表
+Route::get('api/:version/favourite/by_user', 'api/:version.favourite/getSummaryByUser');
 //9. 订单列表
 //10. 订单详情
 //11. 下单
-//12. 支付
-
-Route::get('api/:version/login', 'api/:version.Login/login');
-
-//Sample
-//Route::get('api/:version/sample/:key', 'api/:version.Sample/getSample');
-Route::get('api/:version/sample/sms', 'api/:version.Sample/sendSMS');
-Route::get('api/:version/sample/test4', 'api/:version.Sample/test4');
-
-
-//Category
-Route::get('api/:version/category', 'api/:version.Category/getCategories'); 
-
-//Token
-Route::post('api/:version/token/user', 'api/:version.Token/getToken');
-
-Route::post('api/:version/token/app', 'api/:version.Token/getAppToken');
-Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken');
-
-//Users
-Route::post('api/:version/users/user_info', 'api/:version.Users/addUserInfo');
-
-//Address
-Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
-Route::get('api/:version/address', 'api/:version.Address/getUserAddress');
-
 //Order
 Route::post('api/:version/order', 'api/:version.Order/placeOrder');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);
@@ -60,18 +42,11 @@ Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
 Route::get('api/:version/order/paginate', 'api/:version.Order/getSummary');
 Route::get('api/:version/order/generateOrder', 'api/:version.Order/generateOrder');
 Route::get('api/:version/order/getOrder', 'api/:version.Order/getOrder');
-
-//order
-Route::post('booking/:version/order/check_stock','booking/:version.Order/checkTimeStock');
-//Route::post('booking/:version/order/lock_stock','booking/:version.Order/lockTimeStock');
-Route::post('booking/:version/order/confirm_pay','booking/:version.Order/confirmPayStatus');
-
+//12. 支付
 //Pay
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
 Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');
 Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');
 Route::post('api/:version/pay/concurrency', 'api/:version.Pay/notifyConcurrency');
 
-//场馆列表
-Route::post('api/:version/venue/getVenueList', 'api/:version.Venue/getVenueList');
 

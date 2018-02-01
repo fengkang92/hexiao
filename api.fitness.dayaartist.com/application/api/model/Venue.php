@@ -22,7 +22,7 @@ class Ty_venue extends BaseModel
      */
     public static function VenueList()
     {
-    	$course = self::where('sid',$sid)->find()->toArray();
-    	return $course;
+    	$venue = self::select()->toArray();
+    	return $venue;
     }
 }
