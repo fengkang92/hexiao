@@ -18,7 +18,7 @@ Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/
 //4. 场馆详情
 Route::get('api/:version/gymnasium/:id', 'api/:version.gymnasium/getDetail',[], ['id'=>'\d+']);
 //3. 预约课程列表
-Route::get('api/:version/course/by_user', 'api/:version.course/getSummaryByUser');
+Route::get('api/:version/course/courseTimeList', 'api/:version.Course/courseTimeList');
 //5. 课程详情
 Route::get('api/:version/course/:id', 'api/:version.course/getDetail',[], ['id'=>'\d+']);
 //6. 收藏

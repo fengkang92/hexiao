@@ -8,7 +8,7 @@
 
 namespace app\api\model;
 
-class Ty_venue extends BaseModel
+class Ty_venue_branch extends BaseModel
 {
     protected $autoWriteTimestamp = true;
     protected $hidden = ['create_time', 'update_time'];

@@ -12,23 +12,22 @@ namespace app\api\controller\v2;
 
 use app\api\validate\IDMustBePositiveInt;
 use think\Controller;
-use app\api\model\Ty_venue as VenueModel;
-use app\api\model\Ty_venue as VenueModel;
+use app\api\model\Ty_venue_branch as venueBranch;
+use app\api\model\Ty_course_arrange as CourseArrange;
 
 class Venue extends Controller
 {   
     /**
      * 场馆列表
-     * @param int $user_id 用户id号
-     * @param int $time_id 时间id号
-     * @param int $device_name 门锁名称
+     * @param int $longitude 经度
+     * @param int $latitude 纬度
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function getVenueList($longitude,$latitude)
+    public function getVenueList()
     {
-
-        $data = VenueModel::VenueList();
+        $data = venueBranch::VenueList();
+        
         if (empty($data)) {
             return [
                 'code' => 404,
@@ -41,6 +40,7 @@ class Venue extends Controller
             $data[$key]['distance'] = $distance;
         }
 
+        sortArrByOneField($data,'distance',false);
         return $data;
     }
 
@@ -53,7 +53,29 @@ class Venue extends Controller
     public function getVenueDetails($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $data = VenueModel::VenueDetails($id);
+        $data = venueBranch::VenueDetails($id);
+        if (empty($data)) {
+            return [
+                'code' => 404,
+                'msg' => '暂无数据'
+            ];
+        }
+
+        return $data->toArray();
+    }
+
+    /**
+     * 课程安排
+     * @param int $id 场馆分店ID
+     * @return \think\Paginator
+     * @throws ThemeException
+     */
+    public function courseTimeList($id,$dates=date('Y-m-d'))
+    {
+        echo date('Y-m-d', strtotime('+7 days'));die;
+        (new IDMustBePositiveInt())->goCheck();
+        
+        $data = CourseArrange::CourseTimeList($id,$dates);
         if (empty($data)) {
             return [
                 'code' => 404,
