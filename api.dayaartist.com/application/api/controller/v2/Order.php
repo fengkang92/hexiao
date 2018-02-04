@@ -255,8 +255,12 @@ class Order extends BaseController
     public function getOrder()
     {
         $data = Db::table('order')->order('id desc')->limit(50)->column('order_no');
-        echo '<pre>';
-        print_r($data);
+        foreach ($data as $value){
+            echo $value;
+            echo "<br/>";
+        }
+//        echo '<pre>';
+//        print_r($data);
     }
 }
 

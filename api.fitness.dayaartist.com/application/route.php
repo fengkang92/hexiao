@@ -49,4 +49,3 @@ Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');
 Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');
 Route::post('api/:version/pay/concurrency', 'api/:version.Pay/notifyConcurrency');
 
-
