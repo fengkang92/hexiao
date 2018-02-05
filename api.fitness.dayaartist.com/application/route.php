@@ -16,17 +16,17 @@ Route::get('api/:version/venue/venueList', 'api/:version.Venue/getVenueList');
 //2. 场馆经纬度
 Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/getLongitudeLatitudeByUser');
 //4. 场馆详情
-Route::get('api/:version/gymnasium/:id', 'api/:version.gymnasium/getDetail',[], ['id'=>'\d+']);
+Route::get('api/:version/venue/:id', 'api/:version.venue/getVenueDetails',[], ['id'=>'\d+']);
 //3. 预约课程列表
 Route::get('api/:version/course/courseTimeList', 'api/:version.Course/courseTimeList');
 //5. 课程详情
 Route::get('api/:version/course/:id', 'api/:version.course/getDetail',[], ['id'=>'\d+']);
 //6. 收藏
-Route::get('api/:version/favourite/collect', 'api/:version.favourite/getCollectByUser');
+Route::get('api/:version/collection/collect', 'api/:version.Collection/collectByUser');
 //7. 取消收藏
-Route::get('api/:version/favourite/cancel', 'api/:version.favourite/getCancelByUser');
+Route::get('api/:version/collection/cancel', 'api/:version.Collection/cancelCollect');
 //8. 收藏列表
-Route::get('api/:version/favourite/by_user', 'api/:version.favourite/getSummaryByUser');
+Route::get('api/:version/collection/by_user', 'api/:version.Collection/getSummaryByUser');
 //9. 订单列表
 //10. 订单详情
 //11. 下单

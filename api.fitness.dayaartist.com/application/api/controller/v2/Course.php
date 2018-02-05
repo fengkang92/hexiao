@@ -15,6 +15,7 @@ use think\Controller;
 use app\api\model\Ty_venue_branch as venueBranch;
 use app\api\model\Ty_course_arrange as CourseArrange;
 use app\api\model\Ty_img as ImgModel;
+use app\api\model\Ty_course as CourseModel;
 
 class Course extends Controller
 {   
@@ -36,23 +37,32 @@ class Course extends Controller
         $TimeInfo = array();
 
         $CourseTime = CourseArrange::CourseTimeList($id,$start_date,$end_date); //课程时间列表
-        $Venue = Ty_venue_branch::VenueDetails($id);   //场馆信息
-        $venueImg = ImgModel::getManyImg($Venue['img_id']);
-
-
-        if (empty($data)) {
+        //print_r($CourseTime);die;
+        if (empty($CourseTime)) {
             return [
                 'code' => 404,
                 'msg' => '暂无课程'
             ];
+        }else{
+            $CourseTime = $CourseTime->toArray();
         }
 
-        
+        $Venue = venueBranch::VenueDetails($id);   //场馆信息
+        $venueImg = ImgModel::getManyImg($Venue['img_id']);
+
+        foreach ($venueImg as $key => $v) {
+           $TimeInfo['img'][] = $v['img_url'];
+        }
+
+        $weekarray=array("日","一","二","三","四","五","六");
+
         foreach ($CourseTime as $key => $v) {
-            
+            $week = $weekarray[date("w",strtotime($v['dates']))];
+
+            $TimeInfo['time'][$week] = array('course_name'=>$v['course']['name'],'teacher_name'=>$v['teacher']['name'],'time'=>date('H:i',$v['start_time']).'-'.date('H:i',$v['end_time']),'price'=>$v['course']['price']);
         }
 
-        return $data->toArray();
+        return $TimeInfo;
     }
 
 }

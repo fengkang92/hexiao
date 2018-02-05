@@ -57,15 +57,22 @@ class Venue extends Controller
     public function getVenueDetails($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        $data = VenueModel::VenueDetails($id);
-        if (empty($data)) {
+        $venue = VenueBranch::VenueDetails($id);
+
+        if (empty($venue)) {
             return [
                 'code' => 404,
-                'msg' => '暂无数据'
+                'msg' => '参数异常'
             ];
         }
 
-        return $data->toArray();
+        $img = ImgModel::getManyImg($venue['img_id']);
+
+        foreach ($img as $key => $v) {
+            $venue['img'][] = $v['img_url'];
+        }
+        print_r($venue);die;
+        return $venue;
     }
 
 }

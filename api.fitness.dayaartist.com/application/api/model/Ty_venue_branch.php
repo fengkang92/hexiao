@@ -34,7 +34,7 @@ class Ty_venue_branch extends BaseModel
     public static function VenueDetails($id)
     {
         $where = array('id'=>$id,'status'=>1);
-        $venueData = self::where('sid',$sid)->find();
+        $venueData = self::where('id',$id)->find()->toArray();
         return $venueData;
     }
     

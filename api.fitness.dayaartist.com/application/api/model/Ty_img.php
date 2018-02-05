@@ -14,14 +14,25 @@ class Ty_img extends BaseModel
     //protected $hidden = ['create_time','update_time','main_img_id','img_id','logo_id'];
 
     /**
-     * 获取课程时间列表
-     * @param $sid 盒子ID
-     * @param bool $paginate
+     * 获取一张图片
+     * @param $id 盒子ID
      * @return \think\Paginator
      */
     public static function getOneImg($id)
     {
     	$main_img = self::where('id',$id)->find()->toArray();
     	return $main_img;
+    }
+
+    /**
+     * 获取多张图片
+     * @param $id 多个id
+     * @return \think\Paginator
+     */
+    public static function getManyImg($id)
+    {
+        $where['id'] = array('in',$id);
+        $main_img = self::where($where)->select()->toArray();
+        return $main_img;
     }
 }
