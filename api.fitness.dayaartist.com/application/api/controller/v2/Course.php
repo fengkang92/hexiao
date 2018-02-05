@@ -25,11 +25,12 @@ class Course extends Controller
      */
     public function courseTimeList($id,$dates='')
     {
+        (new IDMustBePositiveInt())->goCheck();
+        
         if (empty($dates)) {
-            $start_date = date('Y-m-d');
+            $start_date = date('Y-m-d', strtotime('-1 days'));
         }
         $end_date = date('Y-m-d', strtotime('+7 days'));
-        (new IDMustBePositiveInt())->goCheck();
         
         $data = CourseArrange::CourseTimeList($id,$start_date,$end_date);
         if (empty($data)) {
