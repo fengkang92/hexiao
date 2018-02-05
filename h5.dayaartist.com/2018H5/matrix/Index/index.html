@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title class="title">Lights Photo — Let’ s Photo</title>
+    <title class="title">华熙灯光游乐园·灯光矩阵</title>
     <link rel="stylesheet" href="../Public/css/main.css">
     <script type="text/javascript" src="../Public/js/setviewport.js"></script>
     <script type="text/javascript" src="../Public/js/jquery-2.1.1.min.js"></script>
@@ -32,19 +32,22 @@
             <div class="p1-8"><img src="../Public/images/p1-10.png" alt=""></div>
             <div class="p1-9"><img src="../Public/images/p1-11.png" alt=""></div>
             <div class="p1-10"><img src="../Public/images/p1-1.png" alt=""></div>
-            <div class="input">
-                <input id="input" type="text" placeholder="请输入12位票号">
-            </div>
-            <div class="sure"><img src="../Public/images/sure.png" alt=""></div>
-
+            <div class="start"><img src="../Public/images/p1-2.png" alt=""></div>
         </div>
         <div class="page2 hide">
             <div class="bg2"></div>
-            <div class="p2-1"><img src="../Public/images/p2-1.png" alt=""></div>
-            <div class="p2-2"><img src="../Public/images/p2-2.png" alt=""></div>
-            <div class="p2-3"><img src="../Public/images/p2-3.png" alt=""></div>
-            <div class="qrcode"><img id="qrcode" src="" alt=""></div>
-            <div class="code">000000000000</div>
+            <div class="box">
+                <div class="box-item" data-id='1'><img src="../Public/images/item-1.png" alt=""></div>
+                <div class="box-item" data-id='2'><img src="../Public/images/item-2.png" alt=""></div>
+                <div class="box-item" data-id='3'><img src="../Public/images/item-3.png" alt=""></div>
+                <div class="box-item" data-id='4'><img src="../Public/images/item-4.png" alt=""></div>
+                <div class="box-item" data-id='5'><img src="../Public/images/item-5.png" alt=""></div>
+                <div class="box-item" data-id='6'><img src="../Public/images/item-6.png" alt=""></div>
+                <div class="box-item" data-id='7'><img src="../Public/images/item-7.png" alt=""></div>
+                <div class="box-item" data-id='8'><img src="../Public/images/item-8.png" alt=""></div>
+                <div class="box-item" data-id='9'><img src="../Public/images/item-9.png" alt=""></div>
+                <!-- <div class="box-item"><img src="../Public/images/add.png" alt=""></div> -->
+            </div>
         </div>
     </div>
     <audio src="../Public/images/bg.mp3" loop id="media" autoplay="autoplay"></audio>
@@ -56,14 +59,13 @@
     //正式服务器地址:
     var url_QiongHe_SB = "https://api.dayaartist.com/index.php/api/v2/platform/share";
     var baseUrl=location.href.split('#')[0];
-
     var _data;
     $(function(){
         $.ajax({
             type: "get",
             async: false,
             url: url_QiongHe_SB,
-            dataType: "json",
+            // dataType: "jsonp",
             data:{
                 url:baseUrl
             },
@@ -75,15 +77,15 @@
                 console.log(_data);
             },
             error: function(){
-//                alert('fail');
+               alert('fail');
             }
         });
     });
     var wxData = {
-        "imgUrl":"http://h5.dayaartist.com/2017H5/20171219H5/Public/images/share.png",
-        "link": "http://h5.dayaartist.com/2017H5/20171219H5/Index/",
-        "title": "五棵松LIVE 华熙灯光节",
-        "desc": "独享VIP通道！“作”孽的健康夜生活，亮！瞎！眼！"
+        "imgUrl":"http://h5.dayaartist.com/2018H5/matrix/Public/images/share.png",
+        "link": "",
+        "title": "华熙灯光游乐园·灯光矩阵",
+        "desc": "撩人的夜色怎么忍心辜负，华熙来了，你又何不走进去？"
     };
     //分享设置
     function setShare(){

@@ -27,6 +27,7 @@ $(function(){
     var musicPath=loadingPath+'bg.mp3';//是否含有背景音乐，有就传路径，没有就为'';
     function setupManifest() {
         manifest=[
+            {src:loadingPath+'add.png'},
             {src:loadingPath+'bg1.png'},
             {src:loadingPath+'bg2.png'},
             {src:loadingPath+'bg2.gif'},
@@ -43,9 +44,14 @@ $(function(){
             {src:loadingPath+'p1-9.png'},
             {src:loadingPath+'p1-10.png'},
             {src:loadingPath+'p1-11.png'},
-            {src:loadingPath+'p2-1.png'},
-            {src:loadingPath+'p2-2.png'},
-            {src:loadingPath+'p2-3.png'},
+            {src:loadingPath+'item-1.png'},
+            {src:loadingPath+'item-2.png'},
+            {src:loadingPath+'item-3.png'},
+            {src:loadingPath+'item-4.png'},
+            {src:loadingPath+'item-5.png'},
+            {src:loadingPath+'item-6.png'},
+            {src:loadingPath+'item-7.png'},
+
     ]
 }
     //可调节的参数
@@ -53,7 +59,7 @@ $(function(){
     var p1=new TimelineMax();
 
     //初始化阻止屏幕双击，当有表单页的时候，要关闭阻止事件，否则不能输入文字了，请传入false值，再次运行即可
-    initPreventPageDobuleTap(false);
+    initPreventPageDobuleTap(true);
     //loading
     var audio=document.getElementById('media');
     audio.src=musicPath;
@@ -112,7 +118,7 @@ $(function(){
     //首屏
     function page1() {
         p1.add(TweenMax.from('.p1-10',.8, { alpha: 0,scale:4,ease:Expo.easeOut}));
-        p1.add(TweenMax.from('.input,.sure',.8, { alpha: 0,scale:0,ease:Back.easeOut}));
+        p1.add(TweenMax.from('.start',.8, { alpha: 0,scale:0,ease:Back.easeOut}));
         p1.pause();
     }
     function reset(){
@@ -135,37 +141,40 @@ $(function(){
         TweenMax.to('.p1-9',3, { rotation:360,repeat:-1,ease:Linear.easeIn});
     };
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //确定
-    $('.sure').on(touchstart,function () {
-        var code=$('#input').val();
-        if(code.length==12){
+    //点击进入第二屏
+    $('.start').on(touchstart,function () {
+        $('.page1').hide();
+        $('.page2').fadeIn();
+    });
+    //点击
+    var wait=true;
+    $('.box-item').on(touchstart,function(){
+        var id=$(this).attr('data-id');
+        if(wait){
             $.ajax({
-                url:'https://api.dayaartist.com/index.php/api/v2/order/by_checker/'+code,
-                type:"GET",
-                dataType:"json",
+                url:'https://api.dayaartist.com/index.php/api/v2/matrixs/newsPush?id='+id,
+                dataType:'jsonp',
+                jsonp:'callback',
+                type:'GET',
                 success:function (res) {
                     console.log(res);
                     if(res.code==200){
-                        initPreventPageDobuleTap(false);
-                        $('#qrcode').attr('src',res.data.code_img);
-                        $('.code').text(res.data.order_no);
-                        $('.page1').hide();
-                        $('.page2').fadeIn();
+                        wait=false;
+                        alert('预约成功，精彩即刻为您呈现！')
                     }else{
-                        alert(res.msg);
-                        return;
+                        alert('系统错误，请稍后重新尝试！')
                     }
                 },
-                fail:function (res) {
-                    alert(res.msg);
-                    return;
+                fail:function (err) {
+                    alert('系统错误，请稍后重新尝试！')
                 }
-
             })
         }else{
-            alert("票号长度为12位！")
+             setTimeout(function() {
+                 wait=true;
+             }, 5000);
+             alert('您点击的太快了，请休息一下再尝试！')
         }
-
     });
 
     //是否允许用户滑动页面
