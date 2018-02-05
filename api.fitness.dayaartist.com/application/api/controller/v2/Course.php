@@ -14,6 +14,7 @@ use app\api\validate\IDMustBePositiveInt;
 use think\Controller;
 use app\api\model\Ty_venue_branch as venueBranch;
 use app\api\model\Ty_course_arrange as CourseArrange;
+use app\api\model\Ty_img as ImgModel;
 
 class Course extends Controller
 {   
@@ -23,21 +24,32 @@ class Course extends Controller
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function courseTimeList($id,$dates='')
+    public function courseTimeList($id,$start_date='')
     {
         (new IDMustBePositiveInt())->goCheck();
         
-        if (empty($dates)) {
+        if (empty($start_date)) {
             $start_date = date('Y-m-d', strtotime('-1 days'));
         }
         $end_date = date('Y-m-d', strtotime('+7 days'));
-        
-        $data = CourseArrange::CourseTimeList($id,$start_date,$end_date);
+
+        $TimeInfo = array();
+
+        $CourseTime = CourseArrange::CourseTimeList($id,$start_date,$end_date); //课程时间列表
+        $Venue = Ty_venue_branch::VenueDetails($id);   //场馆信息
+        $venueImg = ImgModel::getManyImg($Venue['img_id']);
+
+
         if (empty($data)) {
             return [
                 'code' => 404,
-                'msg' => '暂无数据'
+                'msg' => '暂无课程'
             ];
+        }
+
+        
+        foreach ($CourseTime as $key => $v) {
+            
         }
 
         return $data->toArray();

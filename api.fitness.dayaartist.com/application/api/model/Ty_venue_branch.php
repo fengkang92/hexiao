@@ -26,8 +26,8 @@ class Ty_venue_branch extends BaseModel
     }
 
     /**
-     * 获取盒子信息
-     * @param $sid 盒子ID
+     * 获取场馆信息
+     * @param $id 场馆ID
      * @param bool $paginate
      * @return \think\Paginator
      */

@@ -15,15 +15,15 @@ class Ty_course_arrange extends BaseModel
 
     /**
      * 获取课程时间列表
-     * @param $sid 盒子ID
-     * @param bool $paginate
+     * @param $sid 场馆ID
+     * @param $start_date 开始时间
+     * @param $end_date   结束时间
      * @return \think\Paginator
      */
-    public static function CourseTimeList($id,$dates)
+    public static function CourseTimeList($id,$start_date,$end_date)
     {
-        $dates = intval($dates) - 1;
-        self::where('id',$id)->where('dates','<', $dates)->where('end_time','>',time())->find();
-    	$venue = self::where()->select()->toArray();
-    	return $venue;
+        //$CourseTime = self::where('venue_branch_id',$id)->whereTime('dates','between',['2018-02-05','2018-02-11'])->select();
+        $CourseTime = self::where('venue_branch_id',$id)->where('dates','>',$start_date)->where('dates','<',$end_date)->select();
+    	return $CourseTime;
     }
 }
