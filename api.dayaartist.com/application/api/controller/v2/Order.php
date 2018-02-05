@@ -252,9 +252,9 @@ class Order extends BaseController
     /**
      * 订单号取出
      */
-    public function getOrder()
+    public function getOrder($num)
     {
-        $data = Db::table('order')->order('id desc')->limit(50)->column('order_no');
+        $data = Db::table('order')->order('id desc')->limit($num)->column('order_no');
         foreach ($data as $value){
             echo $value;
             echo "<br/>";
