@@ -8,8 +8,15 @@
 
 namespace app\api\model;
 
-class Ty_teacher extends BaseModel
+class TyTeacher extends BaseModel
 {
     protected $autoWriteTimestamp = true;
     protected $hidden = ['create_time', 'update_time'];
+
+    //图片前缀
+    public function getImgAttr($value, $data)
+    {
+        return $this->prefixImgUrl($value, $data);
+    }
+
 }

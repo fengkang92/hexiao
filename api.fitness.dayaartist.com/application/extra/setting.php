@@ -6,5 +6,5 @@
  * Time: 14:08
  */
 return [
-    'img_prefix' => 'https://api.dayaartist.com'
+    'img_prefix' => 'http://api.fitness.dayaartist.com'
 ];

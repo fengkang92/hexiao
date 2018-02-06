@@ -12,8 +12,8 @@ namespace app\api\controller\v2;
 
 use app\api\validate\IDMustBePositiveInt;
 use think\Controller;
-use app\api\model\Ty_venue_branch as VenueBranch;
-use app\api\model\Ty_img as ImgModel;
+use app\api\model\TyVenueBranch as VenueBranch;
+use app\api\model\TyImg as ImgModel;
 
 class Venue extends Controller
 {   
@@ -50,7 +50,7 @@ class Venue extends Controller
 
     /**
      * 场馆详情
-     * @param int $id 预约时间ID
+     * @param int $id 场馆ID
      * @return \think\Paginator
      * @throws ThemeException
      */
@@ -71,7 +71,7 @@ class Venue extends Controller
         foreach ($img as $key => $v) {
             $venue['img'][] = $v['img_url'];
         }
-        print_r($venue);die;
+
         return $venue;
     }
 

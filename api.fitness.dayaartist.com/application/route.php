@@ -21,15 +21,17 @@ Route::get('api/:version/venue/:id', 'api/:version.venue/getVenueDetails',[], ['
 Route::get('api/:version/course/courseTimeList', 'api/:version.Course/courseTimeList');
 //5. 课程详情
 Route::get('api/:version/course/:id', 'api/:version.course/getDetail',[], ['id'=>'\d+']);
-//6. 收藏
+//6. 预约课程详情
+Route::get('api/:version/course/courseData', 'api/:version.course/reservedCourseDetails');
+//7. 收藏
 Route::get('api/:version/collection/collect', 'api/:version.Collection/collectByUser');
-//7. 取消收藏
+//8. 取消收藏
 Route::get('api/:version/collection/cancel', 'api/:version.Collection/cancelCollect');
-//8. 收藏列表
+//9. 收藏列表
 Route::get('api/:version/collection/by_user', 'api/:version.Collection/getSummaryByUser');
-//9. 订单列表
-//10. 订单详情
-//11. 下单
+//10. 订单列表
+//11. 订单详情
+//12. 下单
 //Order
 Route::post('api/:version/order', 'api/:version.Order/placeOrder');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);

@@ -8,10 +8,16 @@
 
 namespace app\api\model;
 
-class Ty_img extends BaseModel
+class TyImg extends BaseModel
 {
     protected $autoWriteTimestamp = true;
     //protected $hidden = ['create_time','update_time','main_img_id','img_id','logo_id'];
+
+    //图片前缀
+    public function getImgUrlAttr($value, $data)
+    {
+        return $this->prefixImgUrl($value, $data);
+    }
 
     /**
      * 获取一张图片

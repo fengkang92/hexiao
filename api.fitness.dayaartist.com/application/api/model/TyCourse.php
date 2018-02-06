@@ -8,7 +8,7 @@
 
 namespace app\api\model;
 
-class Ty_course extends BaseModel
+class TyCourse extends BaseModel
 {
     protected $autoWriteTimestamp = true;
     protected $hidden = ['create_time', 'update_time'];
