@@ -13,7 +13,8 @@ namespace app\api\controller\v2;
 use app\api\validate\IDMustBePositiveInt;
 use think\Controller;
 use app\api\service\Token;
-use app\api\model\Ty_collection as CollectionModel;
+use app\api\model\TyCollection as CollectionModel;
+use app\api\model\TyImg as ImgModel;
 
 class Collection extends Controller
 {   
@@ -70,5 +71,31 @@ class Collection extends Controller
                 'msg' => '成功'
             ];
         }
+    }
+
+    /**
+     * 收藏列表
+     * @param int $id 用户ID
+     * @return \think\Paginator
+     * @throws ThemeException
+     */
+    public function collectionList($id,$longitude='116.468453',$latitude='39.899186')
+    {
+        (new IDMustBePositiveInt())->goCheck();
+        $collection = CollectionModel::getUserCollection($id);
+        if (empty($collection)) {
+            return [
+                'code' => 404,
+                'msg' => '您暂时还没有收藏场馆哦'
+            ];
+        }
+        $collectionData = array();
+        foreach ($collection as $key => $v) {
+            $distance = getdistances($longitude,$latitude,$v['venue']['longitude'],$v['venue']['latitude']);
+            $distance = round($distance/1000,2).'km';
+            $venue_img = ImgModel::getOneImg($v['venue']['main_img_id']);
+            $collectionData[] = array('venue_id'=>$v['venue']['id'],'name'=>$v['venue']['name'],'address'=>$v['venue']['address'],'img'=>$venue_img['img_url'],'status'=>$v['status'],'distance'=>$distance);
+        }
+        return $collectionData;
     }
 }

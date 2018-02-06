@@ -14,7 +14,7 @@ use think\Route;
 //1. 场馆列表
 Route::get('api/:version/venue/venueList', 'api/:version.Venue/getVenueList');
 //2. 场馆经纬度
-Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/getLongitudeLatitudeByUser');
+//Route::get('api/:version/gymnasium/longitude_latitude', 'api/:version.gymnasium/getLongitudeLatitudeByUser');
 //4. 场馆详情
 Route::get('api/:version/venue/:id', 'api/:version.venue/getVenueDetails',[], ['id'=>'\d+']);
 //3. 预约课程列表
@@ -28,7 +28,10 @@ Route::get('api/:version/collection/collect', 'api/:version.Collection/collectBy
 //8. 取消收藏
 Route::get('api/:version/collection/cancel', 'api/:version.Collection/cancelCollect');
 //9. 收藏列表
-Route::get('api/:version/collection/by_user', 'api/:version.Collection/getSummaryByUser');
+Route::get('api/:version/collection/collectionList', 'api/:version.Collection/collectionList');
+//搜索
+Route::get('api/:version/search', 'api/:version.Search/getSearchInfo');
+
 //10. 订单列表
 //11. 订单详情
 //12. 下单
