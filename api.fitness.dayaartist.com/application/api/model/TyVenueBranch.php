@@ -13,6 +13,12 @@ class TyVenueBranch extends BaseModel
     protected $autoWriteTimestamp = true;
     protected $hidden = ['create_time', 'update_time'];
 
+    //关联收藏表
+    public function collection()
+    {
+        return $this->belongsTo('TyCollection','id','venue_branch_id');
+    }
+
     /**
      * 获取盒子信息
      * @param $sid 盒子ID
@@ -21,7 +27,7 @@ class TyVenueBranch extends BaseModel
      */
     public static function VenueList()
     {
-    	$venue = self::select()->toArray();
+    	$venue = self::with('collection')->select()->toArray();
     	return $venue;
     }
 
