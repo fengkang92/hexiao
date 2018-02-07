@@ -32,9 +32,30 @@ Route::get('api/:version/collection/collectionList', 'api/:version.Collection/co
 //搜索
 Route::get('api/:version/search', 'api/:version.Search/getSearchInfo');
 
+
+
 //10. 订单列表
 //11. 订单详情
 //12. 下单
+//12. 支付
+//Sample
+//Route::get('api/:version/sample/:key', 'api/:version.Sample/getSample');
+Route::get('api/:version/sample/sms', 'api/:version.Sample/sendSMS');
+Route::get('api/:version/sample/test4', 'api/:version.Sample/test4');
+
+//Token
+Route::post('api/:version/token/user', 'api/:version.Token/getToken');
+
+Route::post('api/:version/token/app', 'api/:version.Token/getAppToken');
+Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken');
+
+//Users
+Route::post('api/:version/users/user_info', 'api/:version.Users/addUserInfo');
+
+//Address
+Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
+Route::get('api/:version/address', 'api/:version.Address/getUserAddress');
+
 //Order
 Route::post('api/:version/order', 'api/:version.Order/placeOrder');
 Route::get('api/:version/order/:id', 'api/:version.Order/getDetail',[], ['id'=>'\d+']);
@@ -47,10 +68,14 @@ Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
 Route::get('api/:version/order/paginate', 'api/:version.Order/getSummary');
 Route::get('api/:version/order/generateOrder', 'api/:version.Order/generateOrder');
 Route::get('api/:version/order/getOrder', 'api/:version.Order/getOrder');
-//12. 支付
+
 //Pay
 Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
 Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');
 Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');
 Route::post('api/:version/pay/concurrency', 'api/:version.Pay/notifyConcurrency');
+
+//Message
+Route::post('api/:version/message/delivery', 'api/:version.Message/sendDeliveryMsg');
+
 
