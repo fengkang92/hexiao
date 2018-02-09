@@ -9,7 +9,7 @@
 namespace app\api\service;
 
 
-use app\api\model\BoxServiceTime;
+use app\api\model\TyCourseArrange;
 use app\api\model\OrderProduct;
 use app\api\model\Product;
 use app\api\model\UserAddress;
@@ -84,9 +84,9 @@ class Order
             $orderNo = $this->makeOrderNo();
             $order = new \app\api\model\Order();
             $order->user_id = $this->uid;
-            $order->supplier_id = $this->products[0]['supplier_id'];
-            $order->sid = $this->products[0]['sid'];
-            $order->service_id = $this->products[0]['service_id'];
+            $order->supplier_id = $this->products[0]['venue_branch_id'];
+            $order->sid = $this->products[0]['course_id'];
+            $order->service_id = $this->products[0]['teacher_id'];
             $order->time_id = $this->oProducts[0]['product_id'];
             $order->order_no = $orderNo;
             $order->total_price = $snap['orderPrice'];
@@ -139,8 +139,8 @@ class Order
         $snap['orderPrice'] = $status['orderPrice'];
         $snap['totalCount'] = $status['totalCount'];
         $snap['pStatus'] = $status['pStatusArray'];
-        $snap['snapName'] = $this->products[0]['sname'].'-'.$this->products[0]['pname'];
-        $snap['snapImg'] = $this->products[0]['main_img_url'];
+        $snap['snapName'] = $this->products[0]['course']['name'] . '-' . $this->products[0]['teacher']['name'];
+        $snap['snapImg'] = $this->products[0]['teacher']['img'];
 
         if (count($this->products) > 1) {
             $snap['snapName'] .= '等';
@@ -215,11 +215,11 @@ class Order
         } else {
             $product = $products[$pIndex];
             $pStatus['id'] = $product['id'];
-            $pStatus['name'] = $product['sname'] . '-' . $product['pname'];
+            $pStatus['name'] = $product['course']['name'] . '-' . $product['teacher']['name'];
             $pStatus['counts'] = $oCount;
-            $pStatus['price'] = $product['price'];
-            $pStatus['main_img_url'] = $product['main_img_url'];
-            $pStatus['totalPrice'] = $product['price'] * $oCount;
+            $pStatus['price'] = $product['course']['discount_price'];
+            $pStatus['main_img_url'] = $product['teacher']['img'];
+            $pStatus['totalPrice'] = $product['course']['discount_price'] * $oCount;
 
             if ($product['stock'] - $oCount >= 0) {
                 $pStatus['haveStock'] = true;
@@ -236,7 +236,7 @@ class Order
         foreach ($oProducts as $item) {
             array_push($oPIDs, $item['product_id']);
         }
-        $products = BoxServiceTime::getServiceWithIds($oPIDs);
+        $products = TyCourseArrange::getCourseWithIds($oPIDs);
 //        print_r($products);die();
         return $products;
     }
