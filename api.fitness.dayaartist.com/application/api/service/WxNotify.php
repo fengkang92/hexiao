@@ -9,7 +9,7 @@
 namespace app\api\service;
 
 use app\api\model\Order as OrderModel;
-use app\api\model\Product;
+use app\api\model\TyCourseArrange;
 use app\api\service\Order as OrderService;
 use app\lib\enum\OrderStatusEnum;
 use think\Db;
@@ -53,12 +53,12 @@ class WxNotify extends \WxPayNotify
                     ->find();
                 if ($order->status == 1) {
                     $service = new OrderService();
-                    $stockStatus = $service->checkOrderStock($order->id);
+                    $stockStatus = $service->checkCourseOrderStock($order->id);
                     if ($stockStatus['pass']) {
                         $this->updateOrderStatus($order->id, true);
                         $this->reduceStock($stockStatus);
-                        $this->addCodeImgById($order->id);
-                        $this->sendSMS($order->feature,$order->express,$order->order_no,$order->total_count);
+//                        $this->addCodeImgById($order->id);
+//                        $this->sendSMS($order->feature,$order->express,$order->order_no,$order->total_count);
 
                     } else {
                         $this->updateOrderStatus($order->id, false);
@@ -80,7 +80,7 @@ class WxNotify extends \WxPayNotify
     {
         foreach ($stockStatus['pStatusArray'] as $singlePStatus) {
             //            $singlePStatus['count']
-            Product::where('id', '=', $singlePStatus['id'])
+            TyCourseArrange::where('id', '=', $singlePStatus['id'])
                 ->setDec('stock', $singlePStatus['counts']);
         }
     }

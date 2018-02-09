@@ -52,7 +52,7 @@ class Pay
 //        } else {
 //            $status = $OrderService->checkOrderStock($this->orderID);
 //        }
-        $status = $OrderService->checkOrderStock($this->orderID);
+        $status = $OrderService->checkCourseOrderStock($this->orderID);
         if (!$status['pass']) {
             return $status;
         }
@@ -72,10 +72,10 @@ class Pay
         $wxOrderData->SetOut_trade_no($this->orderNo);
         $wxOrderData->SetTrade_type('JSAPI');
         $wxOrderData->SetTotal_fee($totalPrice * 100);
-        $wxOrderData->SetBody('达雅文化');
+        $wxOrderData->SetBody('区块练生活秀');
         $wxOrderData->SetOpenid($openid);
 //        $wxOrderData->SetNotify_url(config('secure.pay_back_url'));
-        $wxOrderData->SetNotify_url('https://api.dayaartist.com/index.php/api/v2/pay/notify');
+        $wxOrderData->SetNotify_url('https://api.fitness.dayaartist.com/index.php/api/v2/pay/notify');
 
         return $this->getPaySignature($wxOrderData);
     }
