@@ -15,7 +15,7 @@ return [
     // 服务器地址
     'hostname'        => 'localhost',
     // 数据库名
-    'database'        => 'sports',
+    'database'        => 'fitness',
     // 用户名
     'username'        => 'root',
     // 密码
