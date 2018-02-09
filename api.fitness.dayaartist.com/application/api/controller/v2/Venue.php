@@ -43,7 +43,6 @@ class Venue extends Controller
             $data[$key]['log_img'] = $logo_img['img_url'];
         }
 
-
         sortArrByOneField($data,'distance',false);
         return $data;
     }

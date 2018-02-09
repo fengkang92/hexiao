@@ -59,6 +59,19 @@ class TyCourseArrange extends BaseModel
     }
 
     /**
+     * 获取搜索课程时间
+     * @param $sid 场馆ID
+     * @return \think\Paginator
+     */
+    public static function searchCourseTime($id)
+    {   
+        $where['course_id'] = array('in',$id);
+        //$CourseTime = self::where('venue_branch_id',$id)->whereTime('dates','between',['2018-02-05','2018-02-11'])->select();
+        $CourseTimeL = self::with(['course','teacher','venue'])->where($where)->where('start_time','>',time())->select();
+        return $CourseTimeL;
+    }
+
+    /**
      * 获取订单课程信息
      * @param $oPIDs
      * @return array

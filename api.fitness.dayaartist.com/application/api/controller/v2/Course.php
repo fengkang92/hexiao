@@ -25,13 +25,13 @@ class Course extends Controller
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function courseTimeList($id,$start_date='')
+    public function courseTimeList($id)
     {
-        (new IDMustBePositiveInt())->goCheck();
+
+      (new IDMustBePositiveInt())->goCheck();
         
-        if (empty($start_date)) {
-            $start_date = date('Y-m-d', strtotime('-1 days'));
-        }
+
+        $start_date = date('Y-m-d', strtotime('-1 days'));
         $end_date = date('Y-m-d', strtotime('+7 days'));
 
         $TimeInfo = array();
@@ -46,32 +46,52 @@ class Course extends Controller
         }else{
             $CourseTime = $CourseTime->toArray();
         }
+
         /*echo '<pre>';
         print_r($CourseTime);die;*/
         $Venue = venueBranch::VenueDetails($id);   //场馆信息
 
         $venueImg = ImgModel::getManyImg($Venue['img_id']); //场馆图片
-        $logoImg = ImgModel::getOneImg($Venue['logo_id']); //场馆图片
+        //$courseImg = ImgModel::getOneImg($Venue['logo_id']); //场馆图片
 
         foreach ($venueImg as $key => $v) {
            $TimeInfo['img'][] = $v['img_url'];
         }
-        
-        $TimeInfo['logo_img'] = $logoImg['img_url'];
 
-        $weekarray=array("日","一","二","三","四","五","六");
-
+        //$weekarray=array("日","一","二","三","四","五","六");
+        $date = date('Y-m-d');
+        $TimeInfo['dates'] = array();
         foreach ($CourseTime as $key => $v) {
-            $week = $weekarray[date("w",strtotime($v['dates']))];
-            
-            if ($week == $weekarray[date("w")]) {
-                $week = '今天';
+            if ($v['dates'] != $date) {
+                $TimeInfo['time'][$date] = '';
             }
 
-            $TimeInfo['time'][$week][] = array('time_id'=>$v['id'],'course_name'=>$v['course']['name'],'teacher_name'=>$v['teacher']['name'],'time'=>date('H:i',$v['start_time']).'-'.date('H:i',$v['end_time']),'price'=>$v['course']['price']);
+            $courseImg = ImgModel::getOneImg($v['course']['main_img_id']); //课程图片
+            
+            $TimeInfo['time'][$v['dates']][] = array('time_id'=>$v['id'],'course_img'=>$courseImg['img_url'],'course_name'=>$v['course']['name'],'teacher_name'=>$v['teacher']['name'],'date'=>$v['dates'],'time'=>date('H:i',$v['start_time']).'-'.date('H:i',$v['end_time']),'price'=>$v['course']['price']);
+            $date = date("Y-m-d",strtotime("+1 day",strtotime($date)));
+
+            
+            /*if (!in_array($v['dates'], $TimeInfo['dates'])) {
+                $TimeInfo['dates'][] = $v['dates'];
+            }*/
+            
         }
-        
+        /*echo '<pre>';
+        print_r($TimeInfo);die;*/
+        $dates = date('Y-m-d');
+        for ($i=0; $i < 7; $i++) { 
+            if (!isset($TimeInfo['time'][$dates])) {
+                $TimeInfo['time'][$dates] = '';
+            }
+            $dates = date("Y-m-d",strtotime("+1 day",strtotime($dates)));
+        }
+
+        $TimeInfo['time'] = array_values($TimeInfo['time']);
+        /*echo '<pre>';
+        print_r($TimeInfo);die;*/
         return $TimeInfo;
+
     }
 
     /**

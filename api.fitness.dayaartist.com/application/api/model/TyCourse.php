@@ -24,4 +24,27 @@ class TyCourse extends BaseModel
         $CourseTime = self::where('id',$id)->find()->toArray();
         return $CourseTime;
     }
+
+    /**
+     * 搜索课程（名称）
+     * @param $info 搜索内容
+     * @return \think\Paginator
+     */
+    public static function searchCourseName($info)
+    {
+        $course = self::where('name','like',"%{$info}%")->select();
+        return $course;
+    }
+
+    /**
+     * 搜索课程（类型）
+     * @param $info 搜索内容
+     * @return \think\Paginator
+     */
+    public static function searchCourseType($id)
+    {
+        $course = self::where('type_id',$id)->select();
+        return $course;
+    }
+    
 }

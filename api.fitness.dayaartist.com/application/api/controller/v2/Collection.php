@@ -29,6 +29,13 @@ class Collection extends Controller
         (new IDMustBePositiveInt())->goCheck();
         //$uid = Token::getCurrentUid();
         $uid = 1;
+        $data = CollectionModel::getUserCollect($uid,$id);
+        if (!empty($data)) {
+            return [
+                'code'=> 20001,
+                'msg' => '您已收藏该场馆'
+            ];
+        }
         $collection = new CollectionModel;
         $collection->user_id = $uid;
         $collection->venue_branch_id = $id;
@@ -79,10 +86,11 @@ class Collection extends Controller
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function collectionList($id,$longitude='116.468453',$latitude='39.899186')
+    public function collectionList($longitude='116.468453',$latitude='39.899186')
     {
         (new IDMustBePositiveInt())->goCheck();
-        $collection = CollectionModel::getUserCollection($id);
+        $uid = Token::getCurrentUid();
+        $collection = CollectionModel::getUserCollection($uid);
         if (empty($collection)) {
             return [
                 'code' => 404,
@@ -96,6 +104,10 @@ class Collection extends Controller
             $venue_img = ImgModel::getOneImg($v['venue']['main_img_id']);
             $collectionData[] = array('venue_id'=>$v['venue']['id'],'name'=>$v['venue']['name'],'address'=>$v['venue']['address'],'img'=>$venue_img['img_url'],'status'=>$v['status'],'distance'=>$distance);
         }
+
+        sortArrByOneField($collectionData,'distance',false);
+        /*echo '<pre>';
+        print_r($collectionData);die;*/
         return $collectionData;
     }
 }

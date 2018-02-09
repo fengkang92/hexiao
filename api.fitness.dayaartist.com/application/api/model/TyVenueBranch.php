@@ -43,5 +43,28 @@ class TyVenueBranch extends BaseModel
         $venueData = self::where('id',$id)->find()->toArray();
         return $venueData;
     }
+
+    /**
+     * 搜索场馆名称
+     * @param $info 场馆名称
+     * @param bool $paginate
+     * @return \think\Paginator
+     */
+    public static function searchVenueName($info)
+    {
+        $venue = self::where('name','like',"%{$info}%")->select();
+        return $venue;
+    }
     
+    /**
+     * 搜索场馆关键字
+     * @param $info 场馆名称
+     * @param bool $paginate
+     * @return \think\Paginator
+     */
+    public static function searchVenueKeyWord($info)
+    {
+        $venue = self::where('key_word',$info)->select();
+        return $venue;
+    }
 }

@@ -20,6 +20,21 @@ class TyCollection extends BaseModel
     }
 
     /**
+     * 查询用户收藏
+     * @param $uid 用户ID
+     * @param $venue_id 场馆ID
+     * @param bool $paginate
+     * @return \think\Paginator
+     */
+    public static function getUserCollect($uid,$venue_id)
+    {
+        $where = array('user_id'=>$uid,'venue_branch_id'=>$venue_id,'status'=>1);
+        $collection = self::where($where)->find();
+        return $collection;
+    }
+
+
+    /**
      * 用户收藏列表
      * @param $id 用户ID
      * @param bool $paginate
