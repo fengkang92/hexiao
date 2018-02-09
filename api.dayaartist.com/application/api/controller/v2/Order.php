@@ -120,14 +120,6 @@ class Order extends BaseController
 //            ->toArray();
         $data = $pagingOrders->hidden(['snap_items', 'snap_address'])
             ->toArray();
-//        判断订单类型，课程加入设备名称字段
-        foreach ($data as &$p) {
-            if (!empty($p['sid'])) {
-                $boxCourse = BoxCourse::get($p['sid']);
-                $p['deviceName'] = $boxCourse->device_name;
-                $p['uid'] = $uid;
-            }
-        }
         return [
             'current_page' => $pagingOrders->currentPage(),
             'data' => $data
