@@ -56,7 +56,7 @@ class Search extends Controller
             $courseData = array();
             foreach ($courseTime as $key => $v) {
                 $course_img = ImgModel::getOneImg($v['course']['main_img_id']);
-                $courseData[] = array('course_img'=>$course_img['img_url'],'course_name'=>$v['course']['name'],'teacher_name'=>$v['teacher']['name'],'date'=>date('Y-m-d',$v['start_time']),'time'=>date('H:i:s',$v['start_time']).'-'.date('H:i:s',$v['end_time']),'price'=>$v['course']['price'],'venue_key_word'=>$v['venue']['key_word']);
+                $courseData[] = array('time_id'=>$v['id'],'course_img'=>$course_img['img_url'],'course_name'=>$v['course']['name'],'teacher_name'=>$v['teacher']['name'],'date'=>date('Y-m-d',$v['start_time']),'time'=>date('H:i:s',$v['start_time']).'-'.date('H:i:s',$v['end_time']),'price'=>$v['course']['price'],'venue_key_word'=>$v['venue']['key_word']);
             }
             echo '<pre>';
             print_r($courseData);die;

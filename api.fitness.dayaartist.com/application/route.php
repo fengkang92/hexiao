@@ -20,9 +20,9 @@ Route::get('api/:version/venue/:id', 'api/:version.venue/getVenueDetails',[], ['
 //3. 预约课程列表
 Route::get('api/:version/course/courseTimeList', 'api/:version.Course/courseTimeList');
 //5. 课程详情
-Route::get('api/:version/course/:id', 'api/:version.course/getDetail',[], ['id'=>'\d+']);
+Route::get('api/:version/course/:id', 'api/:version.Course/getDetail',[], ['id'=>'\d+']);
 //6. 预约课程详情
-Route::get('api/:version/course/courseData', 'api/:version.course/reservedCourseDetails');
+Route::get('api/:version/course/courseData', 'api/:version.Course/reservedCourseDetails');
 //7. 收藏
 Route::get('api/:version/collection/collect', 'api/:version.Collection/collectByUser');
 //8. 取消收藏
