@@ -26,7 +26,8 @@ class TyImg extends BaseModel
      */
     public static function getOneImg($id)
     {
-    	$main_img = self::where('id',$id)->find()->toArray();
+    	$main_img = self::where('id',$id)->find();
+        //print_r($main_img);die;
     	return $main_img;
     }
 

@@ -23,6 +23,7 @@ Route::get('api/:version/course/courseTimeList', 'api/:version.Course/courseTime
 Route::get('api/:version/course/:id', 'api/:version.Course/getDetail',[], ['id'=>'\d+']);
 //6. 预约课程详情
 Route::get('api/:version/course/courseData', 'api/:version.Course/reservedCourseDetails');
+Route::get('api/:version/course/courseHot', 'api/:version.Course/CourseHot');
 //7. 收藏
 Route::get('api/:version/collection/collect', 'api/:version.Collection/collectByUser');
 //8. 取消收藏
@@ -32,7 +33,8 @@ Route::get('api/:version/collection/collectionList', 'api/:version.Collection/co
 //搜索
 Route::get('api/:version/search', 'api/:version.Search/getSearchInfo');
 
-
+//秒杀
+Route::get('api/:version/seckill/lists', 'api/:version.Seckill/seckillList');
 
 //10. 订单列表
 //11. 订单详情

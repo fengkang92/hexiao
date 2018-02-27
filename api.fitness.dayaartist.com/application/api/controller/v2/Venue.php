@@ -24,7 +24,7 @@ class Venue extends Controller
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function getVenueList($longitude='116.468453',$latitude='39.899186')
+    public function getVenueList($longitude,$latitude)
     {
         $data = VenueBranch::VenueList();
         if (empty($data)) {
@@ -35,6 +35,9 @@ class Venue extends Controller
         }
         
         foreach ($data as $key => $v) {
+            if (empty($v['collection'])) {
+                $data[$key]['collection'] = array('status'=>2);
+            }
             $distance = getdistances($longitude,$latitude,$v['longitude'],$v['latitude']);
             $data[$key]['distance'] = round($distance/1000,2).'km';
             $main_img = ImgModel::getOneImg($v['main_img_id']);

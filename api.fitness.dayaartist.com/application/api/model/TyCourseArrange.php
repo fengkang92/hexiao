@@ -81,4 +81,17 @@ class TyCourseArrange extends BaseModel
         $products = self::with(['course','teacher','venue'])->where('id','in',$oPIDs)->select()->toArray();
         return $products;
     }
+
+    /**
+     * 获取预约课程详情
+     * @param $id 时间ID
+     * @param $end_date   结束时间
+     * @return \think\Paginator
+     */
+    public static function getCourseTimeData($id)
+    {
+        //$CourseTime = self::where('venue_branch_id',$id)->whereTime('dates','between',['2018-02-05','2018-02-11'])->select();
+        $Course = self::with(['course','teacher','venue'])->where('id',$id)->find();
+        return $Course;
+    }
 }

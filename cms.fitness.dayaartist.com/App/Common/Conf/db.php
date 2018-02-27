@@ -20,8 +20,8 @@ return array(
 // | 本地测试服务器和数据库
 // +----------------------------------------------------------------------
     'DB_HOST'               =>  'localhost', // 服务器地址
-    'DB_NAME'               =>  'artists_lab',          // 数据库名
+    'DB_NAME'               =>  'sports',          // 数据库名
     'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'Dayaartist1314',      //'1234QWERasdf',          // 密码
+    'DB_PWD'                =>  'root',      //'1234QWERasdf',          // 密码
 
 );

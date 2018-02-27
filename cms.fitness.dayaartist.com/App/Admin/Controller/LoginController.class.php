@@ -37,14 +37,13 @@ class LoginController extends Controller
             $yzm = I('code');
             if ($this->check_verify($yzm)) {
                 $username = $_POST['username'];
-                $admininfo = M('adminuser')->where("name='$username' AND del<1")->find();
+                $admininfo = M('adminuser')->where("name='$username' AND del=1")->find();
                 //查询app表看使用该系统的客户时间
                 if ($admininfo) {
                     if (MD5(MD5($_POST['pwd'])) == $admininfo['pwd']) {
                         $admin = array(
                             "id" => $admininfo["id"],
                             "name" => $admininfo["name"],
-                            //"qx" => $admininfo["qx"],
                             "shop_id" => $admininfo["shop_id"],
                             'supplier_id' => $admininfo['supplier_id']
                         );

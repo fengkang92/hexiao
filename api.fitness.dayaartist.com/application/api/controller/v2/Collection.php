@@ -27,22 +27,30 @@ class Collection extends Controller
     public function collectByUser($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        //$uid = Token::getCurrentUid();
-        $uid = 1;
+        $uid = Token::getCurrentUid();
         $data = CollectionModel::getUserCollect($uid,$id);
         if (!empty($data)) {
-            return [
-                'code'=> 20001,
-                'msg' => '您已收藏该场馆'
-            ];
+            if ($data['status'] == 1) {
+                return [
+                    'code'=> 20001,
+                    'msg' => '您已收藏该场馆'
+                ];
+            }else{
+                $collection = new CollectionModel;
+                $where = array('user_id'=>$uid,'venue_branch_id'=>$id);
+                $res = $collection->where($where)
+                    ->update(['status' => 1,'update_time'=>time()]);
+            }
+        }else{
+            $collection = new CollectionModel;
+            $collection->user_id = $uid;
+            $collection->venue_branch_id = $id;
+            $collection->status = 1;
+            $collection->create_time = time();
+            $collection->save();
+            $res = $collection->id;
         }
-        $collection = new CollectionModel;
-        $collection->user_id = $uid;
-        $collection->venue_branch_id = $id;
-        $collection->status = 1;
-        $collection->create_time = time();
-        $collection->save();
-        $res = $collection->id;
+        
         if ($res > 0) {
             return  [
                 'code' => 200,
@@ -61,10 +69,9 @@ class Collection extends Controller
     public function cancelCollect($id)
     {
         (new IDMustBePositiveInt())->goCheck();
-        //$uid = Token::getCurrentUid();
-        $uid = 1;
+        $uid = Token::getCurrentUid();
         $collection = new CollectionModel;
-        $where = array('user_id'=>1,'venue_branch_id'=>$id);
+        $where = array('user_id'=>$uid,'venue_branch_id'=>$id);
         $res = $collection->where($where)
             ->update(['status' => 2,'update_time'=>time()]);
         if ($res != 1) {
@@ -86,9 +93,8 @@ class Collection extends Controller
      * @return \think\Paginator
      * @throws ThemeException
      */
-    public function collectionList($longitude='116.468453',$latitude='39.899186')
+    public function collectionList($longitude,$latitude)
     {
-        (new IDMustBePositiveInt())->goCheck();
         $uid = Token::getCurrentUid();
         $collection = CollectionModel::getUserCollection($uid);
         if (empty($collection)) {

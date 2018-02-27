@@ -28,7 +28,7 @@ class TyCollection extends BaseModel
      */
     public static function getUserCollect($uid,$venue_id)
     {
-        $where = array('user_id'=>$uid,'venue_branch_id'=>$venue_id,'status'=>1);
+        $where = array('user_id'=>$uid,'venue_branch_id'=>$venue_id);
         $collection = self::where($where)->find();
         return $collection;
     }

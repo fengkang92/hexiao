@@ -16,6 +16,7 @@ use app\api\model\TyVenueBranch as venueBranch;
 use app\api\model\TyCourseArrange as CourseArrange;
 use app\api\model\TyImg as ImgModel;
 use app\api\model\TyCourse as CourseModel;
+use app\api\model\TyType as TypeModel;
 
 class Course extends Controller
 {   
@@ -138,4 +139,13 @@ class Course extends Controller
         return $courseData;
     }
 
+    /**
+     * 课程推荐
+     * @throws ThemeException
+     */
+    public function CourseHot()
+    {
+        $data = TypeModel::getCourseType();
+        return $data;
+    }
 }

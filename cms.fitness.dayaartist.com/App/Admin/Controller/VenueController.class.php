@@ -4,12 +4,12 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class SupplierController extends PublicController
+class VenueController extends PublicController
 {
 	//***********************************
-    // 供应商添加
+    // 添加场馆
     //**********************************
-    public function add()
+    public function add_venue()
     {
     	if (IS_POST) {
 
@@ -32,12 +32,12 @@ class SupplierController extends PublicController
     			$this->error('添加失败，请重新添加');
     		}
     	}else{
-    		//分店信息
+    		/*//分店信息
     		$chain_data = M('chain')->select();
     		//分类信息
     		$category_data = M('category')->select();
 	    	$this->assign('chain_data',$chain_data);
-	    	$this->assign('category_data',$category_data);
+	    	$this->assign('category_data',$category_data);*/
 	    	$this->display();
     	}
     }
