@@ -13,9 +13,6 @@ class VenueController extends PublicController
     {
     	if (IS_POST) {
 
-		 	$Model = M(); // 实例化一个空对象  
-            $Model->startTrans(); // 开启事务
-
     		$data = I('post.');
     		$data['create_time'] = time();
     		$supplier_id = M('box_supplier')->add($data);
@@ -24,11 +21,8 @@ class VenueController extends PublicController
     		$cs_id = M('box_course_supplier')->add($cs_data);
 
     		if ($supplier && $cs_id) {
-    			$Model->commit(); // 成功则提交事务
     			$this->success('编辑成功', U('Admin/Supplier/index'));
     		}else{
-    			// 否则将事务回滚
-                $Model->rollback();
     			$this->error('添加失败，请重新添加');
     		}
     	}else{
