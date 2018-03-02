@@ -25,29 +25,37 @@ class Seckill extends Controller
      */
     public function seckillList()
     {
-        $data = SeckillModel::seckillList();
+        $time = date('H:i',time());
+        if ($time < '12:00') {
+            $time = '10:00-11:00';
+            $start_time = '10:00';
+            $end_time = '11:00';
+        }else{
+            $time = '18:00-19:00';
+            $start_time = '18:00';
+            $end_time = '19:00';
+        }
+
+        $seckillList = CourseArrange::getSeckillList($time);
+        //print_r($seckillList->toArray());die;
 
         $seckillListData = array();
+        $seckillListData['start_time'] = $start_time;
+        $seckillListData['end_time'] = $end_time;
         // print_r($data->toArray());die;
-        foreach ($data as $key => $v) {
-            $seckill = CourseArrange::getCourseTimeData($v['time_id']);
-            $courseImg = ImgModel::getOneImg($seckill['course']['main_img_id']); //课程图片
-
-            $status = 2;
-            if ($data[$key]['start_time'] < time() && $data[$key]['end_time'] > time()) {
-                $status = 1;
-            }
+        foreach ($seckillList as $key => $v) {
+            $courseImg = ImgModel::getOneImg($v['course']['main_img_id']); //课程图片
 
             $seckillListData[$key] = array(
                 'course_img' => $courseImg['img_url'],
-                'course_name' => $seckill['course']['name'],
-                'venue_name' => $seckill['venue']['name'],
-                'price' => $seckill['course']['discount_price'],
+                'course_name' => $v['course']['name'],
+                'venue_name' => $v['venue']['name'],
+                'price' => $v['course']['discount_price'],
                 'seckill_price' => $v['seckill_price'],
-                'date' => date('Y.m.d',$seckill['start_time']).' '.date('H:i',$seckill['start_time']).'-'.date('H:i',$seckill['end_time']),
-                'status' => $status
+                'date' => date('Y.m.d',$v['start_time']).' '.date('H:i',$v['start_time']).'-'.date('H:i',$v['end_time']),
             );
         }
+        //print_r($seckillListData);die;
         return $seckillListData;
     }
 }

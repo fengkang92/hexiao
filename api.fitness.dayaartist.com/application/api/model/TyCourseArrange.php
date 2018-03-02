@@ -94,4 +94,10 @@ class TyCourseArrange extends BaseModel
         $Course = self::with(['course','teacher','venue'])->where('id',$id)->find();
         return $Course;
     }
+
+    public static function getSeckillList($time)
+    {
+        $data = self::with(['course','venue'])->where('start_time','>',time())->where('seckill_time',$time)->where('is_seckill',1)->select();
+        return $data;
+    }
 }

@@ -6,13 +6,22 @@ use Think\Controller;
 
 class VenueController extends PublicController
 {
+    //***********************************
+    // 场馆列表
+    //**********************************
+    public function venue_index()
+    {
+        $venue = M('ty_venue as venue')->field('venue.*,img.img_url')->join('ty_img as img on venue.logo_id=img.id')->select();
+        $this->assign('venue',$venue);
+        $this->display();
+    }
+
 	//***********************************
     // 添加场馆
     //**********************************
     public function add_venue()
     {
     	if (IS_POST) {
-
     		$data = I('post.');
     		$data['create_time'] = time();
     		$supplier_id = M('box_supplier')->add($data);
@@ -49,46 +58,6 @@ class VenueController extends PublicController
    			echo 0;
    		}
    	}
-
-	//***********************************
-    // 供应商列表
-    //**********************************
-    public function index()
-    {
-        //        查询分类信息
-        $category = M('category')->field('id,name')->select();
-        $this->assign('category',$category);
-        //构建搜索条件
-        $where = '1=1';
-        if (IS_POST) {
-            //搜索
-            $category_id = trim($_REQUEST['category_id']);
-            $status = trim($_REQUEST['status']);
-            //根据分类搜索
-            if ($category_id) {
-                $where .= ' AND category_id=' . $category_id;
-                $this->assign('category_id',$category_id);
-            }
-            //根据状态搜索
-            if ($status) {
-                $where .= ' AND status=' . $status;
-                $this->assign('status',$status);
-            }
-        }
-
-//        查询输出信息
-    	$supplier_info = M('box_supplier as s')
-    					 ->field('s.id,s.su_name as name,s.su_email as email,s.category_id,cate.name as cate_name,s.description,cs.status,cs.check_info')
-    	                 ->join('box_course_supplier as cs on s.id=cs.suppiler_id')
-    	                 ->join('category as cate on s.category_id=cate.id')
-                         ->where($where)
-    	                 ->select();
-    	$count = count($supplier_info);
-    	//print_r($supplier_info);die;
-    	$this->assign('count',$count);
-    	$this->assign('supplier_info',$supplier_info);
-    	$this->display();
-    }
 
     //***********************************
     // 供应商修改
