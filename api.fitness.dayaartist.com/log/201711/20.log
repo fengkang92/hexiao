@@ -1,8 +1,0 @@
-[ 2017-11-20T18:08:28+08:00 ] ::1 ::1 GET /index.php/api/v1/product/recent
-[ log ] literature.com/index.php/api/v1/product/recent [运行时间：0.093024s][吞吐率：10.75req/s] [内存消耗：3,716.35kb] [文件加载：55]
-
----------------------------------------------------------------
-[ 2017-11-20T18:08:47+08:00 ] ::1 ::1 GET /index.php/api/v1/product/recent
-[ log ] literature.com/index.php/api/v1/product/recent [运行时间：0.069028s][吞吐率：14.49req/s] [内存消耗：3,715.91kb] [文件加载：55]
-
----------------------------------------------------------------
